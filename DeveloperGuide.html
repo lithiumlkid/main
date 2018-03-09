@@ -2177,25 +2177,25 @@ ease</p></td>
 <h2 id="use-cases"><a class="link" href="#use-cases">Appendix D: Use Cases</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>(For all use cases below, the <strong>System</strong> is the <code>AddressBook</code> and the <strong>Actor</strong> is the <code>user</code>, unless specified otherwise)</p>
+<p>(For all use cases below, the <strong>System</strong> is the <code>CCM</code> and the <strong>Team Manager</strong> is the <code>user</code>, unless specified otherwise)</p>
 </div>
-<h3 id="use-case-delete-person" class="discrete">Use case: Delete person</h3>
+<h3 id="use-case-add-player" class="discrete">Use case: Add player</h3>
 <div class="paragraph">
 <p><strong>MSS</strong></p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>User requests to list persons</p>
+<p>User enter command to add</p>
 </li>
 <li>
-<p>AddressBook shows a list of persons</p>
+<p>CCM prompt user of format to enter player&#8217;s name and details</p>
 </li>
 <li>
-<p>User requests to delete a specific person in the list</p>
+<p>User enter player&#8217;s name and details in required format</p>
 </li>
 <li>
-<p>AddressBook deletes the person</p>
+<p>User press enter to insert person into storage</p>
 <div class="paragraph">
 <p>Use case ends.</p>
 </div>
@@ -2208,19 +2208,158 @@ ease</p></td>
 <div class="ulist none">
 <ul class="none">
 <li>
-<p>2a. The list is empty.</p>
+<p>4a. User did not enter any details.</p>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>4a1. CCM inform user that it is an invalid add command.</p>
 <div class="paragraph">
 <p>Use case ends.</p>
 </div>
 </li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<h3 id="use-case-edit-player-s-team" class="discrete">Use case: Edit player&#8217;s team</h3>
+<div class="paragraph">
+<p><strong>MSS</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
-<p>3a. The given index is invalid.</p>
+<p>User enter command to find</p>
+</li>
+<li>
+<p>User enter player&#8217;s name</p>
+</li>
+<li>
+<p>CCM display list of players found</p>
+</li>
+<li>
+<p>User enter command to edit player&#8217;s team using index of displayed list</p>
+<div class="paragraph">
+<p>Use case ends.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Extensions</strong></p>
+</div>
 <div class="ulist none">
 <ul class="none">
 <li>
-<p>3a1. AddressBook shows an error message.</p>
+<p>2a. Player name does not exist.</p>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>2a1. CCM inform user that player does not exist.</p>
 <div class="paragraph">
-<p>Use case resumes at step 2.</p>
+<p>Use case ends.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<h3 id="use-case-find-player-by-team-name" class="discrete">Use case: Find player by team name</h3>
+<div class="paragraph">
+<p><strong>MSS</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>User enter command to find team</p>
+</li>
+<li>
+<p>User enter team name</p>
+</li>
+<li>
+<p>CCM display list of players in team</p>
+<div class="paragraph">
+<p>Use case ends.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Extensions</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>2a. Team name does not exist.</p>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>2a1. CCM informs user that team name does not exist</p>
+<div class="paragraph">
+<p>Use case ends.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<h3 id="use-case-remove-player-from-team" class="discrete">Use case: Remove player from team</h3>
+<div class="paragraph">
+<p><strong>MSS</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>User enter command to find</p>
+</li>
+<li>
+<p>User enter player&#8217;s name</p>
+</li>
+<li>
+<p>CCM display list of players found</p>
+</li>
+<li>
+<p>User enter remove command and index associated with player</p>
+</li>
+<li>
+<p>CCM displays player that is removed and updated list of players</p>
+<div class="paragraph">
+<p>Use case ends.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Extensions</strong></p>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>4a. Invalid index entered.</p>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>4a1. CCM informs user that index is invalid.</p>
+</li>
+<li>
+<p>4a2. User enters valid index.</p>
+<div class="paragraph">
+<p>Use case resumes at step 5.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>4b. User removes wrong index unintentionally.</p>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>4b1. User undo remove by entering command to undo.</p>
+<div class="paragraph">
+<p>Use case ends.</p>
 </div>
 </li>
 </ul>
@@ -2239,18 +2378,51 @@ ease</p></td>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Should work on any <a href="#mainstream-os">mainstream OS</a> as long as it has Java <code>1.8.0_60</code> or higher installed.</p>
+<p>Should work on any mainstream OS as long as it has Java 1.8.0_60 or higher installed.</p>
 </li>
 <li>
-<p>Should be able to hold up to 1000 persons without a noticeable sluggishness in performance for typical usage.</p>
+<p>Should be able to hold up to 150 persons without a noticeable sluggishness in performance for typical usage.</p>
 </li>
 <li>
 <p>A user with above average typing speed for regular English text (i.e. not code, not system admin commands) should be able to accomplish most of the tasks faster using commands than using the mouse.</p>
 </li>
+<li>
+<p>Works on both 32-bit and 64-bit machines</p>
+</li>
+<li>
+<p>Should respond within 1 second of query</p>
+</li>
+<li>
+<p>Should be intuitive and easy to use for a first-time user.</p>
+</li>
+<li>
+<p>Should be able to handle any sort of input, i.e. should recover from invalid input.</p>
+</li>
+<li>
+<p>Should have audience-focused user guides and developer guides.</p>
+</li>
+<li>
+<p>Should have command names that concisely describe their function.</p>
+</li>
+<li>
+<p>Should be an open-source project.</p>
+</li>
+<li>
+<p>Development be cost effective or free.</p>
+</li>
+<li>
+<p>App should be able to work offline.</p>
+</li>
+<li>
+<p>Should save and backup the state of the addressbook regularly.</p>
+</li>
+<li>
+<p>Current versions must be backward compatible with older versions to support undo.</p>
+</li>
+<li>
+<p>The user interface should be simple and minimise distractions so that user can continue with their work in a focused manner.</p>
+</li>
 </ol>
-</div>
-<div class="paragraph">
-<p><em>{More to be added}</em></p>
 </div>
 </div>
 </div>
@@ -2266,6 +2438,18 @@ ease</p></td>
 <dt class="hdlist1"><a id="private-contact-detail"></a> Private contact detail</dt>
 <dd>
 <p>A contact detail that is not meant to be shared with others</p>
+</dd>
+<dt class="hdlist1"><a id="ccm"></a> Codee&#8217;s Championship Manager (CCM)</dt>
+<dd>
+<p>The name of this application</p>
+</dd>
+<dt class="hdlist1"><a id="lineuo"></a> Lineup</dt>
+<dd>
+<p>A list of players that are playing for a match, with their positions specified</p>
+</dd>
+<dt class="hdlist1"><a id="user-guide"></a> User Guide</dt>
+<dd>
+<p>A documentation on the functionalities and usability of <a href="#ccm">CCM</a></p>
 </dd>
 </dl>
 </div>
@@ -2421,7 +2605,7 @@ Expected: Similar to previous.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-03-08 16:21:04 UTC
+Last updated 2018-03-09 06:18:19 UTC
 </div>
 </div>
 </body>
