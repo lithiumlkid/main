@@ -1,5 +1,8 @@
 package seedu.address.ui;
 
+import static seedu.address.logic.commands.AddCommand.COMMAND_WORD;
+
+import java.util.ArrayList;
 import java.util.logging.Logger;
 
 import org.controlsfx.control.textfield.TextFields;
@@ -9,6 +12,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.Region;
+
 import seedu.address.commons.core.LogsCenter;
 import seedu.address.commons.events.ui.NewResultAvailableEvent;
 import seedu.address.logic.ListElementPointer;
@@ -16,6 +20,7 @@ import seedu.address.logic.Logic;
 import seedu.address.logic.commands.CommandResult;
 import seedu.address.logic.commands.exceptions.CommandException;
 import seedu.address.logic.parser.exceptions.ParseException;
+import seedu.address.model.tag.Tag;
 
 
 
@@ -34,14 +39,12 @@ public class CommandBox extends UiPart<Region> {
     @FXML
     private TextField commandTextField;
 
-    private String[] words = {"Hell", "Hello"};
-
     public CommandBox(Logic logic) {
         super(FXML);
         this.logic = logic;
         // calls #setStyleToDefault() whenever there is a change to the text of the command box.
         commandTextField.textProperty().addListener((unused1, unused2, unused3) -> setStyleToDefault());
-        TextFields.bindAutoCompletion(commandTextField, words);
+        TextFields.bindAutoCompletion(commandTextField, getPossibleCommands());
         historySnapshot = logic.getHistorySnapshot();
 
     }
@@ -154,6 +157,17 @@ public class CommandBox extends UiPart<Region> {
         }
 
         styleClass.add(ERROR_STYLE_CLASS);
+    }
+
+    public ArrayList<String> getPossibleCommands() {
+        ArrayList<String> commands = new ArrayList<>();
+        commands.add(COMMAND_WORD);
+        ObservableList<Tag> tagList = logic.getTagList();
+        for (Tag tag : tagList) {
+            commands.add("t/" + tag.tagName
+            );
+        }
+        return commands;
     }
 
 }
