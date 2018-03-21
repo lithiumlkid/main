@@ -28,20 +28,30 @@
 <li><a href="#quick-start">2. Quick Start</a></li>
 <li><a href="#Features">3. Features</a>
 <ul class="sectlevel2">
-<li><a href="#viewing-help-code-help-code">3.1. Viewing help : <code>help</code></a></li>
-<li><a href="#adding-a-person-code-add-code">3.2. Adding a person: <code>add</code></a></li>
-<li><a href="#listing-all-persons-code-list-code">3.3. Listing all persons : <code>list</code></a></li>
-<li><a href="#editing-a-person-code-edit-code">3.4. Editing a person : <code>edit</code></a></li>
-<li><a href="#locating-persons-by-name-code-find-code">3.5. Locating persons by name: <code>find</code></a></li>
-<li><a href="#deleting-a-person-code-delete-code">3.6. Deleting a person : <code>delete</code></a></li>
-<li><a href="#selecting-a-person-code-select-code">3.7. Selecting a person : <code>select</code></a></li>
-<li><a href="#listing-entered-commands-code-history-code">3.8. Listing entered commands : <code>history</code></a></li>
-<li><a href="#undoing-previous-command-code-undo-code">3.9. Undoing previous command : <code>undo</code></a></li>
-<li><a href="#redoing-the-previously-undone-command-code-redo-code">3.10. Redoing the previously undone command : <code>redo</code></a></li>
-<li><a href="#clearing-all-entries-code-clear-code">3.11. Clearing all entries : <code>clear</code></a></li>
-<li><a href="#exiting-the-program-code-exit-code">3.12. Exiting the program : <code>exit</code></a></li>
-<li><a href="#saving-the-data">3.13. Saving the data</a></li>
-<li><a href="#encrypting-data-files-code-coming-in-v2-0-code">3.14. Encrypting data files <code>[coming in v2.0]</code></a></li>
+<li><a href="#autocomplete">3.1. Autocomplete</a></li>
+<li><a href="#viewing-help-code-help-code">3.2. Viewing help : <code>help</code></a></li>
+<li><a href="#adding-a-person-code-add-code">3.3. Adding a person: <code>add</code></a></li>
+<li><a href="#listing-all-persons-code-list-code">3.4. Listing all persons : <code>list</code></a></li>
+<li><a href="#editing-a-person-code-edit-code">3.5. Editing a person : <code>edit</code></a></li>
+<li><a href="#locating-persons-by-name-code-find-code">3.6. Locating persons by name: <code>find</code></a></li>
+<li><a href="#deleting-a-person-code-delete-code">3.7. Deleting a person : <code>delete</code></a></li>
+<li><a href="#selecting-a-player-code-select-code">3.8. Selecting a player : <code>select</code></a></li>
+<li><a href="#listing-entered-commands-code-history-code">3.9. Listing entered commands : <code>history</code></a></li>
+<li><a href="#undoing-previous-command-code-undo-code">3.10. Undoing previous command : <code>undo</code></a></li>
+<li><a href="#redoing-the-previously-undone-command-code-redo-code">3.11. Redoing the previously undone command : <code>redo</code></a></li>
+<li><a href="#clearing-all-entries-code-clear-code">3.12. Clearing all entries : <code>clear</code></a></li>
+<li><a href="#setting-colour-of-tags-code-settagcolour-code">3.13. Setting Colour of tags : <code>setTagColour</code></a></li>
+<li><a href="#sorting-players-by-tag-code-sort-code">3.14. Sorting players by tag: <code>sort</code></a></li>
+<li><a href="#exiting-the-program-code-exit-code">3.15. Exiting the program : <code>exit</code></a></li>
+<li><a href="#saving-the-data">3.16. Saving the data</a></li>
+<li><a href="#noting-down-a-remark-for-player-code-remark-code">3.17. Noting down a remark for player: <code>remark</code></a></li>
+<li><a href="#creating-a-team-code-create-code-code-coming-in-v2-0-code">3.18. Creating a team: <code>create</code> <code>[Coming in v2.0]</code></a></li>
+<li><a href="#assigning-player-to-teams-code-assign-code-code-coming-in-v2-0-code">3.19. Assigning player to teams: <code>assign</code> <code>[Coming in v2.0]</code></a></li>
+<li><a href="#scheduling-trainings-for-team-code-schedule-code-code-coming-in-v2-0-code">3.20. Scheduling trainings for team <code>schedule</code> <code>[Coming in v2.0]</code></a></li>
+<li><a href="#sending-reminder-emails-to-players-code-send-code-code-coming-in-v2-0-code">3.21. Sending reminder emails to players: <code>send</code> <code>[Coming in v2.0]</code></a></li>
+<li><a href="#viewing-other-teams-being-managed-code-view-code-code-coming-in-v2-0-code">3.22. Viewing other teams being managed: <code>view</code> <code>[Coming in v2.0]</code></a></li>
+<li><a href="#giving-feedback-to-developers-code-feedback-code-code-coming-in-v2-0-code">3.23. Giving feedback to developers: <code>feedback</code> <code>[Coming in v2.0]</code></a></li>
+<li><a href="#giving-demerit-to-players-based-on-performance-code-demerit-code-coming-in-v2-0">3.24. Giving demerit to players based on performance: <code>demerit</code> [Coming in v2.0]</a></li>
 </ul>
 </li>
 <li><a href="#faq">4. FAQ</a></li>
@@ -53,7 +63,11 @@
 <h2 id="introduction"><a class="link" href="#introduction">1. Introduction</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>My Team Manager (MTM) is for those who <strong>prefer to use a desktop app for managing contacts</strong>. More importantly, MTM is <strong>optimized for those who prefer to work with a Command Line Interface</strong> (CLI) while still having the benefits of a Graphical User Interface (GUI). If you can type fast, MTM can get your contact management tasks done faster than traditional GUI apps. Interested? Jump to the <a href="#quick-start">Section 2, &#8220;Quick Start&#8221;</a> to get started. Enjoy!</p>
+<p>My Team Manager (MTM) is for <strong>football team managers</strong> who prefer to conduct management of their teams on their computers.
+This is a Command Line Interface (CLI) application where you, as a team manager, will be able to enter and organise details
+of the players you are managing. The players will be organised into their respective teams, and you can include details such
+as their positions and demerits, so that you can easily pick the lineup for matches.<br>
+Head to <a href="#quick-start">Section 2, &#8220;Quick Start&#8221;</a> to get started with My Team Manager!</p>
 </div>
 </div>
 </div>
@@ -152,17 +166,32 @@ e.g. typing <strong><code>help</code></strong> and pressing <kbd>Enter</kbd> wil
 </div>
 </div>
 <div class="sect2">
-<h3 id="viewing-help-code-help-code"><a class="link" href="#viewing-help-code-help-code">3.1. Viewing help : <code>help</code></a></h3>
+<h3 id="autocomplete"><a class="link" href="#autocomplete">3.1. Autocomplete</a></h3>
+<div class="paragraph">
+<p>After typing in the first few characters of a command, pressing <kbd>tab</kbd> will fill in the rest of the item.</p>
+</div>
+<div class="paragraph">
+<p>To see parameters for a command, press tab after the whole command is typed in. Pressing tab again will remove the parameters.</p>
+</div>
+<div class="paragraph">
+<p>Text will turn red if the input has no parameters or if no matching command exists.</p>
+</div>
+<div class="paragraph">
+<p>If there are multiple possible commands for a given input, i.e. 'e' could be 'edit', 'exit', or 'export', then a dropdown box will appear with the possible commands. These can be navigated using mouse or arrow keys. Then, press enter to select the desired command.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="viewing-help-code-help-code"><a class="link" href="#viewing-help-code-help-code">3.2. Viewing help : <code>help</code></a></h3>
 <div class="paragraph">
 <p>Format: <code>help</code></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="adding-a-person-code-add-code"><a class="link" href="#adding-a-person-code-add-code">3.2. Adding a person: <code>add</code></a></h3>
+<h3 id="adding-a-person-code-add-code"><a class="link" href="#adding-a-person-code-add-code">3.3. Adding a person: <code>add</code></a></h3>
 <div class="paragraph">
 <p>Adds a person to the address book<br>
 Alias: <code>a</code><br>
-Format: <code>add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS [t/TAG]&#8230;&#8203;</code></p>
+Format: <code>add n/NAME  e/EMAIL  tm/TEAM [a/ADDRESS] [p/PHONE_NUMBER] [j/JERSEY_NUMBER] [s/SCORE] [po/POSITION] [r/REMARKS] [t/TAG]&#8230;&#8203;</code></p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -171,7 +200,7 @@ Format: <code>add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS [t/TAG]&#8230;&#8203;<
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-A person can have any number of tags (including 0)
+A person can have any number of tags (including 0).
 </td>
 </tr>
 </table>
@@ -187,11 +216,14 @@ A person can have any number of tags (including 0)
 <li>
 <p><code>add n/Betsy Crowe t/friend e/betsycrowe@example.com a/Newgate Prison p/1234567 t/criminal</code></p>
 </li>
+<li>
+<p><code>add n/Ronaldo p/92331322 e/ronaldo@soccer.com a/Portugal tm/Real Madrid j/17 s/999 po/Striker r/Always play him</code></p>
+</li>
 </ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="listing-all-persons-code-list-code"><a class="link" href="#listing-all-persons-code-list-code">3.3. Listing all persons : <code>list</code></a></h3>
+<h3 id="listing-all-persons-code-list-code"><a class="link" href="#listing-all-persons-code-list-code">3.4. Listing all persons : <code>list</code></a></h3>
 <div class="paragraph">
 <p>Shows a list of all persons in the address book.<br>
 Alias: <code>l</code><br>
@@ -199,9 +231,9 @@ Format: <code>list</code></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="editing-a-person-code-edit-code"><a class="link" href="#editing-a-person-code-edit-code">3.4. Editing a person : <code>edit</code></a></h3>
+<h3 id="editing-a-person-code-edit-code"><a class="link" href="#editing-a-person-code-edit-code">3.5. Editing a person : <code>edit</code></a></h3>
 <div class="paragraph">
-<p>Edits an existing person in the address book.<br>
+<p>You may edit an existing player in the address book with the 'edit' command.<br>
 Alias: <code>e</code><br>
 Format: <code>edit INDEX [n/NAME] [p/PHONE] [e/EMAIL] [a/ADDRESS] [t/TAG]&#8230;&#8203;</code></p>
 </div>
@@ -219,7 +251,7 @@ Format: <code>edit INDEX [n/NAME] [p/PHONE] [e/EMAIL] [a/ADDRESS] [t/TAG]&#8230;
 <p>Existing values will be updated to the input values.</p>
 </li>
 <li>
-<p>When editing tags, the existing tags of the person will be removed i.e adding of tags is not cumulative.</p>
+<p>When you edit tags, the existing tags of the person will be removed i.e adding of tags is not cumulative.</p>
 </li>
 <li>
 <p>You can remove all the person&#8217;s tags by typing <code>t/</code> without specifying any tags after it.</p>
@@ -245,9 +277,9 @@ Edits the name of the 2nd person to be <code>Betsy Crower</code> and clears all 
 </div>
 </div>
 <div class="sect2">
-<h3 id="locating-persons-by-name-code-find-code"><a class="link" href="#locating-persons-by-name-code-find-code">3.5. Locating persons by name: <code>find</code></a></h3>
+<h3 id="locating-persons-by-name-code-find-code"><a class="link" href="#locating-persons-by-name-code-find-code">3.6. Locating persons by name: <code>find</code></a></h3>
 <div class="paragraph">
-<p>Finds persons whose names contain any of the given keywords.<br>
+<p>You can find a player whose names contain any of the given keywords with this command.<br>
 Alias: <code>f</code><br>
 Format: <code>find KEYWORD [MORE_KEYWORDS]</code></p>
 </div>
@@ -291,9 +323,9 @@ Returns any person having names <code>Betsy</code>, <code>Tim</code>, or <code>J
 </div>
 </div>
 <div class="sect2">
-<h3 id="deleting-a-person-code-delete-code"><a class="link" href="#deleting-a-person-code-delete-code">3.6. Deleting a person : <code>delete</code></a></h3>
+<h3 id="deleting-a-person-code-delete-code"><a class="link" href="#deleting-a-person-code-delete-code">3.7. Deleting a person : <code>delete</code></a></h3>
 <div class="paragraph">
-<p>Deletes the specified person from the address book.<br>
+<p>Should you want to delete a player from the address book, you may use this command.<br>
 Alias: <code>d</code><br>
 Format: <code>delete INDEX</code></p>
 </div>
@@ -302,7 +334,7 @@ Format: <code>delete INDEX</code></p>
 <div class="ulist">
 <ul>
 <li>
-<p>Deletes the person at the specified <code>INDEX</code>.</p>
+<p>Deletes the player at the specified <code>INDEX</code>.</p>
 </li>
 <li>
 <p>The index refers to the index number shown in the most recent listing.</p>
@@ -322,64 +354,81 @@ Format: <code>delete INDEX</code></p>
 <li>
 <p><code>list</code><br>
 <code>delete 2</code><br>
-Deletes the 2nd person in the address book.</p>
+Deletes the 2nd player in the address book.</p>
 </li>
 <li>
 <p><code>find Betsy</code><br>
 <code>delete 1</code><br>
-Deletes the 1st person in the results of the <code>find</code> command.</p>
+Deletes the 1st player in the results of the <code>find</code> command.</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="selecting-a-person-code-select-code"><a class="link" href="#selecting-a-person-code-select-code">3.7. Selecting a person : <code>select</code></a></h3>
+<h3 id="selecting-a-player-code-select-code"><a class="link" href="#selecting-a-player-code-select-code">3.8. Selecting a player : <code>select</code></a></h3>
 <div class="paragraph">
-<p>Selects the person identified by the index number used in the last person listing.<br>
-Alias: <code>d</code><br>
-Format: <code>select INDEX</code></p>
-</div>
-<div class="sidebarblock">
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p>Selects the person and loads the Google search page the person at the specified <code>INDEX</code>.</p>
-</li>
-<li>
-<p>The index refers to the index number shown in the most recent listing.</p>
-</li>
-<li>
-<p>The index <strong>must be a positive integer</strong> <code>1, 2, 3, &#8230;&#8203;</code></p>
-</li>
-</ul>
-</div>
-</div>
+<p>Identified the player you&#8217;re looking for and want to see more details about the player? MTM offers you the ability to view details of your specified player via an index shown in the current listing of players.</p>
 </div>
 <div class="paragraph">
-<p>Examples:</p>
+<p>Format: <code>select INDEX</code><br>
+Alias: <code>s</code></p>
 </div>
-<div class="ulist">
-<ul>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The index refers to the index number shown in the most recent listing.<br>
+The index <strong>must be a positive integer</strong> <code>1, 2, 3, &#8230;&#8203;</code></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="title"><strong>Outcome</strong></div>
+<div class="paragraph">
+<p>Your selected player will have their details displayed on the details pane on MTM.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Here are a few valid examples on how you can use the <code>select</code> command:</p>
+</div>
+<div class="ulist NOTE">
+<ul class="NOTE">
 <li>
 <p><code>list</code><br>
 <code>select 2</code><br>
-Selects the 2nd person in the address book.</p>
+Displays the list of all players and selects the 2nd player in that list.</p>
 </li>
 <li>
 <p><code>find Betsy</code><br>
 <code>select 1</code><br>
-Selects the 1st person in the results of the <code>find</code> command.</p>
+Finds a player named Betsy and selects the 1st player in the results of the <code>find</code> command.</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="listing-entered-commands-code-history-code"><a class="link" href="#listing-entered-commands-code-history-code">3.8. Listing entered commands : <code>history</code></a></h3>
+<h3 id="listing-entered-commands-code-history-code"><a class="link" href="#listing-entered-commands-code-history-code">3.9. Listing entered commands : <code>history</code></a></h3>
 <div class="paragraph">
-<p>Lists all the commands that you have entered in reverse chronological order.<br>
-Alias: <code>h</code><br>
-Format: <code>history</code></p>
+<p>Have you been extensively using MTM and in the midst of entering more commands, you could not remember what commands you have entered? MTM allows you to look at all your past commands that you have entered in reverse chronological order.</p>
+</div>
+<div class="paragraph">
+<p>Format: <code>history</code><br>
+Alias: <code>h</code></p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -395,13 +444,33 @@ Format: <code>history</code></p>
 </tr>
 </table>
 </div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="title"><strong>Outcome</strong></div>
+<div class="paragraph">
+<p>A list of your previously entered command will be shown to you.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
 </div>
 <div class="sect2">
-<h3 id="undoing-previous-command-code-undo-code"><a class="link" href="#undoing-previous-command-code-undo-code">3.9. Undoing previous command : <code>undo</code></a></h3>
+<h3 id="undoing-previous-command-code-undo-code"><a class="link" href="#undoing-previous-command-code-undo-code">3.10. Undoing previous command : <code>undo</code></a></h3>
 <div class="paragraph">
-<p>Restores the address book to the state before the previous <em>undoable</em> command was executed.<br>
-Alias: <code>u</code><br>
-Format: <code>undo</code></p>
+<p>Have you entered a wrong command or might have accidentally entered the wrong values to the specified fields to a command?<br></p>
+</div>
+<div class="paragraph">
+<p>You don&#8217;t have to worry, as MTM provides you with the command to undo most mistakes that you might have made. MTM will restore herself to the state before the previous <em>undoAble</em> command was executed.</p>
+</div>
+<div class="paragraph">
+<p>Format: <code>undo</code><br>
+Alias: <code>u</code></p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -411,53 +480,88 @@ Format: <code>undo</code></p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Undoable commands: those commands that modify the address book&#8217;s content (<code>add</code>, <code>delete</code>, <code>edit</code> and <code>clear</code>).</p>
+<p><em>undoAble</em> commands: those commands that modify the address book&#8217;s content (<code>add</code>, <code>delete</code>, <code>edit</code> and <code>clear</code>).</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="title"><strong>Outcome</strong></div>
+<div class="paragraph">
+<p>Commands that are <em>undoAble</em> will be reversed and MTM will be in the state before the command was executed.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p>Examples:</p>
+<p>Here are a few valid examples on how you can use the <code>undo</code> command:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
 <p><code>delete 1</code><br>
 <code>list</code><br>
-<code>undo</code> (reverses the <code>delete 1</code> command)<br></p>
+<code>undo</code><br>
+Calling the <code>undo</code> command will reverse the <code>delete 1</code> command.</p>
 </li>
 <li>
 <p><code>select 1</code><br>
 <code>list</code><br>
 <code>undo</code><br>
-The <code>undo</code> command fails as there are no undoable commands executed previously.</p>
+The <code>undo</code> command fails as there are no <em>undoAble</em> commands executed previously.</p>
 </li>
 <li>
 <p><code>delete 1</code><br>
 <code>clear</code><br>
-<code>undo</code> (reverses the <code>clear</code> command)<br>
-<code>undo</code> (reverses the <code>delete 1</code> command)<br></p>
+<code>undo</code><br>
+<code>undo</code><br>
+Calling the first <code>undo</code> command will reverse the <code>clear</code> command, and the subsequent <code>undo</code> command will reverse the <code>delete 1</code> command.</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="redoing-the-previously-undone-command-code-redo-code"><a class="link" href="#redoing-the-previously-undone-command-code-redo-code">3.10. Redoing the previously undone command : <code>redo</code></a></h3>
+<h3 id="redoing-the-previously-undone-command-code-redo-code"><a class="link" href="#redoing-the-previously-undone-command-code-redo-code">3.11. Redoing the previously undone command : <code>redo</code></a></h3>
 <div class="paragraph">
-<p>Reverses the most recent <code>undo</code> command.<br>
-Alias: <code>r</code><br>
-Format: <code>redo</code></p>
+<p>You accidentally called the <code>undo</code> command too many times and need a way to quickly reverse that? MTM allows you to redo the most recent <code>undo</code> command.</p>
 </div>
 <div class="paragraph">
-<p>Examples:</p>
+<p>Format: <code>redo</code><br>
+Alias: <code>r</code></p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="title"><strong>Outcome</strong></div>
+<div class="paragraph">
+<p>Previously executed <code>undo</code> command will be reversed and MTM will be in its previous state.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Here are a few valid examples on how you can use the <code>redo</code> command:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
 <p><code>delete 1</code><br>
-<code>undo</code> (reverses the <code>delete 1</code> command)<br>
-<code>redo</code> (reapplies the <code>delete 1</code> command)<br></p>
+<code>undo</code><br>
+<code>redo</code><br>
+Calling the <code>undo</code> command will reverse the <code>delete 1</code> command and the subsequent <code>redo</code> command will reapply the <code>delete 1</code> command.</p>
 </li>
 <li>
 <p><code>delete 1</code><br>
@@ -467,41 +571,134 @@ The <code>redo</code> command fails as there are no <code>undo</code> commands e
 <li>
 <p><code>delete 1</code><br>
 <code>clear</code><br>
-<code>undo</code> (reverses the <code>clear</code> command)<br>
-<code>undo</code> (reverses the <code>delete 1</code> command)<br>
-<code>redo</code> (reapplies the <code>delete 1</code> command)<br>
-<code>redo</code> (reapplies the <code>clear</code> command)<br></p>
+<code>undo</code><br>
+<code>undo</code><br>
+<code>redo</code><br>
+<code>redo</code><br>
+Calling the first <code>undo</code> command will reverse the <code>clear</code> command, and the subsequent <code>undo</code> command will reverse the <code>delete 1</code> command.<br>
+Calling the first <code>redo</code> command will reapply the <code>delete 1</code> command, and the subsequent <code>redo</code> command will reapply the <code>clear</code> command.</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="clearing-all-entries-code-clear-code"><a class="link" href="#clearing-all-entries-code-clear-code">3.11. Clearing all entries : <code>clear</code></a></h3>
+<h3 id="clearing-all-entries-code-clear-code"><a class="link" href="#clearing-all-entries-code-clear-code">3.12. Clearing all entries : <code>clear</code></a></h3>
 <div class="paragraph">
-<p>Clears all entries from the address book.<br>
+<p>You can clear all entries from the address book with the 'clear' command.<br>
 Alias: <code>c</code><br>
 Format: <code>clear</code></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="exiting-the-program-code-exit-code"><a class="link" href="#exiting-the-program-code-exit-code">3.12. Exiting the program : <code>exit</code></a></h3>
+<h3 id="setting-colour-of-tags-code-settagcolour-code"><a class="link" href="#setting-colour-of-tags-code-settagcolour-code">3.13. Setting Colour of tags : <code>setTagColour</code></a></h3>
 <div class="paragraph">
-<p>Exits the program.<br>
+<p>You can set the tags to a colour of your choice with the 'setColourTag' command.<br>
+Alias: <code>stc</code><br>
+Format: <code>setTagColour</code></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="sorting-players-by-tag-code-sort-code"><a class="link" href="#sorting-players-by-tag-code-sort-code">3.14. Sorting players by tag: <code>sort</code></a></h3>
+<div class="paragraph">
+<p>You can sort the players by tags with the 'sort' command.<br>
+Alias: <code>stc</code><br>
+Format: <code>setTagColour</code></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="exiting-the-program-code-exit-code"><a class="link" href="#exiting-the-program-code-exit-code">3.15. Exiting the program : <code>exit</code></a></h3>
+<div class="paragraph">
+<p>You can exit the program by entering the 'exit' command.<br>
 Format: <code>exit</code></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="saving-the-data"><a class="link" href="#saving-the-data">3.13. Saving the data</a></h3>
+<h3 id="saving-the-data"><a class="link" href="#saving-the-data">3.16. Saving the data</a></h3>
 <div class="paragraph">
-<p>Address book data are saved in the hard disk automatically after any command that changes the data.<br>
-There is no need to save manually.</p>
+<p>There is no need to save anything manually as My Team Manager will save
+any data entered directly to the hard drive.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="encrypting-data-files-code-coming-in-v2-0-code"><a class="link" href="#encrypting-data-files-code-coming-in-v2-0-code">3.14. Encrypting data files <code>[coming in v2.0]</code></a></h3>
+<h3 id="noting-down-a-remark-for-player-code-remark-code"><a class="link" href="#noting-down-a-remark-for-player-code-remark-code">3.17. Noting down a remark for player: <code>remark</code></a></h3>
 <div class="paragraph">
-<p><em>{explain how the user can enable/disable data encryption}</em></p>
+<p>When you need to drop yourself a self-note with regards to a specific player you&#8217;re managing, you can make a self-note
+of a specific player easily by giving the player a remark for you to remember by.</p>
 </div>
+<div class="paragraph">
+<p>Format: <code>remark INDEX [r/REMARK]</code><br>
+Alias: <code>rm</code></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+By leaving out <code>r/REMARK</code>, the command acts as a remark removal.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="title"><strong>Outcome</strong></div>
+<div class="paragraph">
+<p>Your specified player will either be given a new remark or have its existing remark removed.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Here are a few valid examples on how you can use the <code>remark</code> command:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>remark 1</code><br>
+Removes the remark from the specified player at index 1.</p>
+</li>
+<li>
+<p><code>remark 5 r/MVP Player</code><br>
+Give a remark to the specified player at index 5 with the remark "MVP Player".</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="creating-a-team-code-create-code-code-coming-in-v2-0-code"><a class="link" href="#creating-a-team-code-create-code-code-coming-in-v2-0-code">3.18. Creating a team: <code>create</code> <code>[Coming in v2.0]</code></a></h3>
+
+</div>
+<div class="sect2">
+<h3 id="assigning-player-to-teams-code-assign-code-code-coming-in-v2-0-code"><a class="link" href="#assigning-player-to-teams-code-assign-code-code-coming-in-v2-0-code">3.19. Assigning player to teams: <code>assign</code> <code>[Coming in v2.0]</code></a></h3>
+
+</div>
+<div class="sect2">
+<h3 id="scheduling-trainings-for-team-code-schedule-code-code-coming-in-v2-0-code"><a class="link" href="#scheduling-trainings-for-team-code-schedule-code-code-coming-in-v2-0-code">3.20. Scheduling trainings for team <code>schedule</code> <code>[Coming in v2.0]</code></a></h3>
+
+</div>
+<div class="sect2">
+<h3 id="sending-reminder-emails-to-players-code-send-code-code-coming-in-v2-0-code"><a class="link" href="#sending-reminder-emails-to-players-code-send-code-code-coming-in-v2-0-code">3.21. Sending reminder emails to players: <code>send</code> <code>[Coming in v2.0]</code></a></h3>
+
+</div>
+<div class="sect2">
+<h3 id="viewing-other-teams-being-managed-code-view-code-code-coming-in-v2-0-code"><a class="link" href="#viewing-other-teams-being-managed-code-view-code-code-coming-in-v2-0-code">3.22. Viewing other teams being managed: <code>view</code> <code>[Coming in v2.0]</code></a></h3>
+
+</div>
+<div class="sect2">
+<h3 id="giving-feedback-to-developers-code-feedback-code-code-coming-in-v2-0-code"><a class="link" href="#giving-feedback-to-developers-code-feedback-code-code-coming-in-v2-0-code">3.23. Giving feedback to developers: <code>feedback</code> <code>[Coming in v2.0]</code></a></h3>
+
+</div>
+<div class="sect2">
+<h3 id="giving-demerit-to-players-based-on-performance-code-demerit-code-coming-in-v2-0"><a class="link" href="#giving-demerit-to-players-based-on-performance-code-demerit-code-coming-in-v2-0">3.24. Giving demerit to players based on performance: <code>demerit</code> [Coming in v2.0]</a></h3>
+
 </div>
 </div>
 </div>
@@ -517,54 +714,88 @@ There is no need to save manually.</p>
 <div class="sect1">
 <h2 id="command-summary"><a class="link" href="#command-summary">5. Command Summary</a></h2>
 <div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Add</strong> <code>add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS [t/TAG]&#8230;&#8203;</code><br>
-e.g. <code>add n/James Ho p/22224444 e/jamesho@example.com a/123, Clementi Rd, 1234665 t/friend t/colleague</code></p>
-</li>
-<li>
-<p><strong>Clear</strong> : <code>clear</code></p>
-</li>
-<li>
-<p><strong>Delete</strong> : <code>delete INDEX</code><br>
-e.g. <code>delete 3</code></p>
-</li>
-<li>
-<p><strong>Edit</strong> : <code>edit INDEX [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [a/ADDRESS] [t/TAG]&#8230;&#8203;</code><br>
-e.g. <code>edit 2 n/James Lee e/jameslee@example.com</code></p>
-</li>
-<li>
-<p><strong>Find</strong> : <code>find KEYWORD [MORE_KEYWORDS]</code><br>
-e.g. <code>find James Jake</code></p>
-</li>
-<li>
-<p><strong>List</strong> : <code>list</code></p>
-</li>
-<li>
-<p><strong>Help</strong> : <code>help</code></p>
-</li>
-<li>
-<p><strong>Select</strong> : <code>select INDEX</code><br>
-e.g.<code>select 2</code></p>
-</li>
-<li>
-<p><strong>History</strong> : <code>history</code></p>
-</li>
-<li>
-<p><strong>Undo</strong> : <code>undo</code></p>
-</li>
-<li>
-<p><strong>Redo</strong> : <code>redo</code></p>
-</li>
-</ul>
-</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 40%;">
+<col style="width: 40%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top">Command / Alias</th>
+<th class="tableblock halign-center valign-top">Parameter</th>
+<th class="tableblock halign-center valign-top">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><strong>help</strong></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><code>help</code></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Shows the user guide</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><strong>add / a</strong></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><code>add n/NAME e/EMAIL tm/TEAM [p/PHONE_NUMBER] [a/ADDRESS] [j/JERSEY_NUMBER] [s/SCORE] [po/POSITION] [r/REMARKS] [t/TAG]&#8230;&#8203;</code></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><code>add n/Ronaldo e/ronaldo@soccer.com tm/Real Madrid p/92331322 a/Portugal j/17 s/999 po/Striker r/Always play him /tfamous</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><strong>edit / e</strong></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><code>edit INDEX [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [a/ADDRESS] [t/TAG]&#8230;&#8203;</code></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><code>edit 2 n/James Lee e/jameslee@example.com</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><strong>remark / rm</strong></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><code>remark INDEX [r/REMARK]</code></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><code>remark 4 r/Gotta go faster</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><strong>delete / d</strong></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><code>delete INDEX</code></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><code>delete 3</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><strong>list / l</strong></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><code>list</code></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">List all the players</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><strong>find / f</strong></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><code>find KEYWORD [MORE_KEYWORDS]</code></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><code>find James Jake</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><strong>select / s</strong></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><code>select INDEX</code></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><code>select 2</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><strong>clear / c</strong></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><code>clear</code></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Removes all player&#8217;s information in the application</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><strong>history / h</strong></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><code>history</code></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Display the list of commands entered previously</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><strong>undo / u</strong></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><code>undo</code></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Undo the previous command</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><strong>redo / r</strong></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><code>redo</code></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Redo the previous command</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-03-14 18:18:47 UTC
+Last updated 2018-03-21 16:35:35 UTC
 </div>
 </div>
 </body>

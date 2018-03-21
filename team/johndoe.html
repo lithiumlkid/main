@@ -154,9 +154,14 @@
 <div class="sect2">
 <h3 id="undoing-previous-command-code-undo-code"><a class="link" href="#undoing-previous-command-code-undo-code">Undoing previous command : <code>undo</code></a></h3>
 <div class="paragraph">
-<p>Restores the address book to the state before the previous <em>undoable</em> command was executed.<br>
-Alias: <code>u</code><br>
-Format: <code>undo</code></p>
+<p>Have you entered a wrong command or might have accidentally entered the wrong values to the specified fields to a command?<br></p>
+</div>
+<div class="paragraph">
+<p>You don&#8217;t have to worry, as MTM provides you with the command to undo most mistakes that you might have made. MTM will restore herself to the state before the previous <em>undoAble</em> command was executed.</p>
+</div>
+<div class="paragraph">
+<p>Format: <code>undo</code><br>
+Alias: <code>u</code></p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -166,33 +171,50 @@ Format: <code>undo</code></p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Undoable commands: those commands that modify the address book&#8217;s content (<code>add</code>, <code>delete</code>, <code>edit</code> and <code>clear</code>).</p>
+<p><em>undoAble</em> commands: those commands that modify the address book&#8217;s content (<code>add</code>, <code>delete</code>, <code>edit</code> and <code>clear</code>).</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="title"><strong>Outcome</strong></div>
+<div class="paragraph">
+<p>Commands that are <em>undoAble</em> will be reversed and MTM will be in the state before the command was executed.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p>Examples:</p>
+<p>Here are a few valid examples on how you can use the <code>undo</code> command:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
 <p><code>delete 1</code><br>
 <code>list</code><br>
-<code>undo</code> (reverses the <code>delete 1</code> command)<br></p>
+<code>undo</code><br>
+Calling the <code>undo</code> command will reverse the <code>delete 1</code> command.</p>
 </li>
 <li>
 <p><code>select 1</code><br>
 <code>list</code><br>
 <code>undo</code><br>
-The <code>undo</code> command fails as there are no undoable commands executed previously.</p>
+The <code>undo</code> command fails as there are no <em>undoAble</em> commands executed previously.</p>
 </li>
 <li>
 <p><code>delete 1</code><br>
 <code>clear</code><br>
-<code>undo</code> (reverses the <code>clear</code> command)<br>
-<code>undo</code> (reverses the <code>delete 1</code> command)<br></p>
+<code>undo</code><br>
+<code>undo</code><br>
+Calling the first <code>undo</code> command will reverse the <code>clear</code> command, and the subsequent <code>undo</code> command will reverse the <code>delete 1</code> command.</p>
 </li>
 </ul>
 </div>
@@ -200,19 +222,37 @@ The <code>undo</code> command fails as there are no undoable commands executed p
 <div class="sect2">
 <h3 id="redoing-the-previously-undone-command-code-redo-code"><a class="link" href="#redoing-the-previously-undone-command-code-redo-code">Redoing the previously undone command : <code>redo</code></a></h3>
 <div class="paragraph">
-<p>Reverses the most recent <code>undo</code> command.<br>
-Alias: <code>r</code><br>
-Format: <code>redo</code></p>
+<p>You accidentally called the <code>undo</code> command too many times and need a way to quickly reverse that? MTM allows you to redo the most recent <code>undo</code> command.</p>
 </div>
 <div class="paragraph">
-<p>Examples:</p>
+<p>Format: <code>redo</code><br>
+Alias: <code>r</code></p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="title"><strong>Outcome</strong></div>
+<div class="paragraph">
+<p>Previously executed <code>undo</code> command will be reversed and MTM will be in its previous state.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Here are a few valid examples on how you can use the <code>redo</code> command:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
 <p><code>delete 1</code><br>
-<code>undo</code> (reverses the <code>delete 1</code> command)<br>
-<code>redo</code> (reapplies the <code>delete 1</code> command)<br></p>
+<code>undo</code><br>
+<code>redo</code><br>
+Calling the <code>undo</code> command will reverse the <code>delete 1</code> command and the subsequent <code>redo</code> command will reapply the <code>delete 1</code> command.</p>
 </li>
 <li>
 <p><code>delete 1</code><br>
@@ -222,18 +262,14 @@ The <code>redo</code> command fails as there are no <code>undo</code> commands e
 <li>
 <p><code>delete 1</code><br>
 <code>clear</code><br>
-<code>undo</code> (reverses the <code>clear</code> command)<br>
-<code>undo</code> (reverses the <code>delete 1</code> command)<br>
-<code>redo</code> (reapplies the <code>delete 1</code> command)<br>
-<code>redo</code> (reapplies the <code>clear</code> command)<br></p>
+<code>undo</code><br>
+<code>undo</code><br>
+<code>redo</code><br>
+<code>redo</code><br>
+Calling the first <code>undo</code> command will reverse the <code>clear</code> command, and the subsequent <code>undo</code> command will reverse the <code>delete 1</code> command.<br>
+Calling the first <code>redo</code> command will reapply the <code>delete 1</code> command, and the subsequent <code>redo</code> command will reapply the <code>clear</code> command.</p>
 </li>
 </ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="encrypting-data-files-code-coming-in-v2-0-code"><a class="link" href="#encrypting-data-files-code-coming-in-v2-0-code">Encrypting data files <code>[coming in v2.0]</code></a></h3>
-<div class="paragraph">
-<p><em>{explain how the user can enable/disable data encryption}</em></p>
 </div>
 </div>
 </div>
@@ -563,7 +599,7 @@ If the <code>redoStack</code> is empty, then there are no other commands left to
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-03-14 18:18:47 UTC
+Last updated 2018-03-21 16:35:35 UTC
 </div>
 </div>
 </body>

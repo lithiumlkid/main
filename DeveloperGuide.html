@@ -48,7 +48,8 @@
 <li><a href="#undo-redo-feature">4.1. Undo/Redo feature</a></li>
 <li><a href="#proposed-data-encryption">4.2. [Proposed] Data Encryption</a></li>
 <li><a href="#logging">4.3. Logging</a></li>
-<li><a href="#Implementation-Configuration">4.4. Configuration</a></li>
+<li><a href="#Implementation-Configuration">4.4. Autocomplete</a></li>
+<li><a href="#configuration">4.5. Configuration</a></li>
 </ul>
 </li>
 <li><a href="#documentation">5. Documentation</a>
@@ -81,7 +82,13 @@
 <li><a href="#GetStartedProgramming-RemarkCommand">A.2. Creating a new command: <code>remark</code></a></li>
 </ul>
 </li>
-<li><a href="#product-scope">Appendix B: Product Scope</a></li>
+<li><a href="#product-scope">Appendix B: Product Scope</a>
+<ul class="sectlevel2">
+<li><a href="#target-user-profile">B.1. Target user profile:</a></li>
+<li><a href="#value-proposition">B.2. Value proposition:</a></li>
+<li><a href="#feature-contribution">B.3. Feature Contribution</a></li>
+</ul>
+</li>
 <li><a href="#user-stories">Appendix C: User Stories</a></li>
 <li><a href="#use-cases">Appendix D: Use Cases</a></li>
 <li><a href="#non-functional-requirements">Appendix E: Non Functional Requirements</a></li>
@@ -891,7 +898,7 @@ If the <code>redoStack</code> is empty, then there are no other commands left to
 <div class="ulist">
 <ul>
 <li>
-<p>The logging level can be controlled using the <code>logLevel</code> setting in the configuration file (See <a href="#Implementation-Configuration">Section 4.4, &#8220;Configuration&#8221;</a>)</p>
+<p>The logging level can be controlled using the <code>logLevel</code> setting in the configuration file (See <a href="#Implementation-Configuration">Section 4.4, &#8220;Autocomplete&#8221;</a>)</p>
 </li>
 <li>
 <p>The <code>Logger</code> for a class can be obtained using <code>LogsCenter.getLogger(Class)</code> which will log messages according to the specified logging level</p>
@@ -922,7 +929,47 @@ If the <code>redoStack</code> is empty, then there are no other commands left to
 </div>
 </div>
 <div class="sect2">
-<h3 id="Implementation-Configuration"><a class="link" href="#Implementation-Configuration">4.4. Configuration</a></h3>
+<h3 id="Implementation-Configuration"><a class="link" href="#Implementation-Configuration">4.4. Autocomplete</a></h3>
+<div class="paragraph">
+<p>The autocomplete feature works by handling the Tab key pressed event, searching for any commands with matching prefix and returns one if found. The command strings are stored a Trie data structure, named CommandTrie, for optimal search.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>public class CommandTrie {
+    String attemptAutoComplete (String input);
+    void insert (String input);
+    Set&lt;String&gt; getCommandSet();
+}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The trie is made up of node classes which only have three fields. The sibling field represents a character on the same level as the current one. The child represents a next possible letter. For example in the words edit and exit the node for 'd' would have a child 'i' and a sibling 'x'. 'x' would have a child 'i'.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>public class Node {
+
+    private Node sibling;
+    private Node child;
+    private char key;
+    ...
+}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Upon the pressing of the tab key, the command box calls attemptAutoComplete, in the commandTrie class. This method will traverse the trie using the content of the command box.
+If the input has a character not present in the trie, then the attempt fails. If the trie parses through the input but reaches a node with a sibling option,
+it will attempt to provide the user with possible commands for a given input. In this case, a dropdown box will appear in the UI that lists the possible commands for the user.</p>
+</div>
+<div class="paragraph">
+<p>Upon finding a matching command, attemptAutoComplete returns it and replaces the text in the CommandLine. If the no matching command is found, the text is turned red.</p>
+</div>
+<div class="paragraph">
+<p>One class, command collection, is used to hold the set of commands and a map from each command word to the command usage. This is used by the trie to both construct the command trie and autocomplete from a command word to a command word and its usage. This static class simply contains a set of each command&#8217;s command word that is statically initialized and used by the commandTrie class.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="configuration"><a class="link" href="#configuration">4.5. Configuration</a></h3>
 <div class="paragraph">
 <p>Certain properties of the application can be controlled (e.g App name, logging level) through the configuration file (default: <code>config.json</code>).</p>
 </div>
@@ -1906,9 +1953,8 @@ for <code>RemarkCommandParser</code>.</p>
 <div class="sect1">
 <h2 id="product-scope"><a class="link" href="#product-scope">Appendix B: Product Scope</a></h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p><strong>Target user profile</strong>:</p>
-</div>
+<div class="sect2">
+<h3 id="target-user-profile"><a class="link" href="#target-user-profile">B.1. Target user profile:</a></h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1931,8 +1977,107 @@ for <code>RemarkCommandParser</code>.</p>
 </li>
 </ul>
 </div>
+</div>
+<div class="sect2">
+<h3 id="value-proposition"><a class="link" href="#value-proposition">B.2. Value proposition:</a></h3>
 <div class="paragraph">
-<p><strong>Value proposition</strong>: Exclusive application for management of footballers and football teams that provides an enhanced listing of footballers and convenient lookup on updated information of players.</p>
+<p>Exclusive application for management of footballers and football teams that provides an enhanced listing of footballers and convenient lookup on updated information of players.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="feature-contribution"><a class="link" href="#feature-contribution">B.3. Feature Contribution</a></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Codee<br></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Major - Revamp MTM’s whole GUI for ease of viewing teams and players’ details<br>
+e.g. remove browser panel, add player details panel, change person card<br></p>
+</li>
+<li>
+<p>Minor - Command to set the colour of tags to colour of choice</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Jordan</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Major - Creation of Team and related functions<br>
+e.g. assignment of players,
+viewing of teams,
+formation of team,
+indicate and set upcoming match</p>
+</li>
+<li>
+<p>Minor</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Remark command</p>
+</li>
+<li>
+<p>Enhanced add with optional field</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Syafiq</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Major</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Create a new player class that contains more information about the players<br>
+e.g. Position, Rating (0 - 5 Star),  Remarks<br></p>
+</li>
+<li>
+<p>Update add, edit ,list, sort to include these fields accordingly.<br></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Minor - Autocomplete command</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Tianwei</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Major - privacy</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Set private field and passwords</p>
+</li>
+<li>
+<p>Make accounts</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Minor - Sorting players by different fields</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
@@ -2613,7 +2758,7 @@ Expected: Similar to previous.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-03-14 18:18:47 UTC
+Last updated 2018-03-21 16:35:35 UTC
 </div>
 </div>
 </body>
