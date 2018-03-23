@@ -30,7 +30,7 @@
 <ul class="sectlevel2">
 <li><a href="#autocomplete">3.1. Autocomplete</a></li>
 <li><a href="#viewing-help-code-help-code">3.2. Viewing help : <code>help</code></a></li>
-<li><a href="#adding-a-person-code-add-code">3.3. Adding a person: <code>add</code></a></li>
+<li><a href="#adding-a-player-code-add-code">3.3. Adding a player: <code>add</code></a></li>
 <li><a href="#listing-all-persons-code-list-code">3.4. Listing all persons : <code>list</code></a></li>
 <li><a href="#editing-a-person-code-edit-code">3.5. Editing a person : <code>edit</code></a></li>
 <li><a href="#locating-persons-by-name-code-find-code">3.6. Locating persons by name: <code>find</code></a></li>
@@ -168,16 +168,16 @@ e.g. typing <strong><code>help</code></strong> and pressing <kbd>Enter</kbd> wil
 <div class="sect2">
 <h3 id="autocomplete"><a class="link" href="#autocomplete">3.1. Autocomplete</a></h3>
 <div class="paragraph">
-<p>After typing in the first few characters of a command, pressing <kbd>tab</kbd> will fill in the rest of the item.</p>
+<p>After typing in the first few characters of a command, pressing <kbd>tab</kbd> will fill in the rest of the item. Since v1.1</p>
 </div>
 <div class="paragraph">
-<p>To see parameters for a command, press tab after the whole command is typed in. Pressing tab again will remove the parameters.</p>
+<p>To see parameters for a command, press tab after the whole command is typed in. Pressing tab again will remove the parameters. Since v1.2</p>
 </div>
 <div class="paragraph">
 <p>Text will turn red if the input has no parameters or if no matching command exists.</p>
 </div>
 <div class="paragraph">
-<p>If there are multiple possible commands for a given input, i.e. 'e' could be 'edit', 'exit', or 'export', then a dropdown box will appear with the possible commands. These can be navigated using mouse or arrow keys. Then, press enter to select the desired command.</p>
+<p>If there are multiple possible commands for a given input, i.e. 'e' could be 'edit', 'exit', or 'export', then a dropdown box will appear with the possible commands. These can be navigated using mouse or arrow keys. Then, press enter to select the desired command. Since v1.2</p>
 </div>
 </div>
 <div class="sect2">
@@ -187,9 +187,9 @@ e.g. typing <strong><code>help</code></strong> and pressing <kbd>Enter</kbd> wil
 </div>
 </div>
 <div class="sect2">
-<h3 id="adding-a-person-code-add-code"><a class="link" href="#adding-a-person-code-add-code">3.3. Adding a person: <code>add</code></a></h3>
+<h3 id="adding-a-player-code-add-code"><a class="link" href="#adding-a-player-code-add-code">3.3. Adding a player: <code>add</code></a></h3>
 <div class="paragraph">
-<p>Adds a person to the address book<br>
+<p>Adds a player to the address book<br>
 Alias: <code>a</code><br>
 Format: <code>add n/NAME  e/EMAIL  tm/TEAM [a/ADDRESS] [p/PHONE_NUMBER] [j/JERSEY_NUMBER] [s/SCORE] [po/POSITION] [r/REMARKS] [t/TAG]&#8230;&#8203;</code></p>
 </div>
@@ -217,7 +217,10 @@ A person can have any number of tags (including 0).
 <p><code>add n/Betsy Crowe t/friend e/betsycrowe@example.com a/Newgate Prison p/1234567 t/criminal</code></p>
 </li>
 <li>
-<p><code>add n/Ronaldo p/92331322 e/ronaldo@soccer.com a/Portugal tm/Real Madrid j/17 s/999 po/Striker r/Always play him</code></p>
+<p><code>add n/Ronaldo p/92331322 e/ronaldo@soccer.com a/Portugal j/17 s/99 po/Striker r/Always play him</code></p>
+</li>
+<li>
+<p><code>add n/Fandi Ahmad p/92330022 e/fandi@soccer.com a/Singapore j/21 s/98 po/Striker r/Legendary</code></p>
 </li>
 </ul>
 </div>
@@ -235,7 +238,7 @@ Format: <code>list</code></p>
 <div class="paragraph">
 <p>You may edit an existing player in the address book with the 'edit' command.<br>
 Alias: <code>e</code><br>
-Format: <code>edit INDEX [n/NAME] [p/PHONE] [e/EMAIL] [a/ADDRESS] [t/TAG]&#8230;&#8203;</code></p>
+Format: <code>edit INDEX [n/NAME] [a/ADDRESS] [p/PHONE_NUMBER] [j/JERSEY_NUMBER] [s/SCORE] [po/POSITION] [r/REMARKS] [t/TAG]&#8230;&#8203;</code></p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -795,7 +798,7 @@ Give a remark to the specified player at index 5 with the remark "MVP Player".</
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-03-21 16:35:35 UTC
+Last updated 2018-03-23 08:34:40 UTC
 </div>
 </div>
 </body>
