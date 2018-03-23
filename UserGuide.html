@@ -41,17 +41,22 @@
 <li><a href="#redoing-the-previously-undone-command-code-redo-code">3.11. Redoing the previously undone command : <code>redo</code></a></li>
 <li><a href="#clearing-all-entries-code-clear-code">3.12. Clearing all entries : <code>clear</code></a></li>
 <li><a href="#setting-colour-of-tags-code-settagcolour-code">3.13. Setting Colour of tags : <code>setTagColour</code></a></li>
-<li><a href="#sorting-players-by-tag-code-sort-code">3.14. Sorting players by tag: <code>sort</code></a></li>
+<li><a href="#sorting-players-by-field-code-sort-code">3.14. Sorting players by field: <code>sort</code></a></li>
 <li><a href="#exiting-the-program-code-exit-code">3.15. Exiting the program : <code>exit</code></a></li>
 <li><a href="#saving-the-data">3.16. Saving the data</a></li>
 <li><a href="#noting-down-a-remark-for-player-code-remark-code">3.17. Noting down a remark for player: <code>remark</code></a></li>
 <li><a href="#creating-a-team-code-create-code-code-coming-in-v2-0-code">3.18. Creating a team: <code>create</code> <code>[Coming in v2.0]</code></a></li>
-<li><a href="#assigning-player-to-teams-code-assign-code-code-coming-in-v2-0-code">3.19. Assigning player to teams: <code>assign</code> <code>[Coming in v2.0]</code></a></li>
-<li><a href="#scheduling-trainings-for-team-code-schedule-code-code-coming-in-v2-0-code">3.20. Scheduling trainings for team <code>schedule</code> <code>[Coming in v2.0]</code></a></li>
-<li><a href="#sending-reminder-emails-to-players-code-send-code-code-coming-in-v2-0-code">3.21. Sending reminder emails to players: <code>send</code> <code>[Coming in v2.0]</code></a></li>
-<li><a href="#viewing-other-teams-being-managed-code-view-code-code-coming-in-v2-0-code">3.22. Viewing other teams being managed: <code>view</code> <code>[Coming in v2.0]</code></a></li>
-<li><a href="#giving-feedback-to-developers-code-feedback-code-code-coming-in-v2-0-code">3.23. Giving feedback to developers: <code>feedback</code> <code>[Coming in v2.0]</code></a></li>
-<li><a href="#giving-demerit-to-players-based-on-performance-code-demerit-code-coming-in-v2-0">3.24. Giving demerit to players based on performance: <code>demerit</code> [Coming in v2.0]</a></li>
+<li><a href="#viewing-a-team-code-view-code-code-coming-in-v2-0-code">3.19. Viewing a team: <code>view</code> <code>[Coming in v2.0]</code></a></li>
+<li><a href="#assigning-player-to-teams-code-assign-code-code-coming-in-v2-0-code">3.20. Assigning player to teams: <code>assign</code> <code>[Coming in v2.0]</code></a></li>
+<li><a href="#set-an-upcoming-match-with-an-opposing-team-code-setmatch-code-code-coming-in-v2-0-code">3.21. Set an upcoming match with an opposing team: <code>setmatch</code> <code>[Coming in v2.0]</code></a></li>
+<li><a href="#view-the-team-s-next-upcoming-match-nextmatch">3.22. View the team&#8217;s next upcoming match: nextmatch</a></li>
+<li><a href="#scheduling-trainings-for-team-code-schedule-code-code-coming-in-v2-0-code">3.23. Scheduling trainings for team <code>schedule</code> <code>[Coming in v2.0]</code></a></li>
+<li><a href="#sending-reminder-emails-to-players-code-send-code-code-coming-in-v2-0-code">3.24. Sending reminder emails to players: <code>send</code> <code>[Coming in v2.0]</code></a></li>
+<li><a href="#viewing-other-teams-being-managed-code-view-code-code-coming-in-v2-0-code">3.25. Viewing other teams being managed: <code>view</code> <code>[Coming in v2.0]</code></a></li>
+<li><a href="#giving-feedback-to-developers-code-feedback-code-code-coming-in-v2-0-code">3.26. Giving feedback to developers: <code>feedback</code> <code>[Coming in v2.0]</code></a></li>
+<li><a href="#giving-demerit-to-players-based-on-performance-code-demerit-code-code-coming-in-v2-0-code">3.27. Giving demerit to players based on performance: <code>demerit</code> <code>[Coming in v2.0]</code></a></li>
+<li><a href="#show-best-xi-players-code-showbest-code-coming-in-v2-0">3.28. Show Best XI players: <code>showBest</code> [Coming in v2.0]</a></li>
+<li><a href="#set-various-fields-to-private-coming-in-v2-0">3.29. Set various fields to private: [Coming in v2.0]</a></li>
 </ul>
 </li>
 <li><a href="#faq">4. FAQ</a></li>
@@ -409,8 +414,8 @@ The index <strong>must be a positive integer</strong> <code>1, 2, 3, &#8230;&#82
 <div class="paragraph">
 <p>Here are a few valid examples on how you can use the <code>select</code> command:</p>
 </div>
-<div class="ulist NOTE">
-<ul class="NOTE">
+<div class="ulist">
+<ul>
 <li>
 <p><code>list</code><br>
 <code>select 2</code><br>
@@ -601,11 +606,40 @@ Format: <code>setTagColour</code></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="sorting-players-by-tag-code-sort-code"><a class="link" href="#sorting-players-by-tag-code-sort-code">3.14. Sorting players by tag: <code>sort</code></a></h3>
+<h3 id="sorting-players-by-field-code-sort-code"><a class="link" href="#sorting-players-by-field-code-sort-code">3.14. Sorting players by field: <code>sort</code></a></h3>
 <div class="paragraph">
-<p>You can sort the players by tags with the 'sort' command.<br>
-Alias: <code>stc</code><br>
-Format: <code>setTagColour</code></p>
+<p>You can sort the players by fields with the 'sort' command. Players can be sorted in both ascending or descending order.<br>
+Alias: <code>so</code><br>
+Format: <code>sort</code> FIELD ORDER</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Current version of <code>sort</code> supports the following fields: Name, Phone, Email &amp; Address.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Here are a few valid examples on how you can use the <code>sort</code> command:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>sort</code> name asc<br>
+This will sort the address book by names, in alphabetical order.</p>
+</li>
+<li>
+<p><code>sort</code> name dsc<br>
+This will sort the address book by names, in reverse alphabetical order.</p>
+</li>
+</ul>
 </div>
 </div>
 <div class="sect2">
@@ -677,31 +711,242 @@ Give a remark to the specified player at index 5 with the remark "MVP Player".</
 </div>
 <div class="sect2">
 <h3 id="creating-a-team-code-create-code-code-coming-in-v2-0-code"><a class="link" href="#creating-a-team-code-create-code-code-coming-in-v2-0-code">3.18. Creating a team: <code>create</code> <code>[Coming in v2.0]</code></a></h3>
+<div class="paragraph">
+<p>What is a team management application without the functionality of creating a team? This command allows you to create a team that can be assigned to players.</p>
+</div>
+<div class="paragraph">
+<p>Format: <code>create TEAM_NAME</code><br>
+Alias: <code>ct</code></p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="title"><strong>Outcome</strong></div>
+<div class="paragraph">
+<p>Your newly specified team will be created with the name you have given wihtout any players in it.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Here are a few valid examples on how you can use the <code>create</code> command:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>create Arsenal</code>
+Creates a new team with the name "Arsenal".</p>
+</li>
+<li>
+<p><code>create Liverpool</code>
+Creates another new team with the name "Liverpool"</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="viewing-a-team-code-view-code-code-coming-in-v2-0-code"><a class="link" href="#viewing-a-team-code-view-code-code-coming-in-v2-0-code">3.19. Viewing a team: <code>view</code> <code>[Coming in v2.0]</code></a></h3>
+<div class="paragraph">
+<p>With the ability to manage different teams, you will be able to list all players currently in a team easily with this command.
+Format: <code>view TEAM_NAME</code>
+Alias: <code>v</code></p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="title"><strong>Outcome</strong></div>
+<div class="paragraph">
+<p>Displays the list of players will that are in the team specified.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Here are a few valid examples on how you can use the <code>view</code> command:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>view Arsenal</code>
+List all players in the team "Arsenal".</p>
+</li>
+<li>
+<p><code>view Liverpool</code>
+List all players in the team "Liverpool".</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="assigning-player-to-teams-code-assign-code-code-coming-in-v2-0-code"><a class="link" href="#assigning-player-to-teams-code-assign-code-code-coming-in-v2-0-code">3.20. Assigning player to teams: <code>assign</code> <code>[Coming in v2.0]</code></a></h3>
+<div class="paragraph">
+<p>Have a player without a team, or have yet to assigned one during the addition of player into MTM, you can call this command to assign that player to a particular team of your choice.</p>
+</div>
+<div class="paragraph">
+<p>Format: <code>assign INDEX TEAM_NAME</code>
+Alias: <code>ap</code></p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="title"><strong>Outcome</strong></div>
+<div class="paragraph">
+<p>Your specified player via index will be assigned to the specified team.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Here are a few valid examples on how you can use the <code>create</code> command:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>list</code></p>
+</li>
+<li>
+<p><code>assign 3 Arsenal</code>
+View the full list of players in MTM and assign the player with index 3 to team "Arsenal".</p>
+</li>
+<li>
+<p><code>find John</code></p>
+</li>
+<li>
+<p><code>assign 1 Liverpool</code>
+Find a player by the name of "John" and assign the player with index 1 to team "Liverpool".</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="set-an-upcoming-match-with-an-opposing-team-code-setmatch-code-code-coming-in-v2-0-code"><a class="link" href="#set-an-upcoming-match-with-an-opposing-team-code-setmatch-code-code-coming-in-v2-0-code">3.21. Set an upcoming match with an opposing team: <code>setmatch</code> <code>[Coming in v2.0]</code></a></h3>
+<div class="paragraph">
+<p>With this command, it gives you a convenient way to keep track of the upcoming match of a team.</p>
+</div>
+<div class="paragraph">
+<p>Format: <code>setmatch TEAM_NAME OPPONENT_TEAM_NAME DATE</code>
+Alias: <code>sm</code></p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="title"><strong>Outcome</strong></div>
+<div class="paragraph">
+<p>The upcoming match of the team will be captured and displayed to you.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Here are a few valid examples on how you can use the <code>create</code> command:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>view Arsenal</code></p>
+</li>
+<li>
+<p><code>setmatch Arsenal Liverpool 14/03/2018</code>
+Display the list of players in team "Arsenal" and set an upcoming match for Arsenal with Liverpool on 14/03/2018.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="view-the-team-s-next-upcoming-match-nextmatch"><a class="link" href="#view-the-team-s-next-upcoming-match-nextmatch">3.22. View the team&#8217;s next upcoming match: nextmatch</a></h3>
+<div class="paragraph">
+<p>Easily determine the up and coming match with the team so that you never miss an important date.</p>
+</div>
+<div class="paragraph">
+<p>Format: <code>nextmatch TEAM_NAME</code>
+Alias: <code>nm</code></p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="title"><strong>Outcome</strong></div>
+<div class="paragraph">
+<p>Displays the date and opponent for the upcoming match of the team specified.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Here are a few valid examples on how you can use the <code>create</code> command:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>view Arsenal</code></p>
+</li>
+<li>
+<p><code>nextmatch</code>
+Displays the list of players in team "Arsenal" and view the next upcoming match for "Arsenal".</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="scheduling-trainings-for-team-code-schedule-code-code-coming-in-v2-0-code"><a class="link" href="#scheduling-trainings-for-team-code-schedule-code-code-coming-in-v2-0-code">3.23. Scheduling trainings for team <code>schedule</code> <code>[Coming in v2.0]</code></a></h3>
 
 </div>
 <div class="sect2">
-<h3 id="assigning-player-to-teams-code-assign-code-code-coming-in-v2-0-code"><a class="link" href="#assigning-player-to-teams-code-assign-code-code-coming-in-v2-0-code">3.19. Assigning player to teams: <code>assign</code> <code>[Coming in v2.0]</code></a></h3>
+<h3 id="sending-reminder-emails-to-players-code-send-code-code-coming-in-v2-0-code"><a class="link" href="#sending-reminder-emails-to-players-code-send-code-code-coming-in-v2-0-code">3.24. Sending reminder emails to players: <code>send</code> <code>[Coming in v2.0]</code></a></h3>
 
 </div>
 <div class="sect2">
-<h3 id="scheduling-trainings-for-team-code-schedule-code-code-coming-in-v2-0-code"><a class="link" href="#scheduling-trainings-for-team-code-schedule-code-code-coming-in-v2-0-code">3.20. Scheduling trainings for team <code>schedule</code> <code>[Coming in v2.0]</code></a></h3>
+<h3 id="viewing-other-teams-being-managed-code-view-code-code-coming-in-v2-0-code"><a class="link" href="#viewing-other-teams-being-managed-code-view-code-code-coming-in-v2-0-code">3.25. Viewing other teams being managed: <code>view</code> <code>[Coming in v2.0]</code></a></h3>
 
 </div>
 <div class="sect2">
-<h3 id="sending-reminder-emails-to-players-code-send-code-code-coming-in-v2-0-code"><a class="link" href="#sending-reminder-emails-to-players-code-send-code-code-coming-in-v2-0-code">3.21. Sending reminder emails to players: <code>send</code> <code>[Coming in v2.0]</code></a></h3>
+<h3 id="giving-feedback-to-developers-code-feedback-code-code-coming-in-v2-0-code"><a class="link" href="#giving-feedback-to-developers-code-feedback-code-code-coming-in-v2-0-code">3.26. Giving feedback to developers: <code>feedback</code> <code>[Coming in v2.0]</code></a></h3>
 
 </div>
 <div class="sect2">
-<h3 id="viewing-other-teams-being-managed-code-view-code-code-coming-in-v2-0-code"><a class="link" href="#viewing-other-teams-being-managed-code-view-code-code-coming-in-v2-0-code">3.22. Viewing other teams being managed: <code>view</code> <code>[Coming in v2.0]</code></a></h3>
+<h3 id="giving-demerit-to-players-based-on-performance-code-demerit-code-code-coming-in-v2-0-code"><a class="link" href="#giving-demerit-to-players-based-on-performance-code-demerit-code-code-coming-in-v2-0-code">3.27. Giving demerit to players based on performance: <code>demerit</code> <code>[Coming in v2.0]</code></a></h3>
 
 </div>
 <div class="sect2">
-<h3 id="giving-feedback-to-developers-code-feedback-code-code-coming-in-v2-0-code"><a class="link" href="#giving-feedback-to-developers-code-feedback-code-code-coming-in-v2-0-code">3.23. Giving feedback to developers: <code>feedback</code> <code>[Coming in v2.0]</code></a></h3>
-
+<h3 id="show-best-xi-players-code-showbest-code-coming-in-v2-0"><a class="link" href="#show-best-xi-players-code-showbest-code-coming-in-v2-0">3.28. Show Best XI players: <code>showBest</code> [Coming in v2.0]</a></h3>
+<div class="paragraph">
+<p>If you went to see your current best 11 players in your team based on their respective stats, this command
+is for you.</p>
+</div>
+<div class="paragraph">
+<p>Alias: <code>sb</code><br>
+Format: <code>showBest</code></p>
+</div>
 </div>
 <div class="sect2">
-<h3 id="giving-demerit-to-players-based-on-performance-code-demerit-code-coming-in-v2-0"><a class="link" href="#giving-demerit-to-players-based-on-performance-code-demerit-code-coming-in-v2-0">3.24. Giving demerit to players based on performance: <code>demerit</code> [Coming in v2.0]</a></h3>
-
+<h3 id="set-various-fields-to-private-coming-in-v2-0"><a class="link" href="#set-various-fields-to-private-coming-in-v2-0">3.29. Set various fields to private: [Coming in v2.0]</a></h3>
+<div class="paragraph">
+<p>{explain how fields of players can be set private}</p>
+</div>
 </div>
 </div>
 </div>
@@ -798,7 +1043,7 @@ Give a remark to the specified player at index 5 with the remark "MVP Player".</
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-03-23 08:34:40 UTC
+Last updated 2018-03-23 09:31:47 UTC
 </div>
 </div>
 </body>
