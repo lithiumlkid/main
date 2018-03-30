@@ -18,7 +18,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>By: <code>F14-B1</code>      Since: <code>Jun 2016</code>      Licence: <code>MIT</code></p>
+<p>By: <code>F14-B1</code>      Since: <code>Mar 2018</code>      Licence: <code>MIT</code></p>
 </div>
 </div>
 <div id="toc" class="toc">
@@ -30,7 +30,13 @@
 <li><a href="#prerequisites">2.1. Prerequisites</a></li>
 <li><a href="#setting-up-the-project-in-your-computer">2.2. Setting up the project in your computer</a></li>
 <li><a href="#verifying-the-setup">2.3. Verifying the setup</a></li>
-<li><a href="#configurations-to-do-before-writing-code">2.4. Configurations to do before writing code</a></li>
+<li><a href="#configurations-to-do-before-writing-code">2.4. Configurations to do before writing code</a>
+<ul class="sectlevel3">
+<li><a href="#configuring-the-coding-style">2.4.1. Configuring the coding style</a></li>
+<li><a href="#updating-documentation-to-match-your-fork">2.4.2. Updating documentation to match your fork</a></li>
+<li><a href="#setting-up-ci">2.4.3. Setting up CI</a></li>
+</ul>
+</li>
 <li><a href="#getting-started-with-coding">2.5. Getting started with coding</a></li>
 </ul>
 </li>
@@ -46,18 +52,35 @@
 </li>
 <li><a href="#implementation">4. Implementation</a>
 <ul class="sectlevel2">
-<li><a href="#undo-redo-feature">4.1. Undo/Redo feature</a></li>
-<li><a href="#proposed-data-encryption">4.2. [Proposed] Data Encryption</a></li>
-<li><a href="#logging">4.3. Logging</a></li>
-<li><a href="#Implementation-Configuration">4.4. Autocomplete</a></li>
-<li><a href="#sorting-players-by-fields">4.5. Sorting players by fields</a></li>
-<li><a href="#setting-various-player-fields-to-private">4.6. Setting various player fields to private</a></li>
-<li><a href="#show-best-xi">4.7. Show Best XI</a></li>
-<li><a href="#optional-fields-for-add-mechanism">4.8. Optional Fields for Add Mechanism</a></li>
-<li><a href="#remark-mechanism">4.9. Remark Mechanism</a></li>
-<li><a href="#team-mechanism">4.10. Team Mechanism</a></li>
-<li><a href="#configuration">4.11. Configuration</a></li>
-<li><a href="#set-tag-colour-feature">4.12. Set Tag Colour feature</a></li>
+<li><a href="#pre-existing">4.1. Pre-existing</a>
+<ul class="sectlevel3">
+<li><a href="#configuration">4.1.1. Configuration</a></li>
+<li><a href="#logging">4.1.2. Logging</a></li>
+<li><a href="#Implementation-Configuration">4.1.3. Undo/Redo feature</a></li>
+</ul>
+</li>
+<li><a href="#additional-functions-enhancements">4.2. Additional Functions Enhancements</a>
+<ul class="sectlevel3">
+<li><a href="#remark-mechanism">4.2.1. Remark Mechanism</a></li>
+<li><a href="#setting-various-player-fields-to-private-code-coming-in-v1-5-code">4.2.2. Setting various player fields to private <code>[coming in v1.5]</code></a></li>
+<li><a href="#sorting-players-by-fields">4.2.3. Sorting players by fields</a></li>
+<li><a href="#team-mechanism">4.2.4. Team Mechanism</a></li>
+<li><a href="#show-best-xi-code-coming-in-v1-5-code">4.2.5. Show Best XI <code>[coming in v1.5]</code></a></li>
+</ul>
+</li>
+<li><a href="#usability-enhancements">4.3. Usability Enhancements</a>
+<ul class="sectlevel3">
+<li><a href="#tab-autocomplete">4.3.1. Tab Autocomplete</a></li>
+<li><a href="#optional-fields-for-add-mechanism">4.3.2. Optional Fields for Add Mechanism</a></li>
+<li><a href="#set-tag-colour-feature">4.3.3. Set Tag Colour feature</a></li>
+</ul>
+</li>
+<li><a href="#ui-enhancements">4.4. UI Enhancements</a>
+<ul class="sectlevel3">
+<li><a href="#team-display-bar">4.4.1. Team Display Bar</a></li>
+<li><a href="#player-details-pane">4.4.2. Player Details Pane</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#documentation">5. Documentation</a>
@@ -84,29 +107,23 @@
 <li><a href="#managing-dependencies">7.6. Managing Dependencies</a></li>
 </ul>
 </li>
-<li><a href="#GetStartedProgramming">Appendix A: Suggested Programming Tasks to Get Started</a>
+<li><a href="#product-scope">Appendix A: Product Scope</a>
 <ul class="sectlevel2">
-<li><a href="#GetStartedProgramming-EachComponent">A.1. Improving each component</a></li>
-<li><a href="#GetStartedProgramming-RemarkCommand">A.2. Creating a new command: <code>remark</code></a></li>
+<li><a href="#target-user-profile">A.1. Target user profile:</a></li>
+<li><a href="#value-proposition">A.2. Value proposition:</a></li>
+<li><a href="#feature-contribution">A.3. Feature Contribution</a></li>
 </ul>
 </li>
-<li><a href="#product-scope">Appendix B: Product Scope</a>
+<li><a href="#user-stories">Appendix B: User Stories</a></li>
+<li><a href="#use-cases">Appendix C: Use Cases</a></li>
+<li><a href="#non-functional-requirements">Appendix D: Non Functional Requirements</a></li>
+<li><a href="#glossary">Appendix E: Glossary</a></li>
+<li><a href="#product-survey">Appendix F: Product Survey</a></li>
+<li><a href="#instructions-for-manual-testing">Appendix G: Instructions for Manual Testing</a>
 <ul class="sectlevel2">
-<li><a href="#target-user-profile">B.1. Target user profile:</a></li>
-<li><a href="#value-proposition">B.2. Value proposition:</a></li>
-<li><a href="#feature-contribution">B.3. Feature Contribution</a></li>
-</ul>
-</li>
-<li><a href="#user-stories">Appendix C: User Stories</a></li>
-<li><a href="#use-cases">Appendix D: Use Cases</a></li>
-<li><a href="#non-functional-requirements">Appendix E: Non Functional Requirements</a></li>
-<li><a href="#glossary">Appendix F: Glossary</a></li>
-<li><a href="#product-survey">Appendix G: Product Survey</a></li>
-<li><a href="#instructions-for-manual-testing">Appendix H: Instructions for Manual Testing</a>
-<ul class="sectlevel2">
-<li><a href="#launch-and-shutdown">H.1. Launch and Shutdown</a></li>
-<li><a href="#deleting-a-person">H.2. Deleting a person</a></li>
-<li><a href="#saving-data">H.3. Saving data</a></li>
+<li><a href="#launch-and-shutdown">G.1. Launch and Shutdown</a></li>
+<li><a href="#deleting-a-person">G.2. Deleting a person</a></li>
+<li><a href="#saving-data">G.3. Saving data</a></li>
 </ul>
 </li>
 </ul>
@@ -127,22 +144,22 @@
 <div class="ulist">
 <ul>
 <li>
-<p>Setting up</p>
+<p><a href="#setting-up">Section 2, &#8220;Setting up&#8221;</a></p>
 </li>
 <li>
-<p>Design</p>
+<p><a href="#design">Section 3, &#8220;Design&#8221;</a></p>
 </li>
 <li>
-<p>Implementation</p>
+<p><a href="#implementation">Section 4, &#8220;Implementation&#8221;</a></p>
 </li>
 <li>
-<p>Documentation</p>
+<p><a href="#documentation">Section 5, &#8220;Documentation&#8221;</a></p>
 </li>
 <li>
-<p>Testing</p>
+<p><a href="#Testing">Section 6, &#8220;Testing&#8221;</a></p>
 </li>
 <li>
-<p>Dev Ops</p>
+<p><a href="#dev-ops">Section 7, &#8220;Dev Ops&#8221;</a></p>
 </li>
 </ul>
 </div>
@@ -155,7 +172,7 @@
 <p>The following pointers teach you how to get started with developing on our application. You’ll learn how to prepare yourself with the project on IntelliJ and run it.. Then, you’ll update configurations in IntelliJ to easily match the coding standards and you’ll be ready to start coding.</p>
 </div>
 <div class="paragraph">
-<p>But before you start, there are two fundamental prerequisites you should about MTM:</p>
+<p>But before you start, there are two fundamental prerequisites you should know about MTM:</p>
 </div>
 <div class="sect2">
 <h3 id="prerequisites"><a class="link" href="#prerequisites">2.1. Prerequisites</a></h3>
@@ -174,7 +191,8 @@
 </td>
 <td class="content">
 Having any Java 8 version is not enough.<br>
-This app will not work with earlier versions of Java 8.
+This app will not work with earlier versions of Java 8.<br>
+You can download Java 8 from <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151">here</a>.
 </td>
 </tr>
 </table>
@@ -190,7 +208,8 @@ This app will not work with earlier versions of Java 8.
 </td>
 <td class="content">
 IntelliJ by default has Gradle and JavaFx plugins installed.<br>
-Do not disable them. If you have disabled them, go to <code>File</code> &gt; <code>Settings</code> &gt; <code>Plugins</code> to re-enable them.
+Do not disable them. If you have disabled them, go to <code>File</code> &gt; <code>Settings</code> &gt; <code>Plugins</code> to re-enable them.<br>
+You can download IntelliJ from <a href="https://www.jetbrains.com/idea/download/#section=windows">here</a>.
 </td>
 </tr>
 </table>
@@ -358,7 +377,7 @@ Having both Travis and AppVeyor ensures your App works on both Unix-based platfo
 <p>Get some sense of the overall design by reading <a href="#Design-Architecture">Section 3.1, &#8220;Architecture&#8221;</a>.</p>
 </li>
 <li>
-<p>Take a look at <a href="#GetStartedProgramming">Appendix A, <em>Suggested Programming Tasks to Get Started</em></a>.</p>
+<p>Dive right in and get started with programming.</p>
 </li>
 </ol>
 </div>
@@ -517,7 +536,7 @@ Note how the event is propagated through the <code>EventsCenter</code> to the <c
 <p><strong>API</strong> : <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/ui/Ui.java"><code>Ui.java</code></a></p>
 </div>
 <div class="paragraph">
-<p>The UI consists of a <code>MainWindow</code> that is made up of parts e.g.<code>CommandBox</code>, <code>ResultDisplay</code>, <code>PersonListPanel</code>, <code>StatusBarFooter</code>, <code>BrowserPanel</code> etc. All these, including the <code>MainWindow</code>, inherit from the abstract <code>UiPart</code> class.</p>
+<p>The UI consists of a <code>MainWindow</code> that is made up of parts e.g.<code>CommandBox</code>, <code>ResultDisplay</code>, <code>PersonListPanel</code>, <code>StatusBarFooter</code>, <code>PlayerDetails</code> etc. All these, including the <code>MainWindow</code>, inherit from the abstract <code>UiPart</code> class.</p>
 </div>
 <div class="paragraph">
 <p>The <code>UI</code> component uses JavaFx UI framework. The layout of these UI parts are defined in matching <code>.fxml</code> files that are in the <code>src/main/resources/view</code> folder. For example, the layout of the <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/ui/MainWindow.java"><code>MainWindow</code></a> is specified in <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/resources/view/MainWindow.fxml"><code>MainWindow.fxml</code></a></p>
@@ -654,9 +673,55 @@ Note how the event is propagated through the <code>EventsCenter</code> to the <c
 <p>This section describes some noteworthy details on how certain features are implemented.</p>
 </div>
 <div class="sect2">
-<h3 id="undo-redo-feature"><a class="link" href="#undo-redo-feature">4.1. Undo/Redo feature</a></h3>
+<h3 id="pre-existing"><a class="link" href="#pre-existing">4.1. Pre-existing</a></h3>
 <div class="sect3">
-<h4 id="current-implementation"><a class="link" href="#current-implementation">4.1.1. Current Implementation</a></h4>
+<h4 id="configuration"><a class="link" href="#configuration">4.1.1. Configuration</a></h4>
+<div class="paragraph">
+<p>Certain properties of the application can be controlled (e.g App name, logging level) through the configuration file (default: <code>config.json</code>).</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="logging"><a class="link" href="#logging">4.1.2. Logging</a></h4>
+<div class="paragraph">
+<p>We are using <code>java.util.logging</code> package for logging. The <code>LogsCenter</code> class is used to manage the logging levels and logging destinations.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The logging level can be controlled using the <code>logLevel</code> setting in the configuration file (See <a href="#Implementation-Configuration">Section 4.1.3, &#8220;Undo/Redo feature&#8221;</a>)</p>
+</li>
+<li>
+<p>The <code>Logger</code> for a class can be obtained using <code>LogsCenter.getLogger(Class)</code> which will log messages according to the specified logging level</p>
+</li>
+<li>
+<p>Currently log messages are output through: <code>Console</code> and to a <code>.log</code> file.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Logging Levels</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>SEVERE</code> : Critical problem detected which may possibly cause the termination of the application</p>
+</li>
+<li>
+<p><code>WARNING</code> : Can continue, but with caution</p>
+</li>
+<li>
+<p><code>INFO</code> : Information showing the noteworthy actions by the App</p>
+</li>
+<li>
+<p><code>FINE</code> : Details that is not usually noteworthy but may be useful in debugging e.g. print the actual list instead of just its size</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Implementation-Configuration"><a class="link" href="#Implementation-Configuration">4.1.3. Undo/Redo feature</a></h4>
+<div class="sect4">
+<h5 id="current-implementation"><a class="link" href="#current-implementation">Current Implementation</a></h5>
 <div class="paragraph">
 <p>The undo/redo mechanism is facilitated by an <code>UndoRedoStack</code>, which resides inside <code>LogicManager</code>. It supports undoing and redoing of commands that modifies the state of the address book (e.g. <code>add</code>, <code>edit</code>). Such commands will inherit from <code>UndoableCommand</code>.</p>
 </div>
@@ -808,10 +873,10 @@ If the <code>redoStack</code> is empty, then there are no other commands left to
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="design-considerations"><a class="link" href="#design-considerations">4.1.2. Design Considerations</a></h4>
 <div class="sect4">
-<h5 id="aspect-implementation-of-code-undoablecommand-code"><a class="link" href="#aspect-implementation-of-code-undoablecommand-code">Aspect: Implementation of <code>UndoableCommand</code></a></h5>
+<h5 id="design-considerations"><a class="link" href="#design-considerations">Design Considerations</a></h5>
+<div class="sect5">
+<h6 id="aspect-implementation-of-code-undoablecommand-code"><a class="link" href="#aspect-implementation-of-code-undoablecommand-code">Aspect: Implementation of <code>UndoableCommand</code></a></h6>
 <div class="ulist">
 <ul>
 <li>
@@ -843,8 +908,8 @@ If the <code>redoStack</code> is empty, then there are no other commands left to
 </ul>
 </div>
 </div>
-<div class="sect4">
-<h5 id="aspect-how-undo-redo-executes"><a class="link" href="#aspect-how-undo-redo-executes">Aspect: How undo &amp; redo executes</a></h5>
+<div class="sect5">
+<h6 id="aspect-how-undo-redo-executes"><a class="link" href="#aspect-how-undo-redo-executes">Aspect: How undo &amp; redo executes</a></h6>
 <div class="ulist">
 <ul>
 <li>
@@ -876,8 +941,8 @@ If the <code>redoStack</code> is empty, then there are no other commands left to
 </ul>
 </div>
 </div>
-<div class="sect4">
-<h5 id="aspect-type-of-commands-that-can-be-undone-redone"><a class="link" href="#aspect-type-of-commands-that-can-be-undone-redone">Aspect: Type of commands that can be undone/redone</a></h5>
+<div class="sect5">
+<h6 id="aspect-type-of-commands-that-can-be-undone-redone"><a class="link" href="#aspect-type-of-commands-that-can-be-undone-redone">Aspect: Type of commands that can be undone/redone</a></h6>
 <div class="ulist">
 <ul>
 <li>
@@ -908,6 +973,7 @@ If the <code>redoStack</code> is empty, then there are no other commands left to
 </div>
 </li>
 </ul>
+</div>
 </div>
 </div>
 <div class="sect4">
@@ -946,449 +1012,11 @@ If the <code>redoStack</code> is empty, then there are no other commands left to
 </div>
 </div>
 <div class="sect2">
-<h3 id="proposed-data-encryption"><a class="link" href="#proposed-data-encryption">4.2. [Proposed] Data Encryption</a></h3>
-<div class="paragraph">
-<p><em>{Explain here how the data encryption feature will be implemented}</em></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="logging"><a class="link" href="#logging">4.3. Logging</a></h3>
-<div class="paragraph">
-<p>We are using <code>java.util.logging</code> package for logging. The <code>LogsCenter</code> class is used to manage the logging levels and logging destinations.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>The logging level can be controlled using the <code>logLevel</code> setting in the configuration file (See <a href="#Implementation-Configuration">Section 4.4, &#8220;Autocomplete&#8221;</a>)</p>
-</li>
-<li>
-<p>The <code>Logger</code> for a class can be obtained using <code>LogsCenter.getLogger(Class)</code> which will log messages according to the specified logging level</p>
-</li>
-<li>
-<p>Currently log messages are output through: <code>Console</code> and to a <code>.log</code> file.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Logging Levels</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>SEVERE</code> : Critical problem detected which may possibly cause the termination of the application</p>
-</li>
-<li>
-<p><code>WARNING</code> : Can continue, but with caution</p>
-</li>
-<li>
-<p><code>INFO</code> : Information showing the noteworthy actions by the App</p>
-</li>
-<li>
-<p><code>FINE</code> : Details that is not usually noteworthy but may be useful in debugging e.g. print the actual list instead of just its size</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="Implementation-Configuration"><a class="link" href="#Implementation-Configuration">4.4. Autocomplete</a></h3>
-<div class="paragraph">
-<p>The autocomplete feature works by handling the Tab key pressed event, searching for any commands with matching prefix and returns one if found. The command strings are stored a Trie data structure, named CommandTrie, for optimal search.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>public class CommandTrie {
-    String attemptAutoComplete (String input);
-    void insert (String input);
-    Set&lt;String&gt; getCommandSet();
-}</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>The trie is made up of node classes which only have three fields. The sibling field represents a character on the same level as the current one. The child represents a next possible letter. For example in the words edit and exit the node for 'd' would have a child 'i' and a sibling 'x'. 'x' would have a child 'i'.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>public class Node {
-
-    private Node sibling;
-    private Node child;
-    private char key;
-    ...
-}</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Upon the pressing of the tab key, the command box calls attemptAutoComplete, in the commandTrie class. This method will traverse the trie using the content of the command box.
-If the input has a character not present in the trie, then the attempt fails. If the trie parses through the input but reaches a node with a sibling option,
-it will attempt to provide the user with possible commands for a given input. In this case, a dropdown box will appear in the UI that lists the possible commands for the user.</p>
-</div>
-<div class="paragraph">
-<p>Upon finding a matching command, attemptAutoComplete returns it and replaces the text in the CommandLine. If the no matching command is found, the text is turned red.</p>
-</div>
-<div class="paragraph">
-<p>One class, command collection, is used to hold the set of commands and a map from each command word to the command usage. This is used by the trie to both construct the command trie and autocomplete from a command word to a command word and its usage. This static class simply contains a set of each command&#8217;s command word that is statically initialized and used by the commandTrie class.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="sorting-players-by-fields"><a class="link" href="#sorting-players-by-fields">4.5. Sorting players by fields</a></h3>
+<h3 id="additional-functions-enhancements"><a class="link" href="#additional-functions-enhancements">4.2. Additional Functions Enhancements</a></h3>
 <div class="sect3">
-<h4 id="current-implementation-2"><a class="link" href="#current-implementation-2">4.5.1. Current Implementation</a></h4>
-<div class="paragraph">
-<p>The <code>sort</code> command is currently able to sort players by name, phone, email or address, in either ascending or descending order. Support for more fields will be added in subsequent updates.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>The <code>sort</code> command is parsed through <code>SortCommandParser</code> which hands control to the <code>SortCommand</code> class.</p>
-</li>
-<li>
-<p>Java Collections Sort API is used together with a custom <code>Comparator</code> in this implementation</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Sorting is facilitated by the <code>SortCommand</code> which uses method <code>sortPlayers</code> to ultimately call method <code>sortBy</code> in UniquePersonList for the actual sorting as shown in this code snippet:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="java">        <span class="keyword">switch</span> (field) {
-                <span class="keyword">case</span> <span class="string"><span class="delimiter">&quot;</span><span class="content">name</span><span class="delimiter">&quot;</span></span>:
-                    comparator = nameComparator;
-                    <span class="keyword">break</span>;
-
-                <span class="keyword">case</span> <span class="string"><span class="delimiter">&quot;</span><span class="content">phone</span><span class="delimiter">&quot;</span></span>:
-                    comparator = phoneComparator;
-                    <span class="keyword">break</span>;
-
-                <span class="keyword">case</span> <span class="string"><span class="delimiter">&quot;</span><span class="content">email</span><span class="delimiter">&quot;</span></span>:
-                    comparator = emailComparator;
-                    <span class="keyword">break</span>;
-
-                <span class="keyword">case</span> <span class="string"><span class="delimiter">&quot;</span><span class="content">address</span><span class="delimiter">&quot;</span></span>:
-                    comparator = addressComparator;
-                    <span class="keyword">break</span>;
-
-                <span class="keyword">default</span>:
-                    <span class="keyword">throw</span> <span class="keyword">new</span> <span class="exception">AssertionError</span>(<span class="string"><span class="delimiter">&quot;</span><span class="content">Invalid field parameter entered...</span><span class="char">\n</span><span class="delimiter">&quot;</span></span>);
-                }
-
-        <span class="keyword">switch</span> (order) {
-        <span class="keyword">case</span> <span class="string"><span class="delimiter">&quot;</span><span class="content">asc</span><span class="delimiter">&quot;</span></span>:
-            <span class="predefined-type">Collections</span>.sort(internalList, comparator);
-            <span class="keyword">break</span>;
-
-        <span class="keyword">case</span> <span class="string"><span class="delimiter">&quot;</span><span class="content">desc</span><span class="delimiter">&quot;</span></span>:
-            <span class="predefined-type">Collections</span>.sort(internalList, <span class="predefined-type">Collections</span>.reverseOrder(comparator));
-            <span class="keyword">break</span>;
-
-        <span class="keyword">default</span>:
-            <span class="keyword">throw</span> <span class="keyword">new</span> <span class="exception">AssertionError</span>(<span class="string"><span class="delimiter">&quot;</span><span class="content">Invalid field parameter entered...</span><span class="char">\n</span><span class="delimiter">&quot;</span></span>);
-        }
-    }</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>The code above utilises a custom <code>Comparator</code> defined in the code below:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="predefined-type">Comparator</span>&lt;Person&gt; nameComparator = <span class="keyword">new</span> <span class="predefined-type">Comparator</span>&lt;Person&gt;() {
-            <span class="annotation">@Override</span>
-            <span class="directive">public</span> <span class="type">int</span> compare(Person p1, Person p2) {
-                <span class="keyword">return</span> p1.getName().fullName.compareTo(p2.getName().fullName);
-            }
-        };
-
-        <span class="predefined-type">Comparator</span>&lt;Person&gt; phoneComparator = <span class="keyword">new</span> <span class="predefined-type">Comparator</span>&lt;Person&gt;() {
-            <span class="annotation">@Override</span>
-            <span class="directive">public</span> <span class="type">int</span> compare(Person p1, Person p2) {
-                <span class="keyword">return</span> p1.getPhone().value.compareTo(p2.getPhone().value);
-            }
-        };
-
-        <span class="predefined-type">Comparator</span>&lt;Person&gt; emailComparator = <span class="keyword">new</span> <span class="predefined-type">Comparator</span>&lt;Person&gt;() {
-            <span class="annotation">@Override</span>
-            <span class="directive">public</span> <span class="type">int</span> compare(Person p1, Person p2) {
-                <span class="keyword">return</span> p1.getEmail().value.compareTo(p2.getEmail().value);
-            }
-        };
-
-        <span class="predefined-type">Comparator</span>&lt;Person&gt; addressComparator = <span class="keyword">new</span> <span class="predefined-type">Comparator</span>&lt;Person&gt;() {
-            <span class="annotation">@Override</span>
-            <span class="directive">public</span> <span class="type">int</span> compare(Person p1, Person p2) {
-                <span class="keyword">return</span> p1.getAddress().value.compareTo(p2.getAddress().value);
-            }
-        };</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>The following sequence diagram shows the program flow when <code>sort</code> is used: &lt;image&gt;</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-If address book is empty, a <code>NoPlayerException</code> will be thrown by <code>sortBy</code> method in UniquePlayerList.
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect3">
-<h4 id="design-consideration"><a class="link" href="#design-consideration">4.5.2. Design Consideration</a></h4>
+<h4 id="remark-mechanism"><a class="link" href="#remark-mechanism">4.2.1. Remark Mechanism</a></h4>
 <div class="sect4">
-<h5 id="aspect-implementation-of-code-sort-code"><a class="link" href="#aspect-implementation-of-code-sort-code">Aspect: Implementation of <code>sort</code></a></h5>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Alternative 1 (current choice):</strong> Sorting is done in <code>UniquePersonList</code></p>
-<div class="ulist">
-<ul>
-<li>
-<p>Pros: Sorting methods resides in class that handles most operations done to list. Future changes to implementation would be easier.</p>
-</li>
-<li>
-<p>Cons: Complicated flow of control passed between classes</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><strong>Alternative 2:</strong> Sorting is done in <code>SortCommand</code></p>
-<div class="ulist">
-<ul>
-<li>
-<p>Pros: Easier to trace flow of control as lesser passing between classes</p>
-</li>
-<li>
-<p>Cons: Unnecessary coupling if <code>UniquePersonList</code> has to rely on <code>SortCommand</code></p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect4">
-<h5 id="aspect-sort-by-multiple-fields"><a class="link" href="#aspect-sort-by-multiple-fields">Aspect: Sort by multiple fields</a></h5>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Alternative 1 (current choice):</strong> Sort can only be done by 1 field</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Pros: Easy to implement. Input is straightforward.</p>
-</li>
-<li>
-<p>Cons: Unable to fine tune to great detail how teams are sorted and displayed</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><strong>Alternative 2:</strong> Sort can be done by multiple fields</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Pros:  Able to fine tune to great detail how teams are sorted and displayed</p>
-</li>
-<li>
-<p>Cons: Unnecessary as team managers would not need to sort players by multiple fields</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect4">
-<h5 id="aspect-sort-persistence"><a class="link" href="#aspect-sort-persistence">Aspect: Sort Persistence</a></h5>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Alternative 1 (current choice):</strong> Address book is saved after sorting.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Pros: Easy to implement. Allows team managers to use preferred sort pattern in every session.</p>
-</li>
-<li>
-<p>Cons: Previous order of players will be lost.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><strong>Alternative 2:</strong> Address book is not saved after sorting.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Pros: Good if team manager wants to sort players for current session only</p>
-</li>
-<li>
-<p>Cons: Sort order is lost when program exits. More memory is used to sort a list and reverse it after.</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="setting-various-player-fields-to-private"><a class="link" href="#setting-various-player-fields-to-private">4.6. Setting various player fields to private</a></h3>
-<div class="sect3">
-<h4 id="current-implementation-3"><a class="link" href="#current-implementation-3">4.6.1. Current Implementation</a></h4>
-<div class="paragraph">
-<p>There is currently no implementation for this feature. Coming soon!</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="design-consideration-2"><a class="link" href="#design-consideration-2">4.6.2. Design Consideration</a></h4>
-
-</div>
-</div>
-<div class="sect2">
-<h3 id="show-best-xi"><a class="link" href="#show-best-xi">4.7. Show Best XI</a></h3>
-<div class="sect3">
-<h4 id="current-implementation-4"><a class="link" href="#current-implementation-4">4.7.1. Current Implementation</a></h4>
-<div class="paragraph">
-<p>The <code>showBest</code> command is able to show the current team&#8217;s best 11 players. There is however functional implementation for this feature yet. Coming soon!</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="design-consideration-3"><a class="link" href="#design-consideration-3">4.7.2. Design Consideration</a></h4>
-<hr>
-</div>
-</div>
-<div class="sect2">
-<h3 id="optional-fields-for-add-mechanism"><a class="link" href="#optional-fields-for-add-mechanism">4.8. Optional Fields for Add Mechanism</a></h3>
-<div class="paragraph">
-<p>This mechanism enhances the original implementation of the <code>add</code> command. The required fields that are mandatory to be filled by the user are <code>n/NAME</code> and <code>e/EMAIL</code>. This implementation of making fields optional for <code>AddCommand</code> allows user to add players without their full information, and can be updated accordingly when the user retrieves their full information.</p>
-</div>
-<div class="paragraph">
-<p>The following sequence diagram illustrates the operation of the enhancement made to <code>add</code> command:</p>
-</div>
-<div class="paragraph">
-<p><em>Figure : Sequence Diagram of Enhanced <code>add</code> Command</em></p>
-</div>
-<div class="paragraph">
-<p>Code snippet from <code>ParserUtil.java</code> that shows the implementation of when a field is left empty. "&lt;UNSPECIFED&gt;" string will be return when the value passed in is empty.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">ParserUtil</span> {
-
-    <span class="comment">// ... model code ...</span>
-
-    <span class="directive">public</span> <span class="directive">static</span> <span class="directive">final</span> <span class="predefined-type">String</span> UNSPECIFIED_FIELD = <span class="string"><span class="delimiter">&quot;</span><span class="content">&lt;UNSPECIFIED&gt;</span><span class="delimiter">&quot;</span></span>;
-
-    <span class="comment">// ... model code ...</span>
-
-    <span class="directive">public</span> <span class="directive">static</span> Optional&lt;<span class="predefined-type">String</span>&gt; parseValue(Optional&lt;<span class="predefined-type">String</span>&gt; value) {
-        <span class="keyword">return</span> Optional.of(value.orElse(UNSPECIFIED_FIELD));
-    }
-
-    <span class="comment">// ... model code ...</span>
-}</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Code snippet from <code>AddCommandParser.java</code> that shows the usage of parsing fields that are set as optional.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> AddCommand parse(<span class="predefined-type">String</span> args) <span class="directive">throws</span> <span class="exception">ParseException</span> {
-
-    <span class="comment">// ... logic code ...</span>
-
-    <span class="keyword">if</span> (!arePrefixesPresent(argMultimap, PREFIX_NAME, PREFIX_EMAIL)
-        || !argMultimap.getPreamble().isEmpty()) {
-        <span class="keyword">throw</span> <span class="keyword">new</span> <span class="exception">ParseException</span>(<span class="predefined-type">String</span>.format(MESSAGE_INVALID_COMMAND_FORMAT, AddCommand.MESSAGE_USAGE));
-    }
-
-    <span class="keyword">try</span> {
-
-    <span class="comment">// ... logic code ...</span>
-
-        Phone phone = ParserUtil.parsePhone(
-            ParserUtil.parseValue(argMultimap.getValue(PREFIX_PHONE)).get());
-        Address address = ParserUtil.parseAddress(
-            ParserUtil.parseValue(argMultimap.getValue(PREFIX_ADDRESS)).get());
-
-        <span class="comment">// ... logic code ...</span>
-
-        Person person = <span class="keyword">new</span> Person(name, phone, email, address, tagList);
-
-        <span class="keyword">return</span> <span class="keyword">new</span> AddCommand(person);
-    } <span class="keyword">catch</span> (IllegalValueException ive) {
-        <span class="keyword">throw</span> <span class="keyword">new</span> <span class="exception">ParseException</span>(ive.getMessage(), ive);
-    }
-
-    <span class="comment">// ... logic code ...</span>
-}</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Code snippet from <code>Address.java</code> that shows an example of an optional field being valid when not specified.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">Address</span> {
-
-    <span class="comment">// ... model code ...</span>
-
-    <span class="directive">public</span> <span class="directive">static</span> <span class="type">boolean</span> isValidAddress(<span class="predefined-type">String</span> test) {
-        <span class="keyword">return</span> test.matches(ADDRESS_VALIDATION_REGEX) || test.equals(UNSPECIFIED_FIELD);
-    }
-}</code></pre>
-</div>
-</div>
-<div class="sect3">
-<h4 id="design-consideration-4"><a class="link" href="#design-consideration-4">4.8.1. Design Consideration</a></h4>
-<div class="sect4">
-<h5 id="aspect-implementation-of-optional-fields"><a class="link" href="#aspect-implementation-of-optional-fields">Aspect: Implementation of Optional fields</a></h5>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Alternative 1 (current choice):</strong> Set a default value for unspecified fields and parse fields that are mandatory</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Pros: Easy to implement as fields are still filled with information even though user did not specify</p>
-</li>
-<li>
-<p>Cons: Unattractice display of fields when it is unspecified.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><strong>Alternative 2:</strong> Require users to input all fields</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Pros: Re-use current implementation and easier to clean up code</p>
-</li>
-<li>
-<p>Cons: Less flexibilty given to the user when adding a player into the application</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-<hr>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="remark-mechanism"><a class="link" href="#remark-mechanism">4.9. Remark Mechanism</a></h3>
+<h5 id="current-implementation-2"><a class="link" href="#current-implementation-2">Current Implementation</a></h5>
 <div class="paragraph">
 <p>The 'remark' mechanism is facilitated by <code>RemarkCommand</code>. The mechanism allows user to perform the adding, editing, and deleting of a single remark to a specified <code>Person</code> via the <code>index</code> from the list shown in the <code>UI</code>. The field <code>remark</code> is similar to the other fields of <code>Person</code>, hence some of its logic in <code>AddCommand.java</code> and <code>EditCommand.java</code> needs to be updated.</p>
 </div>
@@ -1476,10 +1104,11 @@ All functions related to <code>remark</code> is done strictly via the <code>rema
 </tr>
 </table>
 </div>
-<div class="sect3">
-<h4 id="design-considerations-2"><a class="link" href="#design-considerations-2">4.9.1. Design Considerations</a></h4>
+</div>
 <div class="sect4">
-<h5 id="aspect-implementation-of-code-remark-code-command"><a class="link" href="#aspect-implementation-of-code-remark-code-command">Aspect: Implementation of <code>Remark</code> command</a></h5>
+<h5 id="design-considerations-2"><a class="link" href="#design-considerations-2">Design Considerations</a></h5>
+<div class="sect5">
+<h6 id="aspect-implementation-of-code-remark-code-command"><a class="link" href="#aspect-implementation-of-code-remark-code-command">Aspect: Implementation of <code>Remark</code> command</a></h6>
 <div class="ulist">
 <ul>
 <li>
@@ -1511,98 +1140,508 @@ All functions related to <code>remark</code> is done strictly via the <code>rema
 </ul>
 </div>
 </div>
-<div class="sect4">
-<h5 id="aspect-how-code-remark-code-works"><a class="link" href="#aspect-how-code-remark-code-works">Aspect: How <code>remark</code> works</a></h5>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Alternative 1 (current choice):</strong> Standalone command that add, edit, and delete remarks from <code>Person</code></p>
-<div class="ulist">
-<ul>
-<li>
-<p>Pros:</p>
-</li>
-<li>
-<p>Cons:</p>
-</li>
-</ul>
 </div>
-</li>
-<li>
-<p><strong>Alternative 2:</strong> Usage of <code>edit</code> command to change or remove remark from <code>Person</code></p>
-<div class="ulist">
-<ul>
-<li>
-<p>Pros:</p>
-</li>
-<li>
-<p>Cons:
-**</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-<hr>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="team-mechanism"><a class="link" href="#team-mechanism">4.10. Team Mechanism</a></h3>
-<div class="paragraph">
-<p>The 'create team' feature is facilitated by <code>CreateCommand</code> class. It allows users to create team into the application with the specified team namte. The team will be shown in</p>
-</div>
-<div class="paragraph">
-<p>The command word for creating a team is <code>create</code>.</p>
 </div>
 <div class="sect3">
-<h4 id="design-considerations-3"><a class="link" href="#design-considerations-3">4.10.1. Design Considerations</a></h4>
+<h4 id="setting-various-player-fields-to-private-code-coming-in-v1-5-code"><a class="link" href="#setting-various-player-fields-to-private-code-coming-in-v1-5-code">4.2.2. Setting various player fields to private <code>[coming in v1.5]</code></a></h4>
 <div class="sect4">
-<h5 id="aspect"><a class="link" href="#aspect">Aspect:</a></h5>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Alternative 1 (current choice):</strong></p>
-<div class="ulist">
-<ul>
-<li>
-<p>Pros:</p>
-</li>
-<li>
-<p>Cons:</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><strong>Alternative 2:</strong></p>
-<div class="ulist">
-<ul>
-<li>
-<p>Pros:</p>
-</li>
-<li>
-<p>Cons:</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="configuration"><a class="link" href="#configuration">4.11. Configuration</a></h3>
+<h5 id="current-implementation-3"><a class="link" href="#current-implementation-3">Current Implementation</a></h5>
 <div class="paragraph">
-<p>Certain properties of the application can be controlled (e.g App name, logging level) through the configuration file (default: <code>config.json</code>).</p>
+<p>There is currently no implementation for this feature. Coming soon!</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="design-consideration"><a class="link" href="#design-consideration">Design Consideration</a></h5>
+
+</div>
+</div>
+<div class="sect3">
+<h4 id="sorting-players-by-fields"><a class="link" href="#sorting-players-by-fields">4.2.3. Sorting players by fields</a></h4>
+<div class="sect4">
+<h5 id="current-implementation-4"><a class="link" href="#current-implementation-4">Current Implementation</a></h5>
+<div class="paragraph">
+<p>The <code>sort</code> command is currently able to sort players by name, phone, email or address, in either ascending or descending order. Support for more fields will be added in subsequent updates.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The <code>sort</code> command is parsed through <code>SortCommandParser</code> which hands control to the <code>SortCommand</code> class.</p>
+</li>
+<li>
+<p>Java Collections Sort API is used together with a custom <code>Comparator</code> in this implementation</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Sorting is facilitated by the <code>SortCommand</code> which uses method <code>sortPlayers</code> to ultimately call method <code>sortBy</code> in UniquePersonList for the actual sorting as shown in this code snippet:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java">        <span class="keyword">switch</span> (field) {
+        <span class="keyword">case</span> <span class="string"><span class="delimiter">&quot;</span><span class="content">name</span><span class="delimiter">&quot;</span></span>:
+            comparator = nameComparator;
+            <span class="keyword">break</span>;
+
+        <span class="keyword">case</span> <span class="string"><span class="delimiter">&quot;</span><span class="content">phone</span><span class="delimiter">&quot;</span></span>:
+            comparator = phoneComparator;
+            <span class="keyword">break</span>;
+
+        <span class="keyword">case</span> <span class="string"><span class="delimiter">&quot;</span><span class="content">email</span><span class="delimiter">&quot;</span></span>:
+            comparator = emailComparator;
+            <span class="keyword">break</span>;
+
+        <span class="keyword">case</span> <span class="string"><span class="delimiter">&quot;</span><span class="content">address</span><span class="delimiter">&quot;</span></span>:
+            comparator = addressComparator;
+            <span class="keyword">break</span>;
+
+        <span class="keyword">default</span>:
+            <span class="keyword">throw</span> <span class="keyword">new</span> <span class="exception">AssertionError</span>(<span class="string"><span class="delimiter">&quot;</span><span class="content">Invalid field parameter entered...</span><span class="char">\n</span><span class="delimiter">&quot;</span></span>);
+        }
+
+        <span class="keyword">switch</span> (order) {
+        <span class="keyword">case</span> <span class="string"><span class="delimiter">&quot;</span><span class="content">asc</span><span class="delimiter">&quot;</span></span>:
+            <span class="predefined-type">Collections</span>.sort(internalList, comparator);
+            <span class="keyword">break</span>;
+
+        <span class="keyword">case</span> <span class="string"><span class="delimiter">&quot;</span><span class="content">desc</span><span class="delimiter">&quot;</span></span>:
+            <span class="predefined-type">Collections</span>.sort(internalList, <span class="predefined-type">Collections</span>.reverseOrder(comparator));
+            <span class="keyword">break</span>;
+
+        <span class="keyword">default</span>:
+            <span class="keyword">throw</span> <span class="keyword">new</span> <span class="exception">AssertionError</span>(<span class="string"><span class="delimiter">&quot;</span><span class="content">Invalid field parameter entered...</span><span class="char">\n</span><span class="delimiter">&quot;</span></span>);
+        }
+    }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The code above utilises a custom <code>Comparator</code> defined in the code below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="predefined-type">Comparator</span>&lt;Person&gt; nameComparator = <span class="keyword">new</span> <span class="predefined-type">Comparator</span>&lt;Person&gt;() {
+            <span class="annotation">@Override</span>
+            <span class="directive">public</span> <span class="type">int</span> compare(Person p1, Person p2) {
+                <span class="keyword">return</span> p1.getName().fullName.compareTo(p2.getName().fullName);
+            }
+        };
+
+        <span class="predefined-type">Comparator</span>&lt;Person&gt; phoneComparator = <span class="keyword">new</span> <span class="predefined-type">Comparator</span>&lt;Person&gt;() {
+            <span class="annotation">@Override</span>
+            <span class="directive">public</span> <span class="type">int</span> compare(Person p1, Person p2) {
+                <span class="keyword">return</span> p1.getPhone().value.compareTo(p2.getPhone().value);
+            }
+        };
+
+        <span class="predefined-type">Comparator</span>&lt;Person&gt; emailComparator = <span class="keyword">new</span> <span class="predefined-type">Comparator</span>&lt;Person&gt;() {
+            <span class="annotation">@Override</span>
+            <span class="directive">public</span> <span class="type">int</span> compare(Person p1, Person p2) {
+                <span class="keyword">return</span> p1.getEmail().value.compareTo(p2.getEmail().value);
+            }
+        };
+
+        <span class="predefined-type">Comparator</span>&lt;Person&gt; addressComparator = <span class="keyword">new</span> <span class="predefined-type">Comparator</span>&lt;Person&gt;() {
+            <span class="annotation">@Override</span>
+            <span class="directive">public</span> <span class="type">int</span> compare(Person p1, Person p2) {
+                <span class="keyword">return</span> p1.getAddress().value.compareTo(p2.getAddress().value);
+            }
+        };</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The following sequence diagram shows the program flow when <code>sort</code> is used: &lt;image&gt;</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+If address book is empty, a <code>NoPlayerException</code> will be thrown by <code>sortBy</code> method in UniquePlayerList.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect4">
+<h5 id="design-consideration-2"><a class="link" href="#design-consideration-2">Design Consideration</a></h5>
+<div class="sect5">
+<h6 id="aspect-implementation-of-code-sort-code"><a class="link" href="#aspect-implementation-of-code-sort-code">Aspect: Implementation of <code>sort</code></a></h6>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Alternative 1 (current choice):</strong> Sorting is done in <code>UniquePersonList</code></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: Sorting methods resides in class that handles most operations done to list. Future changes to implementation would be easier.</p>
+</li>
+<li>
+<p>Cons: Complicated flow of control passed between classes</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Alternative 2:</strong> Sorting is done in <code>SortCommand</code></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: Easier to trace flow of control as lesser passing between classes</p>
+</li>
+<li>
+<p>Cons: Unnecessary coupling if <code>UniquePersonList</code> has to rely on <code>SortCommand</code></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect5">
+<h6 id="aspect-sort-by-multiple-fields"><a class="link" href="#aspect-sort-by-multiple-fields">Aspect: Sort by multiple fields</a></h6>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Alternative 1 (current choice):</strong> Sort can only be done by 1 field</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: Easy to implement. Input is straightforward.</p>
+</li>
+<li>
+<p>Cons: Unable to fine tune to great detail how teams are sorted and displayed</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Alternative 2:</strong> Sort can be done by multiple fields</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros:  Able to fine tune to great detail how teams are sorted and displayed</p>
+</li>
+<li>
+<p>Cons: Unnecessary as team managers would not need to sort players by multiple fields</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect5">
+<h6 id="aspect-sort-persistence"><a class="link" href="#aspect-sort-persistence">Aspect: Sort Persistence</a></h6>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Alternative 1 (current choice):</strong> Address book is saved after sorting.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: Easy to implement. Allows team managers to use preferred sort pattern in every session.</p>
+</li>
+<li>
+<p>Cons: Previous order of players will be lost.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Alternative 2:</strong> Address book is not saved after sorting.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: Good if team manager wants to sort players for current session only</p>
+</li>
+<li>
+<p>Cons: Sort order is lost when program exits. More memory is used to sort a list and reverse it after.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="team-mechanism"><a class="link" href="#team-mechanism">4.2.4. Team Mechanism</a></h4>
+<div class="sect4">
+<h5 id="current-implementation-5"><a class="link" href="#current-implementation-5">Current Implementation</a></h5>
+<div class="paragraph">
+<p>The team mechanism is created to provide better organizational methods to the user for organizing their players. We achieved it by introducing a <code>UniqueTeamList</code> into the application which consists of a list of <code>Team</code> objects.</p>
+</div>
+<div class="paragraph">
+<p><code>Team</code> objects consist of <code>TeamName</code> object, which is used to uniquely identify the team, and <code>UniquePersonList</code> object which stores the information of <code>Person</code> objects which is identical to those found in <code>UniquePersonList</code> in <code>addressbook</code>.</p>
+</div>
+<div class="paragraph">
+<p>Code snippet from <code>Team.java</code> that shows the attributes of <code>Team</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">Team</span> {
+
+    <span class="directive">private</span> <span class="directive">final</span> TeamName teamName;
+    <span class="directive">private</span> <span class="directive">final</span> UniquePersonList players = <span class="keyword">new</span> UniquePersonList();
+
+    <span class="comment">// ... model method ...</span>
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Since <code>Person</code> stored in <code>Team</code> is referencing to the <code>Person</code> in <code>addressbook</code>, any changes made to <code>Person</code> will be immediately reflected. An additional <code>TeamName</code> field is also added to <code>Person</code> so that the user can quickly determine the team the player is in.</p>
+</div>
+<div class="paragraph">
+<p>Code snippet from <code>AddCommand.java</code> that shows the reference to <code>Person</code> in <code>UniquePersonList</code> in <code>addressbnook</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> CommandResult executeUndoableCommand() <span class="directive">throws</span> CommandException {
+    requireNonNull(model);
+    <span class="keyword">try</span> {
+        model.addPerson(toAdd);
+        model.assignPersonToTeam(toAdd, toAdd.getTeamName());
+        <span class="keyword">return</span> <span class="keyword">new</span> CommandResult(<span class="predefined-type">String</span>.format(MESSAGE_SUCCESS, toAdd));
+    } <span class="keyword">catch</span> (DuplicatePersonException e) {
+        <span class="keyword">throw</span> <span class="keyword">new</span> CommandException(MESSAGE_DUPLICATE_PERSON);
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Currently, with the <code>Team</code> mechanism, additional commands such as <code>create</code>, <code>remove</code>, and <code>editteam</code> gives the user basic functionality for team management. Additionally, commands like <code>assign</code>, <code>view</code>, <code>setmatch</code>, and <code>viewmatch</code> gives the user more practical uses in managing multiple teams.</p>
+</div>
+<div class="paragraph">
+<p>The following sequence diagram illustrates the operation of the <code>Team</code> mechanism and some of its respective commands:</p>
+</div>
+<div class="paragraph">
+<p><em>Figure : Sequence Diagram of <code>Team</code> mechanism</em></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="design-considerations-3"><a class="link" href="#design-considerations-3">Design Considerations</a></h5>
+<div class="sect5">
+<h6 id="aspect-implementation-of-code-team-code"><a class="link" href="#aspect-implementation-of-code-team-code">Aspect: Implementation of <code>Team</code></a></h6>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Alternative 1 (current choice):</strong> <code>Team</code> object stores the reference to <code>Person</code> objects that is also in <code>UniquePersonList</code> and <code>TeamName</code> is also an attribute of <code>Person</code></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: Changes made to <code>Person</code> will be reflected on all references, easier lookup of person belonging in which team</p>
+</li>
+<li>
+<p>Cons: Checks need to be done thoroughly to ensure that code does not break when changes are made</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Alternative 2:</strong> <code>Team</code> object is stored in <code>Person</code> object as an attribute</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: Logical thought process to include <code>Team</code> as an attribute</p>
+</li>
+<li>
+<p>Cons: Excess storage wasted due to duplicated data of <code>Team</code> in every <code>Person</code></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="show-best-xi-code-coming-in-v1-5-code"><a class="link" href="#show-best-xi-code-coming-in-v1-5-code">4.2.5. Show Best XI <code>[coming in v1.5]</code></a></h4>
+<div class="sect4">
+<h5 id="current-implementation-6"><a class="link" href="#current-implementation-6">Current Implementation</a></h5>
+<div class="paragraph">
+<p>The <code>showBest</code> command is able to show the current team&#8217;s best 11 players. There is however functional implementation for this feature yet. Coming soon!</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="design-consideration-3"><a class="link" href="#design-consideration-3">Design Consideration</a></h5>
+
+</div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="set-tag-colour-feature"><a class="link" href="#set-tag-colour-feature">4.12. Set Tag Colour feature</a></h3>
+<h3 id="usability-enhancements"><a class="link" href="#usability-enhancements">4.3. Usability Enhancements</a></h3>
 <div class="sect3">
-<h4 id="current-implementation-5"><a class="link" href="#current-implementation-5">4.12.1. Current Implementation</a></h4>
+<h4 id="tab-autocomplete"><a class="link" href="#tab-autocomplete">4.3.1. Tab Autocomplete</a></h4>
+<div class="sect4">
+<h5 id="current-implementation-7"><a class="link" href="#current-implementation-7">Current Implementation</a></h5>
+<div class="paragraph">
+<p>The tab autocomplete feature works by handling the Tab key pressed event, searching for any commands with matching prefix and returns one if found.
+The command strings are stored in a Trie data structure, named <code>CommandTrie</code>, for optimal search.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">CommandTrie</span> {
+    <span class="predefined-type">String</span> attemptAutoComplete (<span class="predefined-type">String</span> input);
+    <span class="type">void</span> insert (<span class="predefined-type">String</span> input);
+    <span class="predefined-type">Set</span>&lt;<span class="predefined-type">String</span>&gt; getCommandSet();
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The trie is made up of <code>TrieNode</code> objects which contains three objects. The <code>TrieNode sibling</code> represents a character on the same level as the current one. The <code>TrieNode child</code> represents a next possible letter.
+For example in the words <code>edit</code> and <code>exit</code>, the node for <code>d</code> would have a child <code>i</code> and a sibling <code>x</code>. <code>x</code> would have a child <code>i</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">TrieNode</span> {
+
+    <span class="directive">private</span> TrieNode sibling;
+    <span class="directive">private</span> TrieNode child;
+    <span class="directive">private</span> <span class="type">char</span> key;
+    ...
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Upon the pressing of the tab key, the command box calls <code>attemptAutoComplete</code>, in the <code>commandTrie</code> class. With the content of the command box as the query, attemptAutoComplete searches for the query using the standard Trie search algortihm.
+If the query prefix itself is not present in the trie, then the attempt fails. If the query reaches a <code>TrieNode</code> with a <code>sibling</code> or <code>child</code> <code>TrieNode</code>,
+it will provide the user with possible commands for a given input. In this case, a dropdown box will appear in the UI that lists the possible commands for the user.</p>
+</div>
+<div class="paragraph">
+<p>Upon finding a matching command, <code>attemptAutoComplete</code> returns it and replaces the text in the Command Line. If the no matching command is found, the text is turned red.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="optional-fields-for-add-mechanism"><a class="link" href="#optional-fields-for-add-mechanism">4.3.2. Optional Fields for Add Mechanism</a></h4>
+<div class="sect4">
+<h5 id="current-implementation-8"><a class="link" href="#current-implementation-8">Current Implementation</a></h5>
+<div class="paragraph">
+<p>This mechanism enhances the original implementation of the <code>add</code> command. The required fields that are mandatory to be filled by the user are <code>n/NAME</code> and <code>e/EMAIL</code>. This implementation of making fields optional for <code>AddCommand</code> allows user to add players without their full information, and can be updated accordingly when the user retrieves their full information.</p>
+</div>
+<div class="paragraph">
+<p>The following sequence diagram illustrates the operation of the enhancement made to <code>add</code> command:</p>
+</div>
+<div class="paragraph">
+<p><em>Figure : Sequence Diagram of Enhanced <code>add</code> Command</em></p>
+</div>
+<div class="paragraph">
+<p>Code snippet from <code>ParserUtil.java</code> that shows the implementation of when a field is left empty. "&lt;UNSPECIFED&gt;" string will be return when the value passed in is empty.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">ParserUtil</span> {
+
+    <span class="comment">// ... model code ...</span>
+
+    <span class="directive">public</span> <span class="directive">static</span> <span class="directive">final</span> <span class="predefined-type">String</span> UNSPECIFIED_FIELD = <span class="string"><span class="delimiter">&quot;</span><span class="content">&lt;UNSPECIFIED&gt;</span><span class="delimiter">&quot;</span></span>;
+
+    <span class="comment">// ... model code ...</span>
+
+    <span class="directive">public</span> <span class="directive">static</span> Optional&lt;<span class="predefined-type">String</span>&gt; parseValue(Optional&lt;<span class="predefined-type">String</span>&gt; value) {
+        <span class="keyword">return</span> Optional.of(value.orElse(UNSPECIFIED_FIELD));
+    }
+
+    <span class="comment">// ... model code ...</span>
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Code snippet from <code>AddCommandParser.java</code> that shows the usage of parsing fields that are set as optional.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> AddCommand parse(<span class="predefined-type">String</span> args) <span class="directive">throws</span> <span class="exception">ParseException</span> {
+
+    <span class="comment">// ... logic code ...</span>
+
+    <span class="keyword">if</span> (!arePrefixesPresent(argMultimap, PREFIX_NAME, PREFIX_EMAIL)
+        || !argMultimap.getPreamble().isEmpty()) {
+        <span class="keyword">throw</span> <span class="keyword">new</span> <span class="exception">ParseException</span>(<span class="predefined-type">String</span>.format(MESSAGE_INVALID_COMMAND_FORMAT, AddCommand.MESSAGE_USAGE));
+    }
+
+    <span class="keyword">try</span> {
+
+    <span class="comment">// ... logic code ...</span>
+
+        Phone phone = ParserUtil.parsePhone(
+            ParserUtil.parseValue(argMultimap.getValue(PREFIX_PHONE)).get());
+        Address address = ParserUtil.parseAddress(
+            ParserUtil.parseValue(argMultimap.getValue(PREFIX_ADDRESS)).get());
+
+        <span class="comment">// ... logic code ...</span>
+
+        Person person = <span class="keyword">new</span> Person(name, phone, email, address, tagList);
+
+        <span class="keyword">return</span> <span class="keyword">new</span> AddCommand(person);
+    } <span class="keyword">catch</span> (IllegalValueException ive) {
+        <span class="keyword">throw</span> <span class="keyword">new</span> <span class="exception">ParseException</span>(ive.getMessage(), ive);
+    }
+
+    <span class="comment">// ... logic code ...</span>
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Code snippet from <code>Address.java</code> that shows an example of an optional field being valid when not specified.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">Address</span> {
+
+    <span class="comment">// ... model code ...</span>
+
+    <span class="directive">public</span> <span class="directive">static</span> <span class="type">boolean</span> isValidAddress(<span class="predefined-type">String</span> test) {
+        <span class="keyword">return</span> test.matches(ADDRESS_VALIDATION_REGEX) || test.equals(UNSPECIFIED_FIELD);
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="design-consideration-4"><a class="link" href="#design-consideration-4">Design Consideration</a></h5>
+<div class="sect5">
+<h6 id="aspect-implementation-of-optional-fields"><a class="link" href="#aspect-implementation-of-optional-fields">Aspect: Implementation of Optional fields</a></h6>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Alternative 1 (current choice):</strong> Set a default value for unspecified fields and parse fields that are mandatory</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: Easy to implement as fields are still filled with information even though user did not specify</p>
+</li>
+<li>
+<p>Cons: Unattractice display of fields when it is unspecified.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Alternative 2:</strong> Require users to input all fields</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: Re-use current implementation and easier to clean up code</p>
+</li>
+<li>
+<p>Cons: Less flexibilty given to the user when adding a player into the application</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="set-tag-colour-feature"><a class="link" href="#set-tag-colour-feature">4.3.3. Set Tag Colour feature</a></h4>
+<div class="sect4">
+<h5 id="current-implementation-9"><a class="link" href="#current-implementation-9">Current Implementation</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -1615,8 +1654,7 @@ All functions related to <code>remark</code> is done strictly via the <code>rema
 <p>The following diagrams show the inheritance for the commands: &lt;image&gt;</p>
 </li>
 <li>
-<p>In <code>SetCommandParser</code>, which implements the <code>Parser</code> interface, it parses the arguments inputted into the CLI, and checks whether
-the arguments are valid.<br></p>
+<p>In <code>SetCommandParser</code>, which implements the <code>Parser</code> interface, it parses the arguments inputted into the CLI, and checks whether the arguments are valid.</p>
 </li>
 </ul>
 </div>
@@ -1625,11 +1663,13 @@ the arguments are valid.<br></p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>public class SetCommandParser implements Parser&lt;SetCommand&gt; {
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">SetCommandParser</span> <span class="directive">implements</span> <span class="predefined-type">Parser</span>&lt;SetCommand&gt; {
 
-    public SetCommand parse(String args) throws ParseException {
+    <span class="directive">public</span> SetCommand parse(<span class="predefined-type">String</span> args) <span class="directive">throws</span> <span class="exception">ParseException</span> {
 
-    // ...parse arguments and check for invalid arguments...</pre>
+    <span class="comment">// ...parse arguments and check for invalid arguments...</span>
+  }
+}</code></pre>
 </div>
 </div>
 <div class="ulist">
@@ -1645,11 +1685,23 @@ lastly changes <code>tagColour</code> attribute within the <code>Tag</code> obje
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>public class SetCommand extends Command {
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">SetCommand</span> <span class="directive">extends</span> Command {
 
-    @Override
-    public CommandResult execute() {
-    // ...set colour logic...</pre>
+    <span class="directive">private</span> <span class="directive">final</span> Tag tagToSet;
+    <span class="directive">private</span> <span class="directive">final</span> <span class="predefined-type">String</span> tagColour;
+
+    <span class="directive">public</span> SetCommand(Tag tag, <span class="predefined-type">String</span> colour) {
+        requireNonNull(tag);
+        tagToSet = tag;
+        tagColour = colour;
+    }
+
+    <span class="annotation">@Override</span>
+    <span class="directive">public</span> CommandResult execute() {
+    <span class="comment">// ...set colour logic...</span>
+    }
+
+}</code></pre>
 </div>
 </div>
 <div class="ulist">
@@ -1661,10 +1713,10 @@ lastly changes <code>tagColour</code> attribute within the <code>Tag</code> obje
 </ul>
 </div>
 </div>
-<div class="sect3">
-<h4 id="design-considerations-4"><a class="link" href="#design-considerations-4">4.12.2. Design Considerations</a></h4>
 <div class="sect4">
-<h5 id="aspect-implementation-of-code-undoablecommand-code-2"><a class="link" href="#aspect-implementation-of-code-undoablecommand-code-2">Aspect: Implementation of <code>UndoableCommand</code></a></h5>
+<h5 id="design-considerations-4"><a class="link" href="#design-considerations-4">Design Considerations</a></h5>
+<div class="sect5">
+<h6 id="aspect-implementation-of-code-undoablecommand-code-2"><a class="link" href="#aspect-implementation-of-code-undoablecommand-code-2">Aspect: Implementation of <code>UndoableCommand</code></a></h6>
 <div class="ulist">
 <ul>
 <li>
@@ -1701,12 +1753,163 @@ out the colour they would like to change their tag to; it is a short command, es
 </div>
 </div>
 </div>
+<div class="sect2">
+<h3 id="ui-enhancements"><a class="link" href="#ui-enhancements">4.4. UI Enhancements</a></h3>
+<div class="sect3">
+<h4 id="team-display-bar"><a class="link" href="#team-display-bar">4.4.1. Team Display Bar</a></h4>
+<div class="sect4">
+<h5 id="current-implementation-10"><a class="link" href="#current-implementation-10">Current Implementation</a></h5>
+<div class="ulist">
+<ul>
+<li>
+<p>The Team Display Bar is implemented as <code>TeamDisplay</code> in the UI Component and renders <code>TeamDisplay.fxml</code>.</p>
+</li>
+<li>
+<p>It is called from <code>MainWindow</code> and will be highlighting
+the current team that has been selected in the Command Line Interface by the user.</p>
+</li>
+<li>
+<p>It calls the <code>Team</code> model and displays the <code>Person</code> cards associated with that <code>Team</code>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Code snippet from 'TeamDisplay' to show initialisation of UI component:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">TeamDisplay</span> <span class="directive">extends</span> UiPart&lt;<span class="predefined-type">Region</span>&gt; {
+
+    <span class="directive">private</span> <span class="directive">static</span> <span class="directive">final</span> <span class="predefined-type">String</span> FXML = <span class="string"><span class="delimiter">&quot;</span><span class="content">TeamDisplay.fxml</span><span class="delimiter">&quot;</span></span>;
+
+    <span class="directive">public</span> TeamDisplay() {
+        <span class="local-variable">super</span>(FXML);
+        <span class="comment">// ...team display code...</span>
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="design-considerations-5"><a class="link" href="#design-considerations-5">Design Considerations</a></h5>
+<div class="sect5">
+<h6 id="aspect-user-experience"><a class="link" href="#aspect-user-experience">Aspect: User Experience</a></h6>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Alternative 1 (current choice):</strong> <code>TeamDisplay</code> is placed underneath the <code>ResultDisplay</code> and above the <code>PersonListPanel</code>.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: Located at an obvious location for the user to view the team currently selected.</p>
+</li>
+<li>
+<p>Cons: There will be less space for the <code>ResultDisplay</code> and <code>CommandBox</code>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Alternative 2:</strong> <code>TeamDisplay</code> is placed on the left of the <code>PersonListPanel</code> as a vertical bar.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: There will be more space for the <code>ResultDisplay</code> and <code>CommandBox</code>.</p>
+</li>
+<li>
+<p>Cons: It is less obvious to the user as it is at the side.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="player-details-pane"><a class="link" href="#player-details-pane">4.4.2. Player Details Pane</a></h4>
+<div class="sect4">
+<h5 id="current-implementation-11"><a class="link" href="#current-implementation-11">Current Implementation</a></h5>
+<div class="ulist">
+<ul>
+<li>
+<p>The <code>Player Details</code> pane is implemented as <code>PlayerDetails</code> in the UI Component. It is called from <code>PlayerListPanel</code>.</p>
+</li>
+<li>
+<p>It renders <code>PlayerDetails.fxml</code> and displays the selected <code>PersonCard</code>.</p>
+</li>
+<li>
+<p>It calls the <code>Person</code> model and displays the fields in the <code>Person</code> model that are not displayed in the left panel.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Code snippet from 'PlayerDetails' to show initialisation of UI component:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">PlayerDetails</span> <span class="directive">extends</span> UiPart&lt;<span class="predefined-type">Region</span>&gt; {
+
+    <span class="directive">private</span> <span class="directive">static</span> <span class="directive">final</span> <span class="predefined-type">String</span> FXML = <span class="string"><span class="delimiter">&quot;</span><span class="content">PlayerDetails.fxml</span><span class="delimiter">&quot;</span></span>;
+    <span class="directive">public</span> <span class="directive">final</span> Person person;
+
+    <span class="directive">public</span> PlayerDetails(Person person) {
+        <span class="local-variable">super</span>(FXML);
+        <span class="local-variable">this</span>.person = person;
+        <span class="comment">//....player details code...</span>
+    }
+
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="design-considerations-6"><a class="link" href="#design-considerations-6">Design Considerations</a></h5>
+<div class="sect5">
+<h6 id="aspect-user-experience-2"><a class="link" href="#aspect-user-experience-2">Aspect: User Experience</a></h6>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Alternative 1 (current choice):</strong> <code>PlayerDetails</code> is placed on the right of <code>Person List Panel</code>, replacing the <code>BrowserPanel</code>.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: It is the only large unused space in the software left and is right beside the <code>Person List Panel</code>, thus is the logical
+place to look at after selection of a person card.</p>
+</li>
+<li>
+<p>Cons: This is a lot of whitespace in the pane as are not many fields.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Alternative 2:</strong> <code>PlayerDetails</code> pane size is reduced and the extra space is repurposed.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: There will be more space for another new feature e.g. calendar.</p>
+</li>
+<li>
+<p>Cons: It can only be implemented in v2.0 due to time constraints in development.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="sect1">
 <h2 id="documentation"><a class="link" href="#documentation">5. Documentation</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>We use asciidoc for writing documentation.</p>
+<p>We use <a href="https://asciidoctor.org">asciidoc</a> for writing documentation.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1951,736 +2154,10 @@ b. Require developers to download those libraries manually (this creates extra w
 </div>
 </div>
 <div class="sect1">
-<h2 id="GetStartedProgramming"><a class="link" href="#GetStartedProgramming">Appendix A: Suggested Programming Tasks to Get Started</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Suggested path for new programmers:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>First, add small local-impact (i.e. the impact of the change does not go beyond the component) enhancements to one component at a time. Some suggestions are given in <a href="#GetStartedProgramming-EachComponent">Section A.1, &#8220;Improving each component&#8221;</a>.</p>
-</li>
-<li>
-<p>Next, add a feature that touches multiple components to learn how to implement an end-to-end feature across all components. <a href="#GetStartedProgramming-RemarkCommand">Section A.2, &#8220;Creating a new command: <code>remark</code>&#8221;</a> explains how to go about adding such a feature.</p>
-</li>
-</ol>
-</div>
-<div class="sect2">
-<h3 id="GetStartedProgramming-EachComponent"><a class="link" href="#GetStartedProgramming-EachComponent">A.1. Improving each component</a></h3>
-<div class="paragraph">
-<p>Each individual exercise in this section is component-based (i.e. you would not need to modify the other components to get it to work).</p>
-</div>
-<h4 id="code-logic-code-component" class="discrete"><code>Logic</code> component</h4>
-<div class="paragraph">
-<p><strong>Scenario:</strong> You are in charge of <code>logic</code>. During dog-fooding, your team realize that it is troublesome for the user to type the whole command in order to execute a command. Your team devise some strategies to help cut down the amount of typing necessary, and one of the suggestions was to implement aliases for the command words. Your job is to implement such aliases.</p>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-Do take a look at <a href="#Design-Logic">Section 3.3, &#8220;Logic component&#8221;</a> before attempting to modify the <code>Logic</code> component.
-</td>
-</tr>
-</table>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Add a shorthand equivalent alias for each of the individual commands. For example, besides typing <code>clear</code>, the user can also type <code>c</code> to remove all persons in the list.</p>
-<div class="sidebarblock">
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p>Hints</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Just like we store each individual command word constant <code>COMMAND_WORD</code> inside <code>*Command.java</code> (e.g.  <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/logic/commands/FindCommand.java"><code>FindCommand#COMMAND_WORD</code></a>, <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/logic/commands/DeleteCommand.java"><code>DeleteCommand#COMMAND_WORD</code></a>), you need a new constant for aliases as well (e.g. <code>FindCommand#COMMAND_ALIAS</code>).</p>
-</li>
-<li>
-<p><a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/logic/parser/AddressBookParser.java"><code>AddressBookParser</code></a> is responsible for analyzing command words.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Solution</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Modify the switch statement in <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/logic/parser/AddressBookParser.java"><code>AddressBookParser#parseCommand(String)</code></a> such that both the proper command word and alias can be used to execute the same intended command.</p>
-</li>
-<li>
-<p>Add new tests for each of the aliases that you have added.</p>
-</li>
-<li>
-<p>Update the user guide to document the new aliases.</p>
-</li>
-<li>
-<p>See this <a href="https://github.com/se-edu/addressbook-level4/pull/785">PR</a> for the full solution.</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</li>
-</ol>
-</div>
-<h4 id="code-model-code-component" class="discrete"><code>Model</code> component</h4>
-<div class="paragraph">
-<p><strong>Scenario:</strong> You are in charge of <code>model</code>. One day, the <code>logic</code>-in-charge approaches you for help. He wants to implement a command such that the user is able to remove a particular tag from everyone in the address book, but the model API does not support such a functionality at the moment. Your job is to implement an API method, so that your teammate can use your API to implement his command.</p>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-Do take a look at <a href="#Design-Model">Section 3.4, &#8220;Model component&#8221;</a> before attempting to modify the <code>Model</code> component.
-</td>
-</tr>
-</table>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Add a <code>removeTag(Tag)</code> method. The specified tag will be removed from everyone in the address book.</p>
-<div class="sidebarblock">
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p>Hints</p>
-<div class="ulist">
-<ul>
-<li>
-<p>The <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/model/Model.java"><code>Model</code></a> and the <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/model/AddressBook.java"><code>AddressBook</code></a> API need to be updated.</p>
-</li>
-<li>
-<p>Think about how you can use SLAP to design the method. Where should we place the main logic of deleting tags?</p>
-</li>
-<li>
-<p>Find out which of the existing API methods in  <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/model/AddressBook.java"><code>AddressBook</code></a> and <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/model/person/Person.java"><code>Person</code></a> classes can be used to implement the tag removal logic. <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/model/AddressBook.java"><code>AddressBook</code></a> allows you to update a person, and <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/model/person/Person.java"><code>Person</code></a> allows you to update the tags.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Solution</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Implement a <code>removeTag(Tag)</code> method in <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/model/AddressBook.java"><code>AddressBook</code></a>. Loop through each person, and remove the <code>tag</code> from each person.</p>
-</li>
-<li>
-<p>Add a new API method <code>deleteTag(Tag)</code> in <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/model/ModelManager.java"><code>ModelManager</code></a>. Your <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/model/ModelManager.java"><code>ModelManager</code></a> should call <code>AddressBook#removeTag(Tag)</code>.</p>
-</li>
-<li>
-<p>Add new tests for each of the new public methods that you have added.</p>
-</li>
-<li>
-<p>See this <a href="https://github.com/se-edu/addressbook-level4/pull/790">PR</a> for the full solution.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>The current codebase has a flaw in tags management. Tags no longer in use by anyone may still exist on the <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/model/AddressBook.java"><code>AddressBook</code></a>. This may cause some tests to fail. See issue  <a href="https://github.com/se-edu/addressbook-level4/issues/753"><code>#753</code></a> for more information about this flaw.</p>
-</li>
-<li>
-<p>The solution PR has a temporary fix for the flaw mentioned above in its first commit.</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</li>
-</ol>
-</div>
-<h4 id="code-ui-code-component" class="discrete"><code>Ui</code> component</h4>
-<div class="paragraph">
-<p><strong>Scenario:</strong> You are in charge of <code>ui</code>. During a beta testing session, your team is observing how the users use your address book application. You realize that one of the users occasionally tries to delete non-existent tags from a contact, because the tags all look the same visually, and the user got confused. Another user made a typing mistake in his command, but did not realize he had done so because the error message wasn&#8217;t prominent enough. A third user keeps scrolling down the list, because he keeps forgetting the index of the last person in the list. Your job is to implement improvements to the UI to solve all these problems.</p>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-Do take a look at <a href="#Design-Ui">Section 3.2, &#8220;UI component&#8221;</a> before attempting to modify the <code>UI</code> component.
-</td>
-</tr>
-</table>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Use different colors for different tags inside person cards. For example, <code>friends</code> tags can be all in brown, and <code>colleagues</code> tags can be all in yellow.</p>
-<div class="paragraph">
-<p><strong>Before</strong></p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/getting-started-ui-tag-before.png" alt="getting started ui tag before" width="300">
-</div>
-</div>
-<div class="paragraph">
-<p><strong>After</strong></p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/getting-started-ui-tag-after.png" alt="getting started ui tag after" width="300">
-</div>
-</div>
-<div class="sidebarblock">
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p>Hints</p>
-<div class="ulist">
-<ul>
-<li>
-<p>The tag labels are created inside <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/ui/PersonCard.java">the <code>PersonCard</code> constructor</a> (<code>new Label(tag.tagName)</code>). <a href="https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/Label.html">JavaFX&#8217;s <code>Label</code> class</a> allows you to modify the style of each Label, such as changing its color.</p>
-</li>
-<li>
-<p>Use the .css attribute <code>-fx-background-color</code> to add a color.</p>
-</li>
-<li>
-<p>You may wish to modify <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/resources/view/DarkTheme.css"><code>DarkTheme.css</code></a> to include some pre-defined colors using css, especially if you have experience with web-based css.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Solution</p>
-<div class="ulist">
-<ul>
-<li>
-<p>You can modify the existing test methods for <code>PersonCard</code> 's to include testing the tag&#8217;s color as well.</p>
-</li>
-<li>
-<p>See this <a href="https://github.com/se-edu/addressbook-level4/pull/798">PR</a> for the full solution.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>The PR uses the hash code of the tag names to generate a color. This is deliberately designed to ensure consistent colors each time the application runs. You may wish to expand on this design to include additional features, such as allowing users to set their own tag colors, and directly saving the colors to storage, so that tags retain their colors even if the hash code algorithm changes.</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</li>
-<li>
-<p>Modify <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/commons/events/ui/NewResultAvailableEvent.java"><code>NewResultAvailableEvent</code></a> such that <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/ui/ResultDisplay.java"><code>ResultDisplay</code></a> can show a different style on error (currently it shows the same regardless of errors).</p>
-<div class="paragraph">
-<p><strong>Before</strong></p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/getting-started-ui-result-before.png" alt="getting started ui result before" width="200">
-</div>
-</div>
-<div class="paragraph">
-<p><strong>After</strong></p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/getting-started-ui-result-after.png" alt="getting started ui result after" width="200">
-</div>
-</div>
-<div class="sidebarblock">
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p>Hints</p>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/commons/events/ui/NewResultAvailableEvent.java"><code>NewResultAvailableEvent</code></a> is raised by <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/ui/CommandBox.java"><code>CommandBox</code></a> which also knows whether the result is a success or failure, and is caught by <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/ui/ResultDisplay.java"><code>ResultDisplay</code></a> which is where we want to change the style to.</p>
-</li>
-<li>
-<p>Refer to <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/ui/CommandBox.java"><code>CommandBox</code></a> for an example on how to display an error.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Solution</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Modify <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/commons/events/ui/NewResultAvailableEvent.java"><code>NewResultAvailableEvent</code></a> 's constructor so that users of the event can indicate whether an error has occurred.</p>
-</li>
-<li>
-<p>Modify <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/ui/ResultDisplay.java"><code>ResultDisplay#handleNewResultAvailableEvent(NewResultAvailableEvent)</code></a> to react to this event appropriately.</p>
-</li>
-<li>
-<p>You can write two different kinds of tests to ensure that the functionality works:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>The unit tests for <code>ResultDisplay</code> can be modified to include verification of the color.</p>
-</li>
-<li>
-<p>The system tests <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/test/java/systemtests/AddressBookSystemTest.java"><code>AddressBookSystemTest#assertCommandBoxShowsDefaultStyle() and AddressBookSystemTest#assertCommandBoxShowsErrorStyle()</code></a> to include verification for <code>ResultDisplay</code> as well.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>See this <a href="https://github.com/se-edu/addressbook-level4/pull/799">PR</a> for the full solution.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Do read the commits one at a time if you feel overwhelmed.</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</li>
-<li>
-<p>Modify the <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/ui/StatusBarFooter.java"><code>StatusBarFooter</code></a> to show the total number of people in the address book.</p>
-<div class="paragraph">
-<p><strong>Before</strong></p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/getting-started-ui-status-before.png" alt="getting started ui status before" width="500">
-</div>
-</div>
-<div class="paragraph">
-<p><strong>After</strong></p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/getting-started-ui-status-after.png" alt="getting started ui status after" width="500">
-</div>
-</div>
-<div class="sidebarblock">
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p>Hints</p>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/resources/view/StatusBarFooter.fxml"><code>StatusBarFooter.fxml</code></a> will need a new <code>StatusBar</code>. Be sure to set the <code>GridPane.columnIndex</code> properly for each <code>StatusBar</code> to avoid misalignment!</p>
-</li>
-<li>
-<p><a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/ui/StatusBarFooter.java"><code>StatusBarFooter</code></a> needs to initialize the status bar on application start, and to update it accordingly whenever the address book is updated.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Solution</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Modify the constructor of <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/ui/StatusBarFooter.java"><code>StatusBarFooter</code></a> to take in the number of persons when the application just started.</p>
-</li>
-<li>
-<p>Use <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/ui/StatusBarFooter.java"><code>StatusBarFooter#handleAddressBookChangedEvent(AddressBookChangedEvent)</code></a> to update the number of persons whenever there are new changes to the addressbook.</p>
-</li>
-<li>
-<p>For tests, modify <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/test/java/guitests/guihandles/StatusBarFooterHandle.java"><code>StatusBarFooterHandle</code></a> by adding a state-saving functionality for the total number of people status, just like what we did for save location and sync status.</p>
-</li>
-<li>
-<p>For system tests, modify <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/test/java/systemtests/AddressBookSystemTest.java"><code>AddressBookSystemTest</code></a> to also verify the new total number of persons status bar.</p>
-</li>
-<li>
-<p>See this <a href="https://github.com/se-edu/addressbook-level4/pull/803">PR</a> for the full solution.</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</li>
-</ol>
-</div>
-<h4 id="code-storage-code-component" class="discrete"><code>Storage</code> component</h4>
-<div class="paragraph">
-<p><strong>Scenario:</strong> You are in charge of <code>storage</code>. For your next project milestone, your team plans to implement a new feature of saving the address book to the cloud. However, the current implementation of the application constantly saves the address book after the execution of each command, which is not ideal if the user is working on limited internet connection. Your team decided that the application should instead save the changes to a temporary local backup file first, and only upload to the cloud after the user closes the application. Your job is to implement a backup API for the address book storage.</p>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-Do take a look at <a href="#Design-Storage">Section 3.5, &#8220;Storage component&#8221;</a> before attempting to modify the <code>Storage</code> component.
-</td>
-</tr>
-</table>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Add a new method <code>backupAddressBook(ReadOnlyAddressBook)</code>, so that the address book can be saved in a fixed temporary location.</p>
-<div class="sidebarblock">
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p>Hint</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Add the API method in <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/storage/AddressBookStorage.java"><code>AddressBookStorage</code></a> interface.</p>
-</li>
-<li>
-<p>Implement the logic in <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/storage/StorageManager.java"><code>StorageManager</code></a> and <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/storage/XmlAddressBookStorage.java"><code>XmlAddressBookStorage</code></a> class.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Solution</p>
-<div class="ulist">
-<ul>
-<li>
-<p>See this <a href="https://github.com/se-edu/addressbook-level4/pull/594">PR</a> for the full solution.</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect2">
-<h3 id="GetStartedProgramming-RemarkCommand"><a class="link" href="#GetStartedProgramming-RemarkCommand">A.2. Creating a new command: <code>remark</code></a></h3>
-<div class="paragraph">
-<p>By creating this command, you will get a chance to learn how to implement a feature end-to-end, touching all major components of the app.</p>
-</div>
-<div class="paragraph">
-<p><strong>Scenario:</strong> You are a software maintainer for <code>addressbook</code>, as the former developer team has moved on to new projects. The current users of your application have a list of new feature requests that they hope the software will eventually have. The most popular request is to allow adding additional comments/notes about a particular contact, by providing a flexible <code>remark</code> field for each contact, rather than relying on tags alone. After designing the specification for the <code>remark</code> command, you are convinced that this feature is worth implementing. Your job is to implement the <code>remark</code> command.</p>
-</div>
-<div class="sect3">
-<h4 id="description"><a class="link" href="#description">A.2.1. Description</a></h4>
-<div class="paragraph">
-<p>Edits the remark for a person specified in the <code>INDEX</code>.<br>
-Format: <code>remark INDEX r/[REMARK]</code></p>
-</div>
-<div class="paragraph">
-<p>Examples:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>remark 1 r/Likes to drink coffee.</code><br>
-Edits the remark for the first person to <code>Likes to drink coffee.</code></p>
-</li>
-<li>
-<p><code>remark 1 r/</code><br>
-Removes the remark for the first person.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="step-by-step-instructions"><a class="link" href="#step-by-step-instructions">A.2.2. Step-by-step Instructions</a></h4>
-<div class="sect4">
-<h5 id="step-1-logic-teach-the-app-to-accept-remark-which-does-nothing"><a class="link" href="#step-1-logic-teach-the-app-to-accept-remark-which-does-nothing">[Step 1] Logic: Teach the app to accept 'remark' which does nothing</a></h5>
-<div class="paragraph">
-<p>Let&#8217;s start by teaching the application how to parse a <code>remark</code> command. We will add the logic of <code>remark</code> later.</p>
-</div>
-<div class="paragraph">
-<p><strong>Main:</strong></p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Add a <code>RemarkCommand</code> that extends <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/logic/commands/UndoableCommand.java"><code>UndoableCommand</code></a>. Upon execution, it should just throw an <code>Exception</code>.</p>
-</li>
-<li>
-<p>Modify <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/logic/parser/AddressBookParser.java"><code>AddressBookParser</code></a> to accept a <code>RemarkCommand</code>.</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p><strong>Tests:</strong></p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Add <code>RemarkCommandTest</code> that tests that <code>executeUndoableCommand()</code> throws an Exception.</p>
-</li>
-<li>
-<p>Add new test method to <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/test/java/seedu/address/logic/parser/AddressBookParserTest.java"><code>AddressBookParserTest</code></a>, which tests that typing "remark" returns an instance of <code>RemarkCommand</code>.</p>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect4">
-<h5 id="step-2-logic-teach-the-app-to-accept-remark-arguments"><a class="link" href="#step-2-logic-teach-the-app-to-accept-remark-arguments">[Step 2] Logic: Teach the app to accept 'remark' arguments</a></h5>
-<div class="paragraph">
-<p>Let&#8217;s teach the application to parse arguments that our <code>remark</code> command will accept. E.g. <code>1 r/Likes to drink coffee.</code></p>
-</div>
-<div class="paragraph">
-<p><strong>Main:</strong></p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Modify <code>RemarkCommand</code> to take in an <code>Index</code> and <code>String</code> and print those two parameters as the error message.</p>
-</li>
-<li>
-<p>Add <code>RemarkCommandParser</code> that knows how to parse two arguments, one index and one with prefix 'r/'.</p>
-</li>
-<li>
-<p>Modify <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/logic/parser/AddressBookParser.java"><code>AddressBookParser</code></a> to use the newly implemented <code>RemarkCommandParser</code>.</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p><strong>Tests:</strong></p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Modify <code>RemarkCommandTest</code> to test the <code>RemarkCommand#equals()</code> method.</p>
-</li>
-<li>
-<p>Add <code>RemarkCommandParserTest</code> that tests different boundary values
-for <code>RemarkCommandParser</code>.</p>
-</li>
-<li>
-<p>Modify <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/test/java/seedu/address/logic/parser/AddressBookParserTest.java"><code>AddressBookParserTest</code></a> to test that the correct command is generated according to the user input.</p>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect4">
-<h5 id="step-3-ui-add-a-placeholder-for-remark-in-code-personcard-code"><a class="link" href="#step-3-ui-add-a-placeholder-for-remark-in-code-personcard-code">[Step 3] Ui: Add a placeholder for remark in <code>PersonCard</code></a></h5>
-<div class="paragraph">
-<p>Let&#8217;s add a placeholder on all our <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/ui/PersonCard.java"><code>PersonCard</code></a> s to display a remark for each person later.</p>
-</div>
-<div class="paragraph">
-<p><strong>Main:</strong></p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Add a <code>Label</code> with any random text inside <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/resources/view/PersonListCard.fxml"><code>PersonListCard.fxml</code></a>.</p>
-</li>
-<li>
-<p>Add FXML annotation in <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/ui/PersonCard.java"><code>PersonCard</code></a> to tie the variable to the actual label.</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p><strong>Tests:</strong></p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Modify <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/test/java/guitests/guihandles/PersonCardHandle.java"><code>PersonCardHandle</code></a> so that future tests can read the contents of the remark label.</p>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect4">
-<h5 id="step-4-model-add-code-remark-code-class"><a class="link" href="#step-4-model-add-code-remark-code-class">[Step 4] Model: Add <code>Remark</code> class</a></h5>
-<div class="paragraph">
-<p>We have to properly encapsulate the remark in our <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/model/person/Person.java"><code>Person</code></a> class. Instead of just using a <code>String</code>, let&#8217;s follow the conventional class structure that the codebase already uses by adding a <code>Remark</code> class.</p>
-</div>
-<div class="paragraph">
-<p><strong>Main:</strong></p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Add <code>Remark</code> to model component (you can copy from <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/model/person/Address.java"><code>Address</code></a>, remove the regex and change the names accordingly).</p>
-</li>
-<li>
-<p>Modify <code>RemarkCommand</code> to now take in a <code>Remark</code> instead of a <code>String</code>.</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p><strong>Tests:</strong></p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Add test for <code>Remark</code>, to test the <code>Remark#equals()</code> method.</p>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect4">
-<h5 id="step-5-model-modify-code-person-code-to-support-a-code-remark-code-field"><a class="link" href="#step-5-model-modify-code-person-code-to-support-a-code-remark-code-field">[Step 5] Model: Modify <code>Person</code> to support a <code>Remark</code> field</a></h5>
-<div class="paragraph">
-<p>Now we have the <code>Remark</code> class, we need to actually use it inside <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/model/person/Person.java"><code>Person</code></a>.</p>
-</div>
-<div class="paragraph">
-<p><strong>Main:</strong></p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Add <code>getRemark()</code> in <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/model/person/Person.java"><code>Person</code></a>.</p>
-</li>
-<li>
-<p>You may assume that the user will not be able to use the <code>add</code> and <code>edit</code> commands to modify the remarks field (i.e. the person will be created without a remark).</p>
-</li>
-<li>
-<p>Modify <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/model/util/SampleDataUtil.java/"><code>SampleDataUtil</code></a> to add remarks for the sample data (delete your <code>addressBook.xml</code> so that the application will load the sample data when you launch it.)</p>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect4">
-<h5 id="step-6-storage-add-code-remark-code-field-to-code-xmladaptedperson-code-class"><a class="link" href="#step-6-storage-add-code-remark-code-field-to-code-xmladaptedperson-code-class">[Step 6] Storage: Add <code>Remark</code> field to <code>XmlAdaptedPerson</code> class</a></h5>
-<div class="paragraph">
-<p>We now have <code>Remark</code> s for <code>Person</code> s, but they will be gone when we exit the application. Let&#8217;s modify <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/storage/XmlAdaptedPerson.java"><code>XmlAdaptedPerson</code></a> to include a <code>Remark</code> field so that it will be saved.</p>
-</div>
-<div class="paragraph">
-<p><strong>Main:</strong></p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Add a new Xml field for <code>Remark</code>.</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p><strong>Tests:</strong></p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Fix <code>invalidAndValidPersonAddressBook.xml</code>, <code>typicalPersonsAddressBook.xml</code>, <code>validAddressBook.xml</code> etc., such that the XML tests will not fail due to a missing <code>&lt;remark&gt;</code> element.</p>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect4">
-<h5 id="step-6b-test-add-withremark-for-code-personbuilder-code"><a class="link" href="#step-6b-test-add-withremark-for-code-personbuilder-code">[Step 6b] Test: Add withRemark() for <code>PersonBuilder</code></a></h5>
-<div class="paragraph">
-<p>Since <code>Person</code> can now have a <code>Remark</code>, we should add a helper method to <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/test/java/seedu/address/testutil/PersonBuilder.java"><code>PersonBuilder</code></a>, so that users are able to create remarks when building a <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/model/person/Person.java"><code>Person</code></a>.</p>
-</div>
-<div class="paragraph">
-<p><strong>Tests:</strong></p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Add a new method <code>withRemark()</code> for <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/test/java/seedu/address/testutil/PersonBuilder.java"><code>PersonBuilder</code></a>. This method will create a new <code>Remark</code> for the person that it is currently building.</p>
-</li>
-<li>
-<p>Try and use the method on any sample <code>Person</code> in <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/test/java/seedu/address/testutil/TypicalPersons.java"><code>TypicalPersons</code></a>.</p>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect4">
-<h5 id="step-7-ui-connect-code-remark-code-field-to-code-personcard-code"><a class="link" href="#step-7-ui-connect-code-remark-code-field-to-code-personcard-code">[Step 7] Ui: Connect <code>Remark</code> field to <code>PersonCard</code></a></h5>
-<div class="paragraph">
-<p>Our remark label in <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/ui/PersonCard.java"><code>PersonCard</code></a> is still a placeholder. Let&#8217;s bring it to life by binding it with the actual <code>remark</code> field.</p>
-</div>
-<div class="paragraph">
-<p><strong>Main:</strong></p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Modify <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/main/java/seedu/address/ui/PersonCard.java"><code>PersonCard</code></a>'s constructor to bind the <code>Remark</code> field to the <code>Person</code> 's remark.</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p><strong>Tests:</strong></p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Modify <a href="https://github.com/CS2103JAN2018-F14-B1/main/tree/master/src/test/java/seedu/address/ui/testutil/GuiTestAssert.java"><code>GuiTestAssert#assertCardDisplaysPerson(&#8230;&#8203;)</code></a> so that it will compare the now-functioning remark label.</p>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect4">
-<h5 id="step-8-logic-implement-code-remarkcommand-execute-code-logic"><a class="link" href="#step-8-logic-implement-code-remarkcommand-execute-code-logic">[Step 8] Logic: Implement <code>RemarkCommand#execute()</code> logic</a></h5>
-<div class="paragraph">
-<p>We now have everything set up&#8230;&#8203; but we still can&#8217;t modify the remarks. Let&#8217;s finish it up by adding in actual logic for our <code>remark</code> command.</p>
-</div>
-<div class="paragraph">
-<p><strong>Main:</strong></p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Replace the logic in <code>RemarkCommand#execute()</code> (that currently just throws an <code>Exception</code>), with the actual logic to modify the remarks of a person.</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p><strong>Tests:</strong></p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Update <code>RemarkCommandTest</code> to test that the <code>execute()</code> logic works.</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="full-solution"><a class="link" href="#full-solution">A.2.3. Full Solution</a></h4>
-<div class="paragraph">
-<p>See this <a href="https://github.com/se-edu/addressbook-level4/pull/599">PR</a> for the step-by-step solution.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="product-scope"><a class="link" href="#product-scope">Appendix B: Product Scope</a></h2>
+<h2 id="product-scope"><a class="link" href="#product-scope">Appendix A: Product Scope</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="target-user-profile"><a class="link" href="#target-user-profile">B.1. Target user profile:</a></h3>
+<h3 id="target-user-profile"><a class="link" href="#target-user-profile">A.1. Target user profile:</a></h3>
 <div class="ulist">
 <ul>
 <li>
@@ -2705,13 +2182,13 @@ for <code>RemarkCommandParser</code>.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="value-proposition"><a class="link" href="#value-proposition">B.2. Value proposition:</a></h3>
+<h3 id="value-proposition"><a class="link" href="#value-proposition">A.2. Value proposition:</a></h3>
 <div class="paragraph">
 <p>Exclusive application for management of footballers and football teams that provides an enhanced listing of footballers and convenient lookup on updated information of players.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="feature-contribution"><a class="link" href="#feature-contribution">B.3. Feature Contribution</a></h3>
+<h3 id="feature-contribution"><a class="link" href="#feature-contribution">A.3. Feature Contribution</a></h3>
 <div class="ulist">
 <ul>
 <li>
@@ -2808,256 +2285,279 @@ e.g. Position, Rating (0 - 5 Star),  Remarks<br></p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="user-stories"><a class="link" href="#user-stories">Appendix C: User Stories</a></h2>
+<h2 id="user-stories"><a class="link" href="#user-stories">Appendix B: User Stories</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Priorities: High (must have) - <code>* * *</code>, Medium (nice to have) - <code>* *</code>, Low (unlikely to have) - <code>*</code></p>
 </div>
-<table class="tableblock frame-all grid-all" style="width: 59%;">
+<table class="tableblock frame-all grid-all" style="width: 75%;">
 <colgroup>
-<col style="width: 22%;">
-<col style="width: 23%;">
-<col style="width: 25%;">
-<col style="width: 30%;">
+<col style="width: 9.3023%;">
+<col style="width: 26.7441%;">
+<col style="width: 29.0697%;">
+<col style="width: 34.8839%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Priority</th>
-<th class="tableblock halign-left valign-top">As a &#8230;&#8203;</th>
+<th class="tableblock halign-center valign-top">Priority</th>
+<th class="tableblock halign-center valign-top">As a &#8230;&#8203;</th>
 <th class="tableblock halign-left valign-top">I want to &#8230;&#8203;</th>
 <th class="tableblock halign-left valign-top">So that I can&#8230;&#8203;</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* * *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">new user</p></td>
+<td class="tableblock halign-center valign-top" colspan="4"><p class="tableblock"><strong>First Time User Stories</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* * *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">new user</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">see usage instructions</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">refer to instructions when I forget how to use the App</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* * *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">add a new person</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* * *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">delete a person</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">remove entries that I no longer need</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* * *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">find a person by name</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">locate details of players without having to go through the entire list</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* * *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">new user</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* * *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">new user</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">access the user guide</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">find out how to use fancy features of the application</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* * *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">add new player</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* * *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">new user</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">see a list of instructions available</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">navigate and use the application easily</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" colspan="4"><p class="tableblock"><strong>Player Related User Stories</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* * *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">add a new player</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* * *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* * *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">add player’s address</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">mail him important documents</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* * *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* * *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">add player’s contact number</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">contact him when needed</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* * *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* * *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">add player’s email</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">email him when needed</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* * *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* * *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">add player’s jersey number</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">easily identify them during the game</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* * *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">add player’s lineup status</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">organise the lineup (e.g. main team, reserves)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* * *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* * *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">add player’s position</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">easily pick my lineup for match</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* * *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">delete player</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* * *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">add player&#8217;s ratings</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">easily identify the better players</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* * *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">delete a player</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">remove him if I kick him out from the team or he quits</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* * *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">edit player’s allocated team</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">move players between teams</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* * *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">find a player by name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">locate details of players without having to go through the entire list</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* * *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* * *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">edit player’s contact number</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* * *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* * *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">edit player’s email</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* * *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* * *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">edit player’s jersey number</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* * *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">edit player’s number of demerits (Y/R cards)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">fine/bench the player easily</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* * *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">find a player by name</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">locate a person without going through the whole list</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* * *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">new user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">see a list of instructions available</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">navigate and use the application with
-ease</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">hide <a href="#private-contact-detail">private contact details</a> by default</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">minimize chance of someone else seeing them by accident</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">add player remarks</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">for self note</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">add player’s avatar</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">for facial recognition</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">add player’s match stats (e.g. goals scored)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">decide the lineup, give award</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">autofill command</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">perform task quickly</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">edit player remarks</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">add player remarks</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">for self note</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">edit player’s address</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">add player’s avatar</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for facial recognition</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">edit player’s avatar</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">edit player’s lineup status</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">organise the lineup (e.g. main team, reserves)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">edit player’s match stats</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">decide the lineup, give award</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">edit player’s position</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">easily pick my lineup for match</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">find player by team name</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">locate a team without going through the whole list</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">edit player’s address</p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">password login</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">If user wants to protect certain information</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">edit player’s avatar</p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>* *</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">submit feedback to developers</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">developers can improve the application constantly</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">edit player remarks</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for self note</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>*</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">hide <a href="#private-contact-detail">private contact details</a> by default</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">minimize chance of someone else seeing them by accident</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>*</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">edit player’s name</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>*</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user with many players in the team managing application</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>*</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager with many players in the team managing application</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">sort by player name</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">locate a person easily</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>*</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
+<td class="tableblock halign-center valign-top" colspan="4"><p class="tableblock"><strong>Team Related User Stories</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* * *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">create teams</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">organize and manage my players through their respective team</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* * *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">assign player to teams</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identify the team that the player is playing for</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* * *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">view players in specified team</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identify the lineup of the team and which player belongs to which team</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* * *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">remove teams</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">remove teams that I no longer managed</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">set match with competing team</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">acknowledge and plan training session for the team</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">view upcoming match</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">keep track of the upcoming matches with opponent teams</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">edit player’s allocated team</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">move players between teams</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">schedule training programs for team</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">I do not have any conflicting schedule between different teams</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">send reminder to team of schedule</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">my players does not forget about training session</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>*</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">sort by team name</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">identify group lineup easily</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" colspan="4"><p class="tableblock"><strong>Additional User Stories</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager who remembers better with visual</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">set colours to tags</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">easily identify the tag that I have set to players</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">autofill command</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">perform task quickly</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">password login</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">if team manager wants to protect certain information</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>* *</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">team manager</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">submit feedback to developers</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">developers can improve the application constantly</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 <div class="sect1">
-<h2 id="use-cases"><a class="link" href="#use-cases">Appendix D: Use Cases</a></h2>
+<h2 id="use-cases"><a class="link" href="#use-cases">Appendix C: Use Cases</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>(For all use cases below, the <strong>System</strong> is the <code>MTM</code> and the <strong>Team Manager</strong> is the <code>user</code>, unless specified otherwise)</p>
@@ -3256,7 +2756,7 @@ ease</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="non-functional-requirements"><a class="link" href="#non-functional-requirements">Appendix E: Non Functional Requirements</a></h2>
+<h2 id="non-functional-requirements"><a class="link" href="#non-functional-requirements">Appendix D: Non Functional Requirements</a></h2>
 <div class="sectionbody">
 <div class="olist arabic">
 <ol class="arabic">
@@ -3310,7 +2810,7 @@ ease</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="glossary"><a class="link" href="#glossary">Appendix F: Glossary</a></h2>
+<h2 id="glossary"><a class="link" href="#glossary">Appendix E: Glossary</a></h2>
 <div class="sectionbody">
 <div class="dlist">
 <dl>
@@ -3335,7 +2835,7 @@ ease</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="product-survey"><a class="link" href="#product-survey">Appendix G: Product Survey</a></h2>
+<h2 id="product-survey"><a class="link" href="#product-survey">Appendix F: Product Survey</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><strong>Product Name</strong></p>
@@ -3372,7 +2872,7 @@ ease</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="instructions-for-manual-testing"><a class="link" href="#instructions-for-manual-testing">Appendix H: Instructions for Manual Testing</a></h2>
+<h2 id="instructions-for-manual-testing"><a class="link" href="#instructions-for-manual-testing">Appendix G: Instructions for Manual Testing</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Given below are instructions to test the app manually.</p>
@@ -3390,7 +2890,7 @@ These instructions only provide a starting point for testers to work on; testers
 </table>
 </div>
 <div class="sect2">
-<h3 id="launch-and-shutdown"><a class="link" href="#launch-and-shutdown">H.1. Launch and Shutdown</a></h3>
+<h3 id="launch-and-shutdown"><a class="link" href="#launch-and-shutdown">G.1. Launch and Shutdown</a></h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -3428,7 +2928,7 @@ Expected: The most recent window size and location is retained.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="deleting-a-person"><a class="link" href="#deleting-a-person">H.2. Deleting a person</a></h3>
+<h3 id="deleting-a-person"><a class="link" href="#deleting-a-person">G.2. Deleting a person</a></h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -3460,7 +2960,7 @@ Expected: Similar to previous.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="saving-data"><a class="link" href="#saving-data">H.3. Saving data</a></h3>
+<h3 id="saving-data"><a class="link" href="#saving-data">G.3. Saving data</a></h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -3484,7 +2984,7 @@ Expected: Similar to previous.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-03-23 09:31:47 UTC
+Last updated 2018-03-30 08:20:05 UTC
 </div>
 </div>
 </body>
