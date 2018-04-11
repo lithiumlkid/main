@@ -28,7 +28,7 @@
 <li><a href="#setting-up">2. Setting up</a>
 <ul class="sectlevel2">
 <li><a href="#prerequisites">2.1. Prerequisites</a></li>
-<li><a href="#setting-up-the-project-in-your-computer">2.2. Setting up the project in your computer</a></li>
+<li><a href="#setting-up-the-project-on-your-computer">2.2. Setting up the project on your computer</a></li>
 <li><a href="#verifying-the-setup">2.3. Verifying the setup</a></li>
 <li><a href="#configurations-to-do-before-writing-code">2.4. Configurations to do before writing code</a>
 <ul class="sectlevel3">
@@ -79,6 +79,7 @@
 <ul class="sectlevel3">
 <li><a href="#team-display-bar">4.4.1. Team Display Bar</a></li>
 <li><a href="#player-details-pane">4.4.2. Player Details Pane</a></li>
+<li><a href="#change-theme-command-code-coming-in-v1-5-code">4.4.3. Change Theme Command <code>[coming in v1.5]</code></a></li>
 </ul>
 </li>
 </ul>
@@ -118,12 +119,11 @@
 <li><a href="#use-cases">Appendix C: Use Cases</a></li>
 <li><a href="#non-functional-requirements">Appendix D: Non Functional Requirements</a></li>
 <li><a href="#glossary">Appendix E: Glossary</a></li>
-<li><a href="#product-survey">Appendix F: Product Survey</a></li>
-<li><a href="#instructions-for-manual-testing">Appendix G: Instructions for Manual Testing</a>
+<li><a href="#instructions-for-manual-testing">Appendix F: Instructions for Manual Testing</a>
 <ul class="sectlevel2">
-<li><a href="#launch-and-shutdown">G.1. Launch and Shutdown</a></li>
-<li><a href="#deleting-a-person">G.2. Deleting a person</a></li>
-<li><a href="#saving-data">G.3. Saving data</a></li>
+<li><a href="#launch-and-shutdown">F.1. Launch and Shutdown</a></li>
+<li><a href="#deleting-a-person">F.2. Deleting a person</a></li>
+<li><a href="#saving-data">F.3. Saving data</a></li>
 </ul>
 </li>
 </ul>
@@ -139,27 +139,27 @@
 <p>This developer&#8217;s guide provides information that will not only show the design principles of the project, but allow you to understand the different implementations, and give you the opportunity to get started with being a contributor or as a reference for experienced developer.</p>
 </div>
 <div class="paragraph">
-<p>This developer&#8217;s guide consist of the following sections.</p>
+<p>This developer&#8217;s guide consist of the following sections:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="#setting-up">Section 2, &#8220;Setting up&#8221;</a></p>
+<p><a href="#setting-up">Setting up</a></p>
 </li>
 <li>
-<p><a href="#design">Section 3, &#8220;Design&#8221;</a></p>
+<p><a href="#design">Design</a></p>
 </li>
 <li>
-<p><a href="#implementation">Section 4, &#8220;Implementation&#8221;</a></p>
+<p><a href="#implementation">Implementation</a></p>
 </li>
 <li>
-<p><a href="#documentation">Section 5, &#8220;Documentation&#8221;</a></p>
+<p><a href="#documentation">Documentation</a></p>
 </li>
 <li>
-<p><a href="#Testing">Section 6, &#8220;Testing&#8221;</a></p>
+<p><a href="#Testing">Testing</a></p>
 </li>
 <li>
-<p><a href="#dev-ops">Section 7, &#8220;Dev Ops&#8221;</a></p>
+<p><a href="#dev-ops">Dev Ops</a></p>
 </li>
 </ul>
 </div>
@@ -169,7 +169,7 @@
 <h2 id="setting-up"><a class="link" href="#setting-up">2. Setting up</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The following pointers teach you how to get started with developing on our application. You’ll learn how to prepare yourself with the project on IntelliJ and run it.. Then, you’ll update configurations in IntelliJ to easily match the coding standards and you’ll be ready to start coding.</p>
+<p>The following pointers teach you how to get started with developing on our application. You’ll learn how to prepare yourself with the project on IntelliJ and run it. Then, you’ll update configurations in IntelliJ to easily match the coding standards and you’ll be ready to start coding.</p>
 </div>
 <div class="paragraph">
 <p>But before you start, there are two fundamental prerequisites you should know about MTM:</p>
@@ -177,12 +177,12 @@
 <div class="sect2">
 <h3 id="prerequisites"><a class="link" href="#prerequisites">2.1. Prerequisites</a></h3>
 <div class="paragraph">
-<p>MTM needs to be written in Java 8 language and will be better written in an integrated development environment (IDE) such as IntelliJ.</p>
+<p>MTM is written in Java 8 and with the use of an integrated development environment (IDE) such as IntelliJ, it provides you as a developer with a better environment suited for developing MTM to maintain coding standards and provide continuous integration.</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p><strong>JDK <code>1.8.0_60</code></strong> or later</p>
+<p>You are required to have <strong>JDK <code>1.8.0_60</code></strong> or later,</p>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -199,7 +199,7 @@ You can download Java 8 from <a href="http://www.oracle.com/technetwork/java/jav
 </div>
 </li>
 <li>
-<p><strong>IntelliJ</strong> IDE</p>
+<p>and <strong>IntelliJ</strong> IDE.</p>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -219,9 +219,9 @@ You can download IntelliJ from <a href="https://www.jetbrains.com/idea/download/
 </div>
 </div>
 <div class="sect2">
-<h3 id="setting-up-the-project-in-your-computer"><a class="link" href="#setting-up-the-project-in-your-computer">2.2. Setting up the project in your computer</a></h3>
+<h3 id="setting-up-the-project-on-your-computer"><a class="link" href="#setting-up-the-project-on-your-computer">2.2. Setting up the project on your computer</a></h3>
 <div class="paragraph">
-<p>Before you begin, ensure that you’ve done the following step on GitHub.</p>
+<p>Before you begin setting up the project, please ensure that you’ve done the following on our GitHub repository (repo).</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -231,7 +231,7 @@ You can download IntelliJ from <a href="https://www.jetbrains.com/idea/download/
 </ol>
 </div>
 <div class="paragraph">
-<p>Upon completion of the GitHub&#8217;s portion on setting up, you can proceed to set up your project on IntelliJ.</p>
+<p>Upon completion of forking from our GitHub repo, you can proceed to set up your project on IntelliJ.</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -264,8 +264,7 @@ You can download IntelliJ from <a href="https://www.jetbrains.com/idea/download/
 <p>Click <code>OK</code> to accept the default settings</p>
 </li>
 <li>
-<p>Open a console and run the command <code>gradlew processResources</code> (Mac/Linux: <code>./gradlew processResources</code>). It should finish with the <code>BUILD SUCCESSFUL</code> message.<br>
-This will generate all resources required by the application and tests.</p>
+<p>Open a console and run the command <code>gradlew processResources</code> (Mac/Linux: <code>./gradlew processResources</code>). It should finish with the <code>BUILD SUCCESSFUL</code> message which will generate all resources required by the application and tests.</p>
 </li>
 </ol>
 </div>
@@ -880,7 +879,7 @@ If the <code>redoStack</code> is empty, then there are no other commands left to
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Alternative 1 (current choice):</strong> Add a new abstract method <code>executeUndoableCommand()</code></p>
+<p><strong>Alternative 1 (current choice):</strong> Add a new abstract method <code>executeUndoableCommand()</code>.</p>
 <div class="ulist">
 <ul>
 <li>
@@ -893,7 +892,7 @@ If the <code>redoStack</code> is empty, then there are no other commands left to
 </div>
 </li>
 <li>
-<p><strong>Alternative 2:</strong> Just override <code>execute()</code></p>
+<p><strong>Alternative 2:</strong> Just override <code>execute()</code>.</p>
 <div class="ulist">
 <ul>
 <li>
@@ -981,7 +980,7 @@ If the <code>redoStack</code> is empty, then there are no other commands left to
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Alternative 1 (current choice):</strong> Use separate stack for undo and redo</p>
+<p><strong>Alternative 1 (current choice):</strong> Use separate stack for undo and redo.</p>
 <div class="ulist">
 <ul>
 <li>
@@ -994,7 +993,7 @@ If the <code>redoStack</code> is empty, then there are no other commands left to
 </div>
 </li>
 <li>
-<p><strong>Alternative 2:</strong> Use <code>HistoryManager</code> for undo/redo</p>
+<p><strong>Alternative 2:</strong> Use <code>HistoryManager</code> for undo/redo.</p>
 <div class="ulist">
 <ul>
 <li>
@@ -1018,7 +1017,7 @@ If the <code>redoStack</code> is empty, then there are no other commands left to
 <div class="sect4">
 <h5 id="current-implementation-2"><a class="link" href="#current-implementation-2">Current Implementation</a></h5>
 <div class="paragraph">
-<p>The 'remark' mechanism is facilitated by <code>RemarkCommand</code>. The mechanism allows user to perform the adding, editing, and deleting of a single remark to a specified <code>Person</code> via the <code>index</code> from the list shown in the <code>UI</code>. The field <code>remark</code> is similar to the other fields of <code>Person</code>, hence some of its logic in <code>AddCommand.java</code> and <code>EditCommand.java</code> needs to be updated.</p>
+<p>The remark mechanism is facilitated by <code>RemarkCommand</code>. The mechanism allows user to perform the adding, editing, and deleting of a single remark to a specified <code>Person</code> via the <code>INDEX</code> from the list shown in the <code>UI</code>. The field <code>remark</code> is similar to the other fields of <code>Person</code>, hence some of its logic in <code>AddCommand.java</code> and <code>EditCommand.java</code> are updated.</p>
 </div>
 <div class="paragraph">
 <p>The mechanism uses the command <code>remark</code> and a <code>r/</code> prefix to add, edit, and delete a single remark of a <code>Person</code>. When the user leaves the remark as empty after the <code>r/</code> prefix, it is an indication to delete the remark, and when it is valid, it either create a new remark for that <code>Person</code> or overwrites the current existing remark.</p>
@@ -1083,7 +1082,7 @@ If the <code>redoStack</code> is empty, then there are no other commands left to
 </td>
 <td class="content">
 <div class="paragraph">
-<p>The field <code>remark</code> is found in <code>Person</code>, however it is not be modified via <code>add</code> or <code>edit</code> commands.<br>
+<p>The field <code>remark</code> is found in <code>Person</code>, however it cannot be modified via <code>add</code> or <code>edit</code> commands.<br>
 All functions related to <code>remark</code> is done strictly via the <code>remark</code> command.</p>
 </div>
 </td>
@@ -1112,27 +1111,27 @@ All functions related to <code>remark</code> is done strictly via the <code>rema
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Alternative 1 (current choice):</strong> Creates an additional <code>remark</code> field in <code>Person</code></p>
+<p><strong>Alternative 1 (current choice):</strong> Creates an additional <code>remark</code> field in <code>Person</code>.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Pros: Follows the existing style of similar fields, making implementation easier</p>
+<p>Pros: Follows the existing style of similar fields, making implementation easier.</p>
 </li>
 <li>
-<p>Cons: Could only have 1 remark per person, unless <code>remark</code> mechanism follows the <code>tag</code> mechanism to have multiple remarks</p>
+<p>Cons: Could only have 1 remark per person, unless <code>remark</code> mechanism follows the <code>tag</code> mechanism to have multiple remarks.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p><strong>Alternative 2:</strong> Have a list of remarks that associates with the specified <code>Person</code></p>
+<p><strong>Alternative 2:</strong> Have a list of remarks that associates with the specified <code>Person</code>.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Pros: Can have multiple remarks associating with a specific <code>Person</code></p>
+<p>Pros: Can have multiple remarks associating with a specific <code>Person</code>.</p>
 </li>
 <li>
-<p>Cons: Harder to maintain, more complicated</p>
+<p>Cons: Harder to maintain, more complicated.</p>
 </li>
 </ul>
 </div>
@@ -1270,27 +1269,27 @@ If address book is empty, a <code>NoPlayerException</code> will be thrown by <co
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Alternative 1 (current choice):</strong> Sorting is done in <code>UniquePersonList</code></p>
+<p><strong>Alternative 1 (current choice):</strong> Sorting is done in <code>UniquePersonList</code>.</p>
 <div class="ulist">
 <ul>
 <li>
 <p>Pros: Sorting methods resides in class that handles most operations done to list. Future changes to implementation would be easier.</p>
 </li>
 <li>
-<p>Cons: Complicated flow of control passed between classes</p>
+<p>Cons: Complicated flow of control passed between classes.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p><strong>Alternative 2:</strong> Sorting is done in <code>SortCommand</code></p>
+<p><strong>Alternative 2:</strong> Sorting is done in <code>SortCommand</code>.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Pros: Easier to trace flow of control as lesser passing between classes</p>
+<p>Pros: Easier to trace flow of control as lesser passing between classes.</p>
 </li>
 <li>
-<p>Cons: Unnecessary coupling if <code>UniquePersonList</code> has to rely on <code>SortCommand</code></p>
+<p>Cons: Unnecessary coupling if <code>UniquePersonList</code> has to rely on <code>SortCommand</code>.</p>
 </li>
 </ul>
 </div>
@@ -1303,27 +1302,27 @@ If address book is empty, a <code>NoPlayerException</code> will be thrown by <co
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Alternative 1 (current choice):</strong> Sort can only be done by 1 field</p>
+<p><strong>Alternative 1 (current choice):</strong> Sort can only be done by 1 field.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Pros: Easy to implement. Input is straightforward.</p>
+<p>Pros: Easy to implement and input is straightforward.</p>
 </li>
 <li>
-<p>Cons: Unable to fine tune to great detail how teams are sorted and displayed</p>
+<p>Cons: Unable to fine tune to great detail how teams are sorted and displayed.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p><strong>Alternative 2:</strong> Sort can be done by multiple fields</p>
+<p><strong>Alternative 2:</strong> Sort can be done by multiple fields.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Pros:  Able to fine tune to great detail how teams are sorted and displayed</p>
+<p>Pros:  Able to fine tune to great detail how teams are sorted and displayed.</p>
 </li>
 <li>
-<p>Cons: Unnecessary as team managers would not need to sort players by multiple fields</p>
+<p>Cons: Unnecessary as team managers would not need to sort players by multiple fields.</p>
 </li>
 </ul>
 </div>
@@ -1353,7 +1352,7 @@ If address book is empty, a <code>NoPlayerException</code> will be thrown by <co
 <div class="ulist">
 <ul>
 <li>
-<p>Pros: Good if team manager wants to sort players for current session only</p>
+<p>Pros: Good if team manager wants to sort players for current session only.</p>
 </li>
 <li>
 <p>Cons: Sort order is lost when program exits. More memory is used to sort a list and reverse it after.</p>
@@ -1374,7 +1373,7 @@ If address book is empty, a <code>NoPlayerException</code> will be thrown by <co
 <p>The team mechanism is created to provide better organizational methods to the user for organizing their players. We achieved it by introducing a <code>UniqueTeamList</code> into the application which consists of a list of <code>Team</code> objects.</p>
 </div>
 <div class="paragraph">
-<p><code>Team</code> objects consist of <code>TeamName</code> object, which is used to uniquely identify the team, and <code>UniquePersonList</code> object which stores the information of <code>Person</code> objects which is identical to those found in <code>UniquePersonList</code> in <code>addressbook</code>.</p>
+<p><code>Team</code> objects consist of <code>TeamName</code> object, which is used to uniquely identify the team, and <code>UniquePersonList</code> object which stores the information of <code>Person</code> objects which should be identical to those found in <code>UniquePersonList</code> in <code>addressbook</code>.</p>
 </div>
 <div class="paragraph">
 <p>Code snippet from <code>Team.java</code> that shows the attributes of <code>Team</code>.</p>
@@ -1391,23 +1390,14 @@ If address book is empty, a <code>NoPlayerException</code> will be thrown by <co
 </div>
 </div>
 <div class="paragraph">
-<p>Since <code>Person</code> stored in <code>Team</code> is referencing to the <code>Person</code> in <code>addressbook</code>, any changes made to <code>Person</code> will be immediately reflected. An additional <code>TeamName</code> field is also added to <code>Person</code> so that the user can quickly determine the team the player is in.</p>
+<p>Since <code>Person</code> stored in <code>Team</code> is referencing to the <code>Person</code> in <code>addressbook</code>, changes made to <code>Person</code> needs to be ensured that is properly propagated to the <code>Person</code> objects found in <code>Team</code>. An additional <code>TeamName</code> field is also added to <code>Person</code> so that the user can quickly determine the team the player is in.</p>
 </div>
 <div class="paragraph">
-<p>Code snippet from <code>AddCommand.java</code> that shows the reference to <code>Person</code> in <code>UniquePersonList</code> in <code>addressbnook</code>.</p>
+<p>Code snippet from <code>&lt;somefile&gt;.java</code> that shows the propagation of details updated in <code>Person</code> from <code>addressbook</code> to the <code>Person</code> objects in <code>Team</code>.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> CommandResult executeUndoableCommand() <span class="directive">throws</span> CommandException {
-    requireNonNull(model);
-    <span class="keyword">try</span> {
-        model.addPerson(toAdd);
-        model.assignPersonToTeam(toAdd, toAdd.getTeamName());
-        <span class="keyword">return</span> <span class="keyword">new</span> CommandResult(<span class="predefined-type">String</span>.format(MESSAGE_SUCCESS, toAdd));
-    } <span class="keyword">catch</span> (DuplicatePersonException e) {
-        <span class="keyword">throw</span> <span class="keyword">new</span> CommandException(MESSAGE_DUPLICATE_PERSON);
-    }
-}</code></pre>
+<pre class="CodeRay highlight"><code data-lang="java">    <span class="comment">// placeholder</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1427,27 +1417,27 @@ If address book is empty, a <code>NoPlayerException</code> will be thrown by <co
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Alternative 1 (current choice):</strong> <code>Team</code> object stores the reference to <code>Person</code> objects that is also in <code>UniquePersonList</code> and <code>TeamName</code> is also an attribute of <code>Person</code></p>
+<p><strong>Alternative 1 (current choice):</strong> <code>Team</code> object stores the reference to <code>Person</code> objects that is also in <code>UniquePersonList</code> and <code>TeamName</code> is also an attribute of <code>Person</code>.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Pros: Changes made to <code>Person</code> will be reflected on all references, easier lookup of person belonging in which team</p>
+<p>Pros: Provides an easier lookup of person belonging in which team without the need of iterating through the <code>UniqueTeamList</code> for a specific <code>Person</code>, and efficient way of listing all <code>Persons</code> in a <code>Team</code>.</p>
 </li>
 <li>
-<p>Cons: Checks need to be done thoroughly to ensure that code does not break when changes are made</p>
+<p>Cons: Checks need to be done thoroughly to ensure that code does not break when changes are made, especially the synchronisation of <code>Person</code> details in <code>Team</code> and in <code>addressbook</code>.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p><strong>Alternative 2:</strong> <code>Team</code> object is stored in <code>Person</code> object as an attribute</p>
+<p><strong>Alternative 2:</strong> <code>Team</code> object is stored in <code>Person</code> object as an attribute.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Pros: Logical thought process to include <code>Team</code> as an attribute</p>
+<p>Pros: Logical thought process to include <code>Team</code> as an attribute.</p>
 </li>
 <li>
-<p>Cons: Excess storage wasted due to duplicated data of <code>Team</code> in every <code>Person</code></p>
+<p>Cons: Excess storage wasted due to duplicated data of <code>Team</code> in every <code>Person</code>.</p>
 </li>
 </ul>
 </div>
@@ -1608,27 +1598,27 @@ it will provide the user with possible commands for a given input. In this case,
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Alternative 1 (current choice):</strong> Set a default value for unspecified fields and parse fields that are mandatory</p>
+<p><strong>Alternative 1 (current choice):</strong> Set a default value for unspecified fields and parse fields that are mandatory.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Pros: Easy to implement as fields are still filled with information even though user did not specify</p>
+<p>Pros: Easy to implement as fields are still filled with information even though user did not specify.</p>
 </li>
 <li>
-<p>Cons: Unattractice display of fields when it is unspecified.</p>
+<p>Cons: Unattractive display of fields when it is unspecified.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p><strong>Alternative 2:</strong> Require users to input all fields</p>
+<p><strong>Alternative 2:</strong> Require users to input all fields.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Pros: Re-use current implementation and easier to clean up code</p>
+<p>Pros: The current implementation is used, hence there is no additional code to ensure validity of unspecified input.</p>
 </li>
 <li>
-<p>Cons: Less flexibilty given to the user when adding a player into the application</p>
+<p>Cons: Less flexibility is given to the user when adding a player into the application.</p>
 </li>
 </ul>
 </div>
@@ -1720,7 +1710,7 @@ lastly changes <code>tagColour</code> attribute within the <code>Tag</code> obje
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Alternative 1 (current choice):</strong> Inherit from <code>Command</code></p>
+<p><strong>Alternative 1 (current choice):</strong> Inherit from <code>Command</code>.</p>
 <div class="ulist">
 <ul>
 <li>
@@ -1734,7 +1724,7 @@ lessen chances of mistakes made in implementation.</p>
 </div>
 </li>
 <li>
-<p><strong>Alternative 2 :</strong> Inherit from <code>UndoableCommand</code></p>
+<p><strong>Alternative 2 :</strong> Inherit from <code>UndoableCommand</code>.</p>
 <div class="ulist">
 <ul>
 <li>
@@ -1771,10 +1761,14 @@ the current team that has been selected in the Command Line Interface by the use
 <li>
 <p>It calls the <code>Team</code> model and displays the <code>Person</code> cards associated with that <code>Team</code>.</p>
 </li>
+<li>
+<p>It contains event handler methods such as handleShowNewTeamEvent(), handleHighlightSelectedTeamEvent(),
+and handleDeselectTeamEvent().</p>
+</li>
 </ul>
 </div>
 <div class="paragraph">
-<p>Code snippet from 'TeamDisplay' to show initialisation of UI component:</p>
+<p>Code snippet from 'TeamDisplay' to show initialisation of UI component and event handlers:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -1784,7 +1778,25 @@ the current team that has been selected in the Command Line Interface by the use
 
     <span class="directive">public</span> TeamDisplay() {
         <span class="local-variable">super</span>(FXML);
-        <span class="comment">// ...team display code...</span>
+            <span class="local-variable">this</span>.teamList = teamList;
+            initTeams();
+            getTeams();
+            registerAsAnEventHandler(<span class="local-variable">this</span>);
+    }
+
+    <span class="annotation">@Subscribe</span>
+    <span class="directive">private</span> <span class="type">void</span> handleShowNewTeamEvent(ShowNewTeamNameEvent event) {
+        ...handleShowNewTeamEvent code...
+    }
+
+    <span class="annotation">@Subscribe</span>
+    <span class="directive">private</span> <span class="type">void</span> handleHighlightSelectedTeamEvent(HighlightSelectedTeamEvent event) {
+        ...handleHighlightSelectedTeamEvent code...
+    }
+
+    <span class="annotation">@Subscribe</span>
+    <span class="directive">private</span> <span class="type">void</span> handleDeselectTeamEvent(DeselectTeamEvent event) {
+        ...handleDeselectTeamEvent code...
     }
 }</code></pre>
 </div>
@@ -1893,6 +1905,67 @@ place to look at after selection of a person card.</p>
 </li>
 <li>
 <p>Cons: It can only be implemented in v2.0 due to time constraints in development.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="change-theme-command-code-coming-in-v1-5-code"><a class="link" href="#change-theme-command-code-coming-in-v1-5-code">4.4.3. Change Theme Command <code>[coming in v1.5]</code></a></h4>
+<div class="sect4">
+<h5 id="current-implementation-12"><a class="link" href="#current-implementation-12">Current Implementation</a></h5>
+<div class="ulist">
+<ul>
+<li>
+<p>The <code>ChangThemeCommand</code> is a new feature that allows user to change the current theme to another theme.</p>
+</li>
+<li>
+<p>New css classes are implemented to accommodate the new themes.</p>
+</li>
+<li>
+<p>The <code>MainWindow</code> class is also changed to allow for switch cases depending on which theme is selected.<br>
+Code snippet from 'ChangThemeCommand':</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="comment">//code snippet</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="design-considerations-7"><a class="link" href="#design-considerations-7">Design Considerations</a></h5>
+<div class="sect5">
+<h6 id="aspect-user-experience-3"><a class="link" href="#aspect-user-experience-3">Aspect: User Experience</a></h6>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Alternative 1 (current choice):</strong> <code>ChangeThemeCommand</code> is implemented as a CLI command.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: Consistent with the rest of the application, of which all changes are made by the CLI.</p>
+</li>
+<li>
+<p>Cons: User has yet another command to remember the syntax of.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Alternative 2:</strong> Change of theme is implemented as a button to change onClick.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: User does not have to type anything to change the theme, so it might be more user friendly.</p>
+</li>
+<li>
+<p>Cons: Inconsistent with the rest of the application, which is CLI-based.</p>
 </li>
 </ul>
 </div>
@@ -2210,21 +2283,20 @@ e.g. remove browser panel, add player details panel, change person card<br></p>
 <div class="ulist">
 <ul>
 <li>
-<p>Major - Creation of Team and related functions<br>
+<p>Major - Creation of Team and related functions.<br>
 e.g. assignment of players,
 viewing of teams,
-formation of team,
-indicate and set upcoming match</p>
+removal of team.</p>
 </li>
 <li>
 <p>Minor</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Remark command</p>
+<p>Introduce <code>remark</code> command and <code>remark</code> field.</p>
 </li>
 <li>
-<p>Enhanced add with optional field</p>
+<p>Enhanced add functionality to allow optional fields.</p>
 </li>
 </ul>
 </div>
@@ -2835,44 +2907,7 @@ e.g. Position, Rating (0 - 5 Star),  Remarks<br></p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="product-survey"><a class="link" href="#product-survey">Appendix F: Product Survey</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><strong>Product Name</strong></p>
-</div>
-<div class="paragraph">
-<p>Author: &#8230;&#8203;</p>
-</div>
-<div class="paragraph">
-<p>Pros:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>&#8230;&#8203;</p>
-</li>
-<li>
-<p>&#8230;&#8203;</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Cons:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>&#8230;&#8203;</p>
-</li>
-<li>
-<p>&#8230;&#8203;</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="instructions-for-manual-testing"><a class="link" href="#instructions-for-manual-testing">Appendix G: Instructions for Manual Testing</a></h2>
+<h2 id="instructions-for-manual-testing"><a class="link" href="#instructions-for-manual-testing">Appendix F: Instructions for Manual Testing</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Given below are instructions to test the app manually.</p>
@@ -2890,7 +2925,7 @@ These instructions only provide a starting point for testers to work on; testers
 </table>
 </div>
 <div class="sect2">
-<h3 id="launch-and-shutdown"><a class="link" href="#launch-and-shutdown">G.1. Launch and Shutdown</a></h3>
+<h3 id="launch-and-shutdown"><a class="link" href="#launch-and-shutdown">F.1. Launch and Shutdown</a></h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -2928,7 +2963,7 @@ Expected: The most recent window size and location is retained.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="deleting-a-person"><a class="link" href="#deleting-a-person">G.2. Deleting a person</a></h3>
+<h3 id="deleting-a-person"><a class="link" href="#deleting-a-person">F.2. Deleting a person</a></h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -2960,7 +2995,7 @@ Expected: Similar to previous.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="saving-data"><a class="link" href="#saving-data">G.3. Saving data</a></h3>
+<h3 id="saving-data"><a class="link" href="#saving-data">F.3. Saving data</a></h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -2984,7 +3019,7 @@ Expected: Similar to previous.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-04-01 10:03:54 UTC
+Last updated 2018-04-11 04:19:56 UTC
 </div>
 </div>
 </body>

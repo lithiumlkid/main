@@ -16,7 +16,7 @@
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="project-addressbook-level-4"><a class="link" href="#project-addressbook-level-4">PROJECT: AddressBook - Level 4</a></h2>
+<h2 id="project-my-team-manager-mtm"><a class="link" href="#project-my-team-manager-mtm">PROJECT: My Team Manager (MTM)</a></h2>
 <div class="sectionbody">
 <hr>
 </div>
@@ -25,7 +25,7 @@
 <h2 id="overview"><a class="link" href="#overview">Overview</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>AddressBook - Level 4 is a desktop address book application used for teaching Software Engineering principles. The user interacts with it using a CLI, and it has a GUI created with JavaFX. It is written in Java, and has about 10 kLoC.</p>
+<p>My Team Manager (MTM) is a Command-Line Interface (CLI) based address book application for football team managers. It is a one-stop solution to help you manage your player’s contact details in an efficient and convenient manner. Using MTM, you can organize players into teams, view player statistics, and, generate player line-ups.</p>
 </div>
 </div>
 </div>
@@ -35,29 +35,36 @@
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Major enhancement</strong>: added <strong>nothing at the moment</strong></p>
+<p><strong>Major enhancement</strong>: added <strong>team implementation and commands</strong></p>
 <div class="ulist">
 <ul>
 <li>
-<p>What it does:</p>
+<p><strong>What it does</strong>: allows the user to perform team management functions such as creating, removing, renaming, viewing a team, and assigning players into a team</p>
 </li>
 <li>
-<p>Justification:</p>
+<p><strong>Justification</strong>: This feature is a core component to the product as it gives the user the capability to manage and view their teams easily and in a convenient way.</p>
 </li>
 <li>
-<p>Highlights:</p>
-</li>
-<li>
-<p>Credits: <em>{mention here if you reused any code/ideas from elsewhere or if a third-party library is heavily used in the feature so that a reader can make a more accurate judgement of how much effort went into the feature}</em></p>
+<p><strong>Highlights</strong>: The implementation requires new classes and commands to be created and also affects current existing <code>add</code> command. The class is set up so that future enhancements can use the data quickly. The implementation was challenging as it requires that player&#8217;s information are in-sync with the information in the class.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
 <p><strong>Minor enhancement</strong>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>added a remark command that allows the user to leave a remark to a specific player</p>
 </li>
 <li>
-<p><strong>Code contributed</strong>: [<a href="https://github.com">Functional code</a>] [<a href="https://github.com">Test code</a>] <em>{give links to collated code files}</em></p>
+<p>enhanced functionality of add command that allows certain field to be optional</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Code contributed</strong>: [<a href="https://github.com/CS2103JAN2018-F14-B1/main/collated/functional/jordancjq.md">Functional code</a>] [<a href="https://github.com/CS2103JAN2018-F14-B1/main/collated/test/jordancjq.md">Test code</a>]</p>
 </li>
 <li>
 <p><strong>Other contributions</strong>:</p>
@@ -68,30 +75,66 @@
 <div class="ulist">
 <ul>
 <li>
-<p>Managed releases</p>
+<p>Managed releases <code>v1.3</code> ~ <code>v1.4</code> (2 release) on GitHub</p>
+</li>
+<li>
+<p>Documented issues of project using GitHub&#8217;s Issue Tracker and address the issues accordingly</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
 <p>Enhancements to existing features:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Changes are mentioned in <a href="#Minor Enhancement">Minor enhancement</a></p>
+</li>
+</ul>
+</div>
 </li>
 <li>
 <p>Documentation:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Re-arrange features into appropriate categories (Player, Team, Additional)</p>
+</li>
+<li>
+<p>Create command summary table for ease of viewing and quick access</p>
+</li>
+</ul>
+</div>
 </li>
 <li>
 <p>Community:</p>
-</li>
+<div class="ulist">
+<ul>
 <li>
-<p>Tools:</p>
+<p>Reported bugs and suggestions for other teams in the class (
+<a href="https://github.com/CS2103JAN2018-F11-B4/main/issues/99">1</a>,
+<a href="https://github.com/CS2103JAN2018-F11-B4/main/issues/105">2</a>,
+<a href="https://github.com/CS2103JAN2018-F11-B4/main/issues/108">3</a>,
+<a href="https://github.com/CS2103JAN2018-F11-B4/main/issues/111">4</a>,
+<a href="https://github.com/CS2103JAN2018-F11-B4/main/issues/112">5</a>,
+<a href="https://github.com/CS2103JAN2018-F11-B4/main/issues/113">6</a>,
+<a href="https://github.com/CS2103JAN2018-F11-B4/main/issues/116">7</a>,
+<a href="https://github.com/CS2103JAN2018-F11-B4/main/issues/117">8</a>,
+<a href="https://github.com/CS2103JAN2018-F11-B4/main/issues/121">9</a>,
+<a href="https://github.com/CS2103JAN2018-F11-B4/main/issues/123">10</a>,
+<a href="https://github.com/CS2103JAN2018-F11-B4/main/issues/127">11</a>,
+<a href="https://github.com/CS2103JAN2018-F11-B4/main/issues/129">12</a>,
+<a href="https://github.com/CS2103JAN2018-F11-B4/main/issues/133">13</a>,
+<a href="https://github.com/CS2103JAN2018-F11-B4/main/issues/135">14</a>,
+<a href="https://github.com/CS2103JAN2018-F11-B4/main/issues/136">15</a>)</p>
 </li>
 </ul>
 </div>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p><em>{you can add/remove categories in the list above}</em></p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -109,16 +152,55 @@
 </tbody>
 </table>
 <div class="sect2">
-<h3 id="undoing-previous-command-code-undo-code"><a class="link" href="#undoing-previous-command-code-undo-code">Undoing previous command : <code>undo</code></a></h3>
+<h3 id="team-related-commands"><a class="link" href="#team-related-commands">Team Related Commands</a></h3>
+<div class="sect3">
+<h4 id="creating-a-team-code-create-code-code-since-v1-2-code"><a class="link" href="#creating-a-team-code-create-code-code-since-v1-2-code">Creating a team: <code>create</code> <code>[Since v1.2]</code></a></h4>
 <div class="paragraph">
-<p>Have you entered a wrong command or might have accidentally entered the wrong values to the specified fields to a command?<br></p>
+<p>What is a team management application without the functionality of creating a team? When you use this command, it allows you to create a team that can be assigned to players later on.</p>
 </div>
 <div class="paragraph">
-<p>You don&#8217;t have to worry, as MTM provides you with the command to undo most mistakes that you might have made. MTM will restore herself to the state before the previous <em>undoAble</em> command was executed.</p>
+<p>Format: <code>create TEAM_NAME</code><br>
+Alias: <code>ct</code></p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="title"><strong>What to expect</strong></div>
+<div class="paragraph">
+<p>Your newly specified team will be created with the name you have given without any players in it, and your team name will appear in the team bar below.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
-<p>Format: <code>undo</code><br>
-Alias: <code>u</code></p>
+<p>Here are a few valid examples on how you can use the <code>create</code> command:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>create Arsenal</code><br>
+Creates a new team with the name "Arsenal".</p>
+</li>
+<li>
+<p><code>create Liverpool</code><br>
+Creates another new team with the name "Liverpool"</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="removing-a-team-code-remove-code-code-since-v1-4-code"><a class="link" href="#removing-a-team-code-remove-code-code-since-v1-4-code">Removing a team: <code>remove</code> <code>[Since v1.4]</code></a></h4>
+<div class="paragraph">
+<p>No longer managing the team or the team has been disbanded, you can easily remove the team from MTM.</p>
+</div>
+<div class="paragraph">
+<p>Format: <code>remove TEAM_NAME</code><br>
+Alias: <code>rt</code></p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -128,107 +210,456 @@ Alias: <code>u</code></p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p><em>undoAble</em> commands: those commands that modify the address book&#8217;s content (<code>add</code>, <code>delete</code>, <code>edit</code> and <code>clear</code>).</p>
+<p>Removing a team will automatically update all affected players' <code>Team</code> field.<br>
+Players without a team will need to be re-assigned.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-<div class="title"><strong>Outcome</strong></div>
+<div class="title"><strong>What to expect</strong></div>
 <div class="paragraph">
-<p>Commands that are <em>undoAble</em> will be reversed and MTM will be in the state before the command was executed.</p>
+<p>Remove the specified team and update all affected players.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p>Here are a few valid examples on how you can use the <code>undo</code> command:</p>
+<p>Here are a few valid examples of how you can use the <code>remove</code> command:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>delete 1</code><br>
-<code>list</code><br>
-<code>undo</code><br>
-Calling the <code>undo</code> command will reverse the <code>delete 1</code> command.</p>
-</li>
-<li>
-<p><code>select 1</code><br>
-<code>list</code><br>
-<code>undo</code><br>
-The <code>undo</code> command fails as there are no <em>undoAble</em> commands executed previously.</p>
-</li>
-<li>
-<p><code>delete 1</code><br>
-<code>clear</code><br>
-<code>undo</code><br>
-<code>undo</code><br>
-Calling the first <code>undo</code> command will reverse the <code>clear</code> command, and the subsequent <code>undo</code> command will reverse the <code>delete 1</code> command.</p>
+<p><code>view Arsenal</code><br>
+<code>remove Arsenal</code><br>
+Display the list of players in team "Arsenal" and remove the team.</p>
 </li>
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="redoing-the-previously-undone-command-code-redo-code"><a class="link" href="#redoing-the-previously-undone-command-code-redo-code">Redoing the previously undone command : <code>redo</code></a></h3>
+<div class="sect3">
+<h4 id="rename-a-team-code-rename-code-code-since-v1-4-code"><a class="link" href="#rename-a-team-code-rename-code-code-since-v1-4-code">Rename a team: <code>rename</code> <code>[Since v1.4]</code></a></h4>
 <div class="paragraph">
-<p>You accidentally called the <code>undo</code> command too many times and need a way to quickly reverse that? MTM allows you to redo the most recent <code>undo</code> command.</p>
+<p>Entered your team name wrongly or you need to update it to accordingly, you can use the <code>rename</code> command to help you make that change.</p>
 </div>
 <div class="paragraph">
-<p>Format: <code>redo</code><br>
-Alias: <code>r</code></p>
+<p>Format: <code>rename TEAM_NAME tm/RENAME_TEAM_NAME</code><br>
+Alias: <code>rnt</code></p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-<div class="title"><strong>Outcome</strong></div>
+<div class="title"><strong>What to expect</strong></div>
 <div class="paragraph">
-<p>Previously executed <code>undo</code> command will be reversed and MTM will be in its previous state.</p>
+<p>Your specified team will be updated with the new team name along with the affected players in the existing team.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p>Here are a few valid examples on how you can use the <code>redo</code> command:</p>
+<p>Here are a few valid examples on how you can use the <code>rename</code> command:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>delete 1</code><br>
-<code>undo</code><br>
-<code>redo</code><br>
-Calling the <code>undo</code> command will reverse the <code>delete 1</code> command and the subsequent <code>redo</code> command will reapply the <code>delete 1</code> command.</p>
-</li>
-<li>
-<p><code>delete 1</code><br>
-<code>redo</code><br>
-The <code>redo</code> command fails as there are no <code>undo</code> commands executed previously.</p>
-</li>
-<li>
-<p><code>delete 1</code><br>
-<code>clear</code><br>
-<code>undo</code><br>
-<code>undo</code><br>
-<code>redo</code><br>
-<code>redo</code><br>
-Calling the first <code>undo</code> command will reverse the <code>clear</code> command, and the subsequent <code>undo</code> command will reverse the <code>delete 1</code> command.<br>
-Calling the first <code>redo</code> command will reapply the <code>delete 1</code> command, and the subsequent <code>redo</code> command will reapply the <code>clear</code> command.</p>
+<p><code>rename Arsenal tm/Neo Arsenal</code>
+Renames the current team "Arsenal" into "Neo Arsenal".</p>
 </li>
 </ul>
 </div>
 </div>
+<div class="sect3">
+<h4 id="assigning-player-to-teams-code-assign-code-code-since-v1-3-code"><a class="link" href="#assigning-player-to-teams-code-assign-code-code-since-v1-3-code">Assigning player to teams: <code>assign</code> <code>[Since v1.3]</code></a></h4>
+<div class="paragraph">
+<p>Have a player without a team, or have yet to assigned one during the addition of player into MTM, you can call <code>assign</code> command to assign that player to a particular team of your choice.</p>
+</div>
+<div class="paragraph">
+<p>Format: <code>assign tm/TEAM_NAME i/INDEX [INDEX]&#8230;&#8203;</code><br>
+Alias: <code>at</code></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The index refers to the index number shown in the most recent listing.<br>
+The index <strong>must be a positive integer</strong> <code>1, 2, 3, &#8230;&#8203;</code><br>
+You can assign multiple players to a team by including more than one valid index.<br>
+A player can only consist of 1 team, assigning a player that have an existing team, will be re-assigned the new team.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="title"><strong>What to expect</strong></div>
+<div class="paragraph">
+<p>Your specified player, via index, will be assigned to the specified team.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Here are a few valid examples on how you can use the <code>create</code> command:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>list</code></p>
+</li>
+<li>
+<p><code>assign tm/Arsenal i/1 2 3</code><br>
+View the full list of players in MTM and assign the player with index 1, 2, and 3 to team "Arsenal".</p>
+</li>
+<li>
+<p><code>find John</code></p>
+</li>
+<li>
+<p><code>assign tm/Liverpool i/1</code><br>
+Find a player by the name of "John" and assign the player with index 1 to team "Liverpool".</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="viewing-a-team-code-view-code-code-since-v1-3-code"><a class="link" href="#viewing-a-team-code-view-code-code-since-v1-3-code">Viewing a team: <code>view</code> <code>[Since v1.3]</code></a></h4>
+<div class="paragraph">
+<p>With the ability to manage different teams, you will be able to identify all players in a team easily with the <code>view</code> command.</p>
+</div>
+<div class="paragraph">
+<p>Format: <code>view TEAM_NAME</code><br>
+Alias: <code>vt</code></p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="title"><strong>What to expect</strong></div>
+<div class="paragraph">
+<p>Displays the list of players on the left panel that are in the team specified.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Here are a few valid examples on how you can use the <code>view</code> command:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>view Arsenal</code><br>
+List all players in the team "Arsenal".</p>
+</li>
+<li>
+<p><code>view Liverpool</code><br>
+List all players in the team "Liverpool".</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="setting-an-upcoming-match-with-an-opposing-team-code-setmatch-code-code-coming-in-v2-0-code"><a class="link" href="#setting-an-upcoming-match-with-an-opposing-team-code-setmatch-code-code-coming-in-v2-0-code">Setting an upcoming match with an opposing team: <code>setmatch</code> <code>[Coming in v2.0]</code></a></h4>
+<div class="paragraph">
+<p>With this command, it gives you a convenient way to keep track of the upcoming match of a team.</p>
+</div>
+<div class="paragraph">
+<p>Format: <code>setmatch TEAM_NAME OPPONENT_TEAM_NAME DATE</code><br>
+Alias: <code>sm</code></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Date format to be entered is in <code>DD/MM/YYYY</code>.<br>
+Opponent team does not need to exist in MTM.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="title"><strong>What to expect</strong></div>
+<div class="paragraph">
+<p>The upcoming match of the team will be captured and displayed to you.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Here are a few valid examples on how you can use the <code>create</code> command:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>view Arsenal</code></p>
+</li>
+<li>
+<p><code>setmatch Arsenal Liverpool 14/03/2018</code><br>
+Display the list of players in team "Arsenal" and set an upcoming match for Arsenal with Liverpool on 14/03/2018.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="viewing-the-team-s-next-upcoming-match-code-nextmatch-code-code-coming-in-v2-0-code"><a class="link" href="#viewing-the-team-s-next-upcoming-match-code-nextmatch-code-code-coming-in-v2-0-code">Viewing the team&#8217;s next upcoming match: <code>nextmatch</code> <code>[Coming in v2.0]</code></a></h4>
+<div class="paragraph">
+<p>Easily determine the up and coming match with the team so that you never miss an important date.</p>
+</div>
+<div class="paragraph">
+<p>Format: <code>nextmatch TEAM_NAME</code>
+Alias: <code>nm</code></p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="title"><strong>What to expect</strong></div>
+<div class="paragraph">
+<p>Displays the date and opponent for the upcoming match of the team specified.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Here are a few valid examples on how you can use the <code>create</code> command:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>view Arsenal</code></p>
+</li>
+<li>
+<p><code>nextmatch Arsenal</code><br>
+Displays the list of players in team "Arsenal" and view the next upcoming match for "Arsenal".</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="command-summary"><a class="link" href="#command-summary">Command Summary</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Just a quick reference sheet for all your needs. Never forget how to use MTM ever again.</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3335%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top">Command</th>
+<th class="tableblock halign-center valign-top">Alias</th>
+<th class="tableblock halign-center valign-top">Parameter</th>
+<th class="tableblock halign-center valign-top">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top" colspan="4"><p class="tableblock"><strong>General Commands</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>help</code></strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>NONE</code></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>help</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shows the user guide</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>history</code></strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>h</code></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>history</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Display the list of commands entered previously</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>undo</code></strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>u</code></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>undo</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Undo the previous command</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>redo</code></strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>r</code></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>redo</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Redo the previous command</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>changeTheme</code></strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>ct</code></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>changeTheme THEME_NAME</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">changes current theme to theme of choice</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>clear</code></strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>c</code></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>clear</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Removes all information in the application</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>exit</code></strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>NONE</code></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>exit</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exits the application</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" colspan="4"><p class="tableblock"><strong>Player Related Commands</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>add</code></strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>a</code></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>add n/NAME e/EMAIL [tm/TEAM] [p/PHONE_NUMBER] [a/ADDRESS] [j/JERSEY_NUMBER] [ra/RATING] [po/POSITION] [t/TAG]&#8230;&#8203;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>add n/Ronaldo e/ronaldo@soccer.com tm/Real Madrid p/92331322 a/Portugal j/17 po/Striker t/famous</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>edit</code></strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>e</code></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>edit INDEX [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [a/ADDRESS] [j/JERSEY_NUMBER] [ra/RATING] [po/POSITION] [t/TAG]&#8230;&#8203;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>edit 2 n/James Lee e/jameslee@example.com</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>delete</code></strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>d</code></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>delete INDEX</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>delete 3</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>remark</code></strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>rm</code></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>remark INDEX [r/REMARK]</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>remark 4 r/Gotta go faster</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>list</code></strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>l</code></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>list</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">List all the players</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>sort</code></strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>so</code></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort FIELD ORDER</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort name asc</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>find</code></strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>f</code></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>find KEYWORD [MORE_KEYWORDS]</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>find James Jake</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>select</code></strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>s</code></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>select INDEX</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>select 2</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" colspan="4"><p class="tableblock"><strong>Team Related Commands</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>create</code></strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>ct</code></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>create TEAM_NAME</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>create Arsenal</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>remove</code></strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>rt</code></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>remove TEAM_NAME</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>remove Real Madrid</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>rename</code></strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>rnt</code></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rename TEAM_NAME tm/RENAME_TEAM_NAME</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rename Arsenal tm/Neo Arsenal</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>assign</code></strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>at</code></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>assign tm/TEAM_NAME i/INDEX [INDEX]&#8230;&#8203;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>assign tm/Barcelona i/1 2 3</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>view</code></strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>vt</code></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>view TEAM_NAME</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>view Liverpool</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>setmatch</code></strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>sm</code></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>setmatch TEAM_NAME OPPONENT_TEAM_NAME DATE</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><code>Coming in v2.0</code></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>nextmatch</code></strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>nm</code></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nextmatch TEAM_NAME</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><code>Coming in v2.0</code></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" colspan="4"><p class="tableblock"><strong>Useful Commands</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>setTagColour</code></strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>stc</code></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>setTagColour TAG COLOUR</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>setTagColour friends yellow</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>toggleprivacy</code></strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>tp</code></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>toggleprivacy INDEX [p/] [e/] [a/]</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>toggleprivacy 2 a/</code></p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div class="sect1">
@@ -244,189 +675,115 @@ Calling the first <code>redo</code> command will reapply the <code>delete 1</cod
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="overview-2"><a class="link" href="#overview-2">Overview</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>My Team Manager (MTM) is a team managing application for football coaches. MTM is designed to be quick and easy for you to manage a team of players without the need of a mouse.</p>
+</div>
+<div class="paragraph">
+<p>This developer&#8217;s guide provides information that will not only show the design principles of the project, but allow you to understand the different implementations, and give you the opportunity to get started with being a contributor or as a reference for experienced developer.</p>
+</div>
+<div class="paragraph">
+<p>This developer&#8217;s guide consist of the following sections:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#Setting up">Setting up</a></p>
+</li>
+<li>
+<p><a href="#Design">Design</a></p>
+</li>
+<li>
+<p><a href="#Implementation">Implementation</a></p>
+</li>
+<li>
+<p><a href="#Documentation">Documentation</a></p>
+</li>
+<li>
+<p><a href="#Testing">Testing</a></p>
+</li>
+<li>
+<p><a href="#Dev Ops">Dev Ops</a></p>
+</li>
+</ul>
+</div>
 <div class="sect3">
-<h4 id="undo-redo-feature"><a class="link" href="#undo-redo-feature">Undo/Redo feature</a></h4>
+<h4 id="team-mechanism"><a class="link" href="#team-mechanism">Team Mechanism</a></h4>
 <div class="sect4">
 <h5 id="current-implementation"><a class="link" href="#current-implementation">Current Implementation</a></h5>
 <div class="paragraph">
-<p>The undo/redo mechanism is facilitated by an <code>UndoRedoStack</code>, which resides inside <code>LogicManager</code>. It supports undoing and redoing of commands that modifies the state of the address book (e.g. <code>add</code>, <code>edit</code>). Such commands will inherit from <code>UndoableCommand</code>.</p>
+<p>The team mechanism is created to provide better organizational methods to the user for organizing their players. We achieved it by introducing a <code>UniqueTeamList</code> into the application which consists of a list of <code>Team</code> objects.</p>
 </div>
 <div class="paragraph">
-<p><code>UndoRedoStack</code> only deals with <code>UndoableCommands</code>. Commands that cannot be undone will inherit from <code>Command</code> instead. The following diagram shows the inheritance diagram for commands:</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../images/LogicCommandClassDiagram.png" alt="LogicCommandClassDiagram" width="800">
-</div>
+<p><code>Team</code> objects consist of <code>TeamName</code> object, which is used to uniquely identify the team, and <code>UniquePersonList</code> object which stores the information of <code>Person</code> objects which should be identical to those found in <code>UniquePersonList</code> in <code>addressbook</code>.</p>
 </div>
 <div class="paragraph">
-<p>As you can see from the diagram, <code>UndoableCommand</code> adds an extra layer between the abstract <code>Command</code> class and concrete commands that can be undone, such as the <code>DeleteCommand</code>. Note that extra tasks need to be done when executing a command in an <em>undoable</em> way, such as saving the state of the address book before execution. <code>UndoableCommand</code> contains the high-level algorithm for those extra tasks while the child classes implements the details of how to execute the specific command. Note that this technique of putting the high-level algorithm in the parent class and lower-level steps of the algorithm in child classes is also known as the <a href="https://www.tutorialspoint.com/design_pattern/template_pattern.htm">template pattern</a>.</p>
-</div>
-<div class="paragraph">
-<p>Commands that are not undoable are implemented this way:</p>
+<p>Code snippet from <code>Team.java</code> that shows the attributes of <code>Team</code>.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">ListCommand</span> <span class="directive">extends</span> Command {
-    <span class="annotation">@Override</span>
-    <span class="directive">public</span> CommandResult execute() {
-        <span class="comment">// ... list logic ...</span>
-    }
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">Team</span> {
+
+    <span class="directive">private</span> <span class="directive">final</span> TeamName teamName;
+    <span class="directive">private</span> <span class="directive">final</span> UniquePersonList players = <span class="keyword">new</span> UniquePersonList();
+
+    <span class="comment">// ... model method ...</span>
 }</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>With the extra layer, the commands that are undoable are implemented this way:</p>
+<p>Since <code>Person</code> stored in <code>Team</code> is referencing to the <code>Person</code> in <code>addressbook</code>, changes made to <code>Person</code> needs to be ensured that is properly propagated to the <code>Person</code> objects found in <code>Team</code>. An additional <code>TeamName</code> field is also added to <code>Person</code> so that the user can quickly determine the team the player is in.</p>
+</div>
+<div class="paragraph">
+<p>Code snippet from <code>&lt;somefile&gt;.java</code> that shows the propagation of details updated in <code>Person</code> from <code>addressbook</code> to the <code>Person</code> objects in <code>Team</code>.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="directive">abstract</span> <span class="type">class</span> <span class="class">UndoableCommand</span> <span class="directive">extends</span> Command {
-    <span class="annotation">@Override</span>
-    <span class="directive">public</span> CommandResult execute() {
-        <span class="comment">// ... undo logic ...</span>
-
-        executeUndoableCommand();
-    }
-}
-
-<span class="directive">public</span> <span class="type">class</span> <span class="class">DeleteCommand</span> <span class="directive">extends</span> UndoableCommand {
-    <span class="annotation">@Override</span>
-    <span class="directive">public</span> CommandResult executeUndoableCommand() {
-        <span class="comment">// ... delete logic ...</span>
-    }
-}</code></pre>
+<pre class="CodeRay highlight"><code data-lang="java">    <span class="comment">// placeholder</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Suppose that the user has just launched the application. The <code>UndoRedoStack</code> will be empty at the beginning.</p>
+<p>Currently, with the <code>Team</code> mechanism, additional commands such as <code>create</code>, <code>remove</code>, and <code>editteam</code> gives the user basic functionality for team management. Additionally, commands like <code>assign</code>, <code>view</code>, <code>setmatch</code>, and <code>viewmatch</code> gives the user more practical uses in managing multiple teams.</p>
 </div>
 <div class="paragraph">
-<p>The user executes a new <code>UndoableCommand</code>, <code>delete 5</code>, to delete the 5th person in the address book. The current state of the address book is saved before the <code>delete 5</code> command executes. The <code>delete 5</code> command will then be pushed onto the <code>undoStack</code> (the current state is saved together with the command).</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../images/UndoRedoStartingStackDiagram.png" alt="UndoRedoStartingStackDiagram" width="800">
-</div>
+<p>The following sequence diagram illustrates the operation of the <code>Team</code> mechanism and some of its respective commands:</p>
 </div>
 <div class="paragraph">
-<p>As the user continues to use the program, more commands are added into the <code>undoStack</code>. For example, the user may execute <code>add n/David &#8230;&#8203;</code> to add a new person.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../images/UndoRedoNewCommand1StackDiagram.png" alt="UndoRedoNewCommand1StackDiagram" width="800">
-</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-If a command fails its execution, it will not be pushed to the <code>UndoRedoStack</code> at all.
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>The user now decides that adding the person was a mistake, and decides to undo that action using <code>undo</code>.</p>
-</div>
-<div class="paragraph">
-<p>We will pop the most recent command out of the <code>undoStack</code> and push it back to the <code>redoStack</code>. We will restore the address book to the state before the <code>add</code> command executed.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../images/UndoRedoExecuteUndoStackDiagram.png" alt="UndoRedoExecuteUndoStackDiagram" width="800">
-</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-If the <code>undoStack</code> is empty, then there are no other commands left to be undone, and an <code>Exception</code> will be thrown when popping the <code>undoStack</code>.
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>The following sequence diagram shows how the undo operation works:</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../images/UndoRedoSequenceDiagram.png" alt="UndoRedoSequenceDiagram" width="800">
-</div>
-</div>
-<div class="paragraph">
-<p>The redo does the exact opposite (pops from <code>redoStack</code>, push to <code>undoStack</code>, and restores the address book to the state after the command is executed).</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-If the <code>redoStack</code> is empty, then there are no other commands left to be redone, and an <code>Exception</code> will be thrown when popping the <code>redoStack</code>.
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>The user now decides to execute a new command, <code>clear</code>. As before, <code>clear</code> will be pushed into the <code>undoStack</code>. This time the <code>redoStack</code> is no longer empty. It will be purged as it no longer make sense to redo the <code>add n/David</code> command (this is the behavior that most modern desktop applications follow).</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../images/UndoRedoNewCommand2StackDiagram.png" alt="UndoRedoNewCommand2StackDiagram" width="800">
-</div>
-</div>
-<div class="paragraph">
-<p>Commands that are not undoable are not added into the <code>undoStack</code>. For example, <code>list</code>, which inherits from <code>Command</code> rather than <code>UndoableCommand</code>, will not be added after execution:</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../images/UndoRedoNewCommand3StackDiagram.png" alt="UndoRedoNewCommand3StackDiagram" width="800">
-</div>
-</div>
-<div class="paragraph">
-<p>The following activity diagram summarize what happens inside the <code>UndoRedoStack</code> when a user executes a new command:</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../images/UndoRedoActivityDiagram.png" alt="UndoRedoActivityDiagram" width="650">
-</div>
+<p><em>Figure : Sequence Diagram of <code>Team</code> mechanism</em></p>
 </div>
 </div>
 <div class="sect4">
 <h5 id="design-considerations"><a class="link" href="#design-considerations">Design Considerations</a></h5>
 <div class="sect5">
-<h6 id="aspect-implementation-of-code-undoablecommand-code"><a class="link" href="#aspect-implementation-of-code-undoablecommand-code">Aspect: Implementation of <code>UndoableCommand</code></a></h6>
+<h6 id="aspect-implementation-of-code-team-code"><a class="link" href="#aspect-implementation-of-code-team-code">Aspect: Implementation of <code>Team</code></a></h6>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Alternative 1 (current choice):</strong> Add a new abstract method <code>executeUndoableCommand()</code></p>
+<p><strong>Alternative 1 (current choice):</strong> <code>Team</code> object stores the reference to <code>Person</code> objects that is also in <code>UniquePersonList</code> and <code>TeamName</code> is also an attribute of <code>Person</code>.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Pros: We will not lose any undone/redone functionality as it is now part of the default behaviour. Classes that deal with <code>Command</code> do not have to know that <code>executeUndoableCommand()</code> exist.</p>
+<p>Pros: Provides an easier lookup of person belonging in which team without the need of iterating through the <code>UniqueTeamList</code> for a specific <code>Person</code>, and efficient way of listing all <code>Persons</code> in a <code>Team</code>.</p>
 </li>
 <li>
-<p>Cons: Hard for new developers to understand the template pattern.</p>
+<p>Cons: Checks need to be done thoroughly to ensure that code does not break when changes are made, especially the synchronisation of <code>Person</code> details in <code>Team</code> and in <code>addressbook</code>.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p><strong>Alternative 2:</strong> Just override <code>execute()</code></p>
+<p><strong>Alternative 2:</strong> <code>Team</code> object is stored in <code>Person</code> object as an attribute.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Pros: Does not involve the template pattern, easier for new developers to understand.</p>
+<p>Pros: Logical thought process to include <code>Team</code> as an attribute.</p>
 </li>
 <li>
-<p>Cons: Classes that inherit from <code>UndoableCommand</code> must remember to call <code>super.execute()</code>, or lose the ability to undo/redo.</p>
+<p>Cons: Excess storage wasted due to duplicated data of <code>Team</code> in every <code>Person</code>.</p>
 </li>
 </ul>
 </div>
@@ -434,32 +791,128 @@ If the <code>redoStack</code> is empty, then there are no other commands left to
 </ul>
 </div>
 </div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="remark-mechanism"><a class="link" href="#remark-mechanism">Remark Mechanism</a></h4>
+<div class="sect4">
+<h5 id="current-implementation-2"><a class="link" href="#current-implementation-2">Current Implementation</a></h5>
+<div class="paragraph">
+<p>The remark mechanism is facilitated by <code>RemarkCommand</code>. The mechanism allows user to perform the adding, editing, and deleting of a single remark to a specified <code>Person</code> via the <code>INDEX</code> from the list shown in the <code>UI</code>. The field <code>remark</code> is similar to the other fields of <code>Person</code>, hence some of its logic in <code>AddCommand.java</code> and <code>EditCommand.java</code> are updated.</p>
+</div>
+<div class="paragraph">
+<p>The mechanism uses the command <code>remark</code> and a <code>r/</code> prefix to add, edit, and delete a single remark of a <code>Person</code>. When the user leaves the remark as empty after the <code>r/</code> prefix, it is an indication to delete the remark, and when it is valid, it either create a new remark for that <code>Person</code> or overwrites the current existing remark.</p>
+</div>
+<div class="paragraph">
+<p>The following sequence diagram illustrates the operation of the <code>remark</code> command:</p>
+</div>
+<div class="paragraph">
+<p><em>Figure : Sequence Diagram of <code>remark</code> Command</em></p>
+</div>
+<div class="paragraph">
+<p>The <code>remark</code> field is not required when adding or editing a <code>Person</code>, however it will be initialized to an empty string or retrieved to fit the implementation of the other fields.</p>
+</div>
+<div class="paragraph">
+<p>Code snippet from <code>AddCommandParser.java</code> that shows that remark is initialized as empty.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> AddCommand parse(<span class="predefined-type">String</span> args) <span class="directive">throws</span> <span class="exception">ParseException</span> {
+
+    <span class="comment">// ... logic code ...</span>
+
+    <span class="keyword">try</span> {
+
+        <span class="comment">// ... logic code ...</span>
+
+        Remark remark = <span class="keyword">new</span> Remark(<span class="string"><span class="delimiter">&quot;</span><span class="delimiter">&quot;</span></span>);
+
+        Person person = <span class="keyword">new</span> Person(name, phone, email, address, remark, tagList);
+
+        <span class="keyword">return</span> <span class="keyword">new</span> AddCommand(person);
+    } <span class="keyword">catch</span> (IllegalValueException ive) {
+            <span class="keyword">throw</span> <span class="keyword">new</span> <span class="exception">ParseException</span>(ive.getMessage(), ive);
+    }
+
+    <span class="comment">// ... logic code ...</span>
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Code snippet from <code>EditCommand.java</code> that shows that remark is being retrieved.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">private</span> <span class="directive">static</span> Person createEditedPerson(Person personToEdit,
+    EditPersonDescriptor editPersonDescriptor) {
+
+    <span class="comment">// ... logic code ...</span>
+
+    Remark updatedRemark = personToEdit.getRemark();
+
+    <span class="keyword">return</span> <span class="keyword">new</span> Person(updatedName, updatedPhone, updatedEmail,
+        updatedAddress, updatedRemark, updatedTags);
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The field <code>remark</code> is found in <code>Person</code>, however it cannot be modified via <code>add</code> or <code>edit</code> commands.<br>
+All functions related to <code>remark</code> is done strictly via the <code>remark</code> command.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Only one <code>remark</code> is saved at a time. If the user <code>remark</code> on the same person, it will be overwritten.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect4">
+<h5 id="design-considerations-2"><a class="link" href="#design-considerations-2">Design Considerations</a></h5>
 <div class="sect5">
-<h6 id="aspect-how-undo-redo-executes"><a class="link" href="#aspect-how-undo-redo-executes">Aspect: How undo &amp; redo executes</a></h6>
+<h6 id="aspect-implementation-of-code-remark-code-command"><a class="link" href="#aspect-implementation-of-code-remark-code-command">Aspect: Implementation of <code>Remark</code> command</a></h6>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Alternative 1 (current choice):</strong> Saves the entire address book.</p>
+<p><strong>Alternative 1 (current choice):</strong> Creates an additional <code>remark</code> field in <code>Person</code>.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Pros: Easy to implement.</p>
+<p>Pros: Follows the existing style of similar fields, making implementation easier.</p>
 </li>
 <li>
-<p>Cons: May have performance issues in terms of memory usage.</p>
+<p>Cons: Could only have 1 remark per person, unless <code>remark</code> mechanism follows the <code>tag</code> mechanism to have multiple remarks.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p><strong>Alternative 2:</strong> Individual command knows how to undo/redo by itself.</p>
+<p><strong>Alternative 2:</strong> Have a list of remarks that associates with the specified <code>Person</code>.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Pros: Will use less memory (e.g. for <code>delete</code>, just save the person being deleted).</p>
+<p>Pros: Can have multiple remarks associating with a specific <code>Person</code>.</p>
 </li>
 <li>
-<p>Cons: We must ensure that the implementation of each individual command are correct.</p>
+<p>Cons: Harder to maintain, more complicated.</p>
 </li>
 </ul>
 </div>
@@ -467,72 +920,128 @@ If the <code>redoStack</code> is empty, then there are no other commands left to
 </ul>
 </div>
 </div>
-<div class="sect5">
-<h6 id="aspect-type-of-commands-that-can-be-undone-redone"><a class="link" href="#aspect-type-of-commands-that-can-be-undone-redone">Aspect: Type of commands that can be undone/redone</a></h6>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Alternative 1 (current choice):</strong> Only include commands that modifies the address book (<code>add</code>, <code>clear</code>, <code>edit</code>).</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Pros: We only revert changes that are hard to change back (the view can easily be re-modified as no data are * lost).</p>
-</li>
-<li>
-<p>Cons: User might think that undo also applies when the list is modified (undoing filtering for example), * only to realize that it does not do that, after executing <code>undo</code>.</p>
-</li>
-</ul>
 </div>
-</li>
-<li>
-<p><strong>Alternative 2:</strong> Include all commands.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Pros: Might be more intuitive for the user.</p>
-</li>
-<li>
-<p>Cons: User have no way of skipping such commands if he or she just want to reset the state of the address * book and not the view.
-<strong>Additional Info:</strong> See our discussion  <a href="https://github.com/se-edu/addressbook-level4/issues/390#issuecomment-298936672">here</a>.</p>
-</li>
-</ul>
 </div>
-</li>
-</ul>
+<div class="sect3">
+<h4 id="optional-fields-for-add-mechanism"><a class="link" href="#optional-fields-for-add-mechanism">Optional Fields for Add Mechanism</a></h4>
+<div class="sect4">
+<h5 id="current-implementation-3"><a class="link" href="#current-implementation-3">Current Implementation</a></h5>
+<div class="paragraph">
+<p>This mechanism enhances the original implementation of the <code>add</code> command. The required fields that are mandatory to be filled by the user are <code>n/NAME</code> and <code>e/EMAIL</code>. This implementation of making fields optional for <code>AddCommand</code> allows user to add players without their full information, and can be updated accordingly when the user retrieves their full information.</p>
+</div>
+<div class="paragraph">
+<p>The following sequence diagram illustrates the operation of the enhancement made to <code>add</code> command:</p>
+</div>
+<div class="paragraph">
+<p><em>Figure : Sequence Diagram of Enhanced <code>add</code> Command</em></p>
+</div>
+<div class="paragraph">
+<p>Code snippet from <code>ParserUtil.java</code> that shows the implementation of when a field is left empty. "&lt;UNSPECIFED&gt;" string will be return when the value passed in is empty.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">ParserUtil</span> {
+
+    <span class="comment">// ... model code ...</span>
+
+    <span class="directive">public</span> <span class="directive">static</span> <span class="directive">final</span> <span class="predefined-type">String</span> UNSPECIFIED_FIELD = <span class="string"><span class="delimiter">&quot;</span><span class="content">&lt;UNSPECIFIED&gt;</span><span class="delimiter">&quot;</span></span>;
+
+    <span class="comment">// ... model code ...</span>
+
+    <span class="directive">public</span> <span class="directive">static</span> Optional&lt;<span class="predefined-type">String</span>&gt; parseValue(Optional&lt;<span class="predefined-type">String</span>&gt; value) {
+        <span class="keyword">return</span> Optional.of(value.orElse(UNSPECIFIED_FIELD));
+    }
+
+    <span class="comment">// ... model code ...</span>
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Code snippet from <code>AddCommandParser.java</code> that shows the usage of parsing fields that are set as optional.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> AddCommand parse(<span class="predefined-type">String</span> args) <span class="directive">throws</span> <span class="exception">ParseException</span> {
+
+    <span class="comment">// ... logic code ...</span>
+
+    <span class="keyword">if</span> (!arePrefixesPresent(argMultimap, PREFIX_NAME, PREFIX_EMAIL)
+        || !argMultimap.getPreamble().isEmpty()) {
+        <span class="keyword">throw</span> <span class="keyword">new</span> <span class="exception">ParseException</span>(<span class="predefined-type">String</span>.format(MESSAGE_INVALID_COMMAND_FORMAT, AddCommand.MESSAGE_USAGE));
+    }
+
+    <span class="keyword">try</span> {
+
+    <span class="comment">// ... logic code ...</span>
+
+        Phone phone = ParserUtil.parsePhone(
+            ParserUtil.parseValue(argMultimap.getValue(PREFIX_PHONE)).get());
+        Address address = ParserUtil.parseAddress(
+            ParserUtil.parseValue(argMultimap.getValue(PREFIX_ADDRESS)).get());
+
+        <span class="comment">// ... logic code ...</span>
+
+        Person person = <span class="keyword">new</span> Person(name, phone, email, address, tagList);
+
+        <span class="keyword">return</span> <span class="keyword">new</span> AddCommand(person);
+    } <span class="keyword">catch</span> (IllegalValueException ive) {
+        <span class="keyword">throw</span> <span class="keyword">new</span> <span class="exception">ParseException</span>(ive.getMessage(), ive);
+    }
+
+    <span class="comment">// ... logic code ...</span>
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Code snippet from <code>Address.java</code> that shows an example of an optional field being valid when not specified.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">Address</span> {
+
+    <span class="comment">// ... model code ...</span>
+
+    <span class="directive">public</span> <span class="directive">static</span> <span class="type">boolean</span> isValidAddress(<span class="predefined-type">String</span> test) {
+        <span class="keyword">return</span> test.matches(ADDRESS_VALIDATION_REGEX) || test.equals(UNSPECIFIED_FIELD);
+    }
+}</code></pre>
 </div>
 </div>
 </div>
 <div class="sect4">
-<h5 id="aspect-data-structure-to-support-the-undo-redo-commands"><a class="link" href="#aspect-data-structure-to-support-the-undo-redo-commands">Aspect: Data structure to support the undo/redo commands</a></h5>
+<h5 id="design-consideration"><a class="link" href="#design-consideration">Design Consideration</a></h5>
+<div class="sect5">
+<h6 id="aspect-implementation-of-optional-fields"><a class="link" href="#aspect-implementation-of-optional-fields">Aspect: Implementation of Optional fields</a></h6>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Alternative 1 (current choice):</strong> Use separate stack for undo and redo</p>
+<p><strong>Alternative 1 (current choice):</strong> Set a default value for unspecified fields and parse fields that are mandatory.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Pros: Easy to understand for new Computer Science student undergraduates to understand, who are likely to be * the new incoming developers of our project.</p>
+<p>Pros: Easy to implement as fields are still filled with information even though user did not specify.</p>
 </li>
 <li>
-<p>Cons: Logic is duplicated twice. For example, when a new command is executed, we must remember to update * both <code>HistoryManager</code> and <code>UndoRedoStack</code>.</p>
+<p>Cons: Unattractive display of fields when it is unspecified.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p><strong>Alternative 2:</strong> Use <code>HistoryManager</code> for undo/redo</p>
+<p><strong>Alternative 2:</strong> Require users to input all fields.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Pros: We do not need to maintain a separate stack, and just reuse what is already in the codebase.</p>
+<p>Pros: The current implementation is used, hence there is no additional code to ensure validity of unspecified input.</p>
 </li>
 <li>
-<p>Cons: Requires dealing with commands that have already been undone: We must remember to skip these commands. Violates Single Responsibility Principle and Separation of Concerns as <code>HistoryManager</code> now needs to do two * different things.</p>
+<p>Cons: Less flexibility is given to the user when adding a player into the application.</p>
 </li>
 </ul>
 </div>
 </li>
 </ul>
+</div>
 </div>
 </div>
 </div>
@@ -541,7 +1050,7 @@ If the <code>redoStack</code> is empty, then there are no other commands left to
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-04-01 10:03:54 UTC
+Last updated 2018-04-11 04:19:56 UTC
 </div>
 </div>
 </body>
