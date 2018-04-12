@@ -25,7 +25,9 @@
 <h2 id="overview"><a class="link" href="#overview">Overview</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>My Team Manager (MTM) is a Command-Line Interface (CLI) based address book application for football team managers. It is a one-stop solution to help you manage your player’s contact details in an efficient and convenient manner. Using MTM, you can organize players into teams, view player statistics, and, generate player line-ups.</p>
+<p>My Team Manager (MTM) is a dekstop command-line interface (CLI) based address book application for football team managers.
+It is a one-stop solution to help you manage your player’s contact details and team information in an efficient and convenient manner.
+MTM is further enhanced with usability implementations that make MTM efficient and easy to use with JavaFX GUI display.</p>
 </div>
 </div>
 </div>
@@ -35,14 +37,14 @@
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Major enhancement</strong>: added <strong>team implementation and commands</strong></p>
+<p><strong>Major enhancement</strong>: added <strong>team implementation and commands</strong>.</p>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>What it does</strong>: allows the user to perform team management functions such as creating, removing, renaming, viewing a team, and assigning players into a team</p>
+<p><strong>What it does</strong>: allows the user to perform <strong>team management</strong> functions such as creating, removing, renaming, viewing a team, and assigning players into a team.</p>
 </li>
 <li>
-<p><strong>Justification</strong>: This feature is a core component to the product as it gives the user the capability to manage and view their teams easily and in a convenient way.</p>
+<p><strong>Justification</strong>: This feature is a core component to the product as it gives users the capability to manage and view their teams <strong>easily and in a convenient way</strong>.</p>
 </li>
 <li>
 <p><strong>Highlights</strong>: The implementation requires new classes and commands to be created and also affects current existing <code>add</code> command. The class is set up so that future enhancements can use the data quickly. The implementation was challenging as it requires that player&#8217;s information are in-sync with the information in the class.</p>
@@ -55,10 +57,10 @@
 <div class="ulist">
 <ul>
 <li>
-<p>added a remark command that allows the user to leave a remark to a specific player</p>
+<p>added a remark command that allows the user to leave a remark to a specific player. [<a href="https://github.com/CS2103JAN2018-F14-B1/main/pull/58">PR#58</a>]</p>
 </li>
 <li>
-<p>enhanced functionality of add command that allows certain field to be optional</p>
+<p>enhanced functionality of add command that allows certain field to be optional. [<a href="https://github.com/CS2103JAN2018-F14-B1/main/pull/54">PR#54</a>]</p>
 </li>
 </ul>
 </div>
@@ -75,10 +77,10 @@
 <div class="ulist">
 <ul>
 <li>
-<p>Managed releases <code>v1.3</code> ~ <code>v1.4</code> (2 release) on GitHub</p>
+<p>Published releases <code>v1.3</code> ~ <code>v1.4</code> (2 release) on GitHub.</p>
 </li>
 <li>
-<p>Documented issues of project using GitHub&#8217;s Issue Tracker and address the issues accordingly</p>
+<p>Documented issues of project using GitHub&#8217;s Issue Tracker and address the issues accordingly.</p>
 </li>
 </ul>
 </div>
@@ -88,7 +90,10 @@
 <div class="ulist">
 <ul>
 <li>
-<p>Changes are mentioned in <a href="#Minor Enhancement">Minor enhancement</a></p>
+<p>Changes are mentioned in <a href="#Minor Enhancement">Minor enhancement</a>.</p>
+</li>
+<li>
+<p>Made changes based on suggestions from feedback. [<a href="https://github.com/CS2103JAN2018-F14-B1/main/pull/167">PR#167</a>]</p>
 </li>
 </ul>
 </div>
@@ -98,10 +103,13 @@
 <div class="ulist">
 <ul>
 <li>
-<p>Re-arrange features into appropriate categories (Player, Team, Additional)</p>
+<p>Re-arrange features in UserGuide into appropriate categories (Basic, Player, Team, Others). [<a href="https://github.com/CS2103JAN2018-F14-B1/main/pull/110">PR#110</a>]</p>
 </li>
 <li>
 <p>Create command summary table for ease of viewing and quick access</p>
+</li>
+<li>
+<p>Update AboutUs segment with team member&#8217;s pictures and contributions. [<a href="https://github.com/CS2103JAN2018-F14-B1/main/pull/68">PR#68</a>][<a href="https://github.com/CS2103JAN2018-F14-B1/main/pull/49">#PR49</a>]</p>
 </li>
 </ul>
 </div>
@@ -111,8 +119,10 @@
 <div class="ulist">
 <ul>
 <li>
-<p>Reported bugs and suggestions for other teams in the class (
-<a href="https://github.com/CS2103JAN2018-F11-B4/main/issues/99">1</a>,
+<p>PRs reviewed (with non-trivial review comments) [<a href="https://github.com/CS2103JAN2018-F14-B1/main/pull/57">PR#57</a>][<a href="https://github.com/CS2103JAN2018-F14-B1/main/pull/94">PR#94</a>][<a href="https://github.com/CS2103JAN2018-F14-B1/main/pull/171">PR#171</a>]</p>
+</li>
+<li>
+<p>Reported bugs and suggestions for other teams in the class (<a href="https://github.com/CS2103JAN2018-F11-B4/main/issues/99">1</a>,
 <a href="https://github.com/CS2103JAN2018-F11-B4/main/issues/105">2</a>,
 <a href="https://github.com/CS2103JAN2018-F11-B4/main/issues/108">3</a>,
 <a href="https://github.com/CS2103JAN2018-F11-B4/main/issues/111">4</a>,
@@ -287,7 +297,7 @@ Renames the current team "Arsenal" into "Neo Arsenal".</p>
 <p>Have a player without a team, or have yet to assigned one during the addition of player into MTM, you can call <code>assign</code> command to assign that player to a particular team of your choice.</p>
 </div>
 <div class="paragraph">
-<p>Format: <code>assign tm/TEAM_NAME i/INDEX [INDEX]&#8230;&#8203;</code><br>
+<p>Format: <code>assign [TEAM_NAME] i/INDEX [INDEX]&#8230;&#8203;</code><br>
 Alias: <code>at</code></p>
 </div>
 <div class="admonitionblock note">
@@ -301,7 +311,8 @@ Alias: <code>at</code></p>
 <p>The index refers to the index number shown in the most recent listing.<br>
 The index <strong>must be a positive integer</strong> <code>1, 2, 3, &#8230;&#8203;</code><br>
 You can assign multiple players to a team by including more than one valid index.<br>
-A player can only consist of 1 team, assigning a player that have an existing team, will be re-assigned the new team.</p>
+A player can only consist of 1 team, assigning a player that have an existing team, will be re-assigned the new team.
+Assigning a player without a given team will unassign the player from its current team.</p>
 </div>
 </td>
 </tr>
@@ -316,7 +327,7 @@ A player can only consist of 1 team, assigning a player that have an existing te
 <td class="content">
 <div class="title"><strong>What to expect</strong></div>
 <div class="paragraph">
-<p>Your specified player, via index, will be assigned to the specified team.</p>
+<p>Your specified player, via index, will be assigned to the specified team or unassigned from any team.</p>
 </div>
 </td>
 </tr>
@@ -331,14 +342,11 @@ A player can only consist of 1 team, assigning a player that have an existing te
 <p><code>list</code></p>
 </li>
 <li>
-<p><code>assign tm/Arsenal i/1 2 3</code><br>
+<p><code>assign Arsenal i/1 2 3</code><br>
 View the full list of players in MTM and assign the player with index 1, 2, and 3 to team "Arsenal".</p>
 </li>
 <li>
-<p><code>find John</code></p>
-</li>
-<li>
-<p><code>assign tm/Liverpool i/1</code><br>
+<p><code>assign i/1</code><br>
 Find a player by the name of "John" and assign the player with index 1 to team "Liverpool".</p>
 </li>
 </ul>
@@ -348,6 +356,10 @@ Find a player by the name of "John" and assign the player with index 1 to team "
 <h4 id="viewing-a-team-code-view-code-code-since-v1-3-code"><a class="link" href="#viewing-a-team-code-view-code-code-since-v1-3-code">Viewing a team: <code>view</code> <code>[Since v1.3]</code></a></h4>
 <div class="paragraph">
 <p>With the ability to manage different teams, you will be able to identify all players in a team easily with the <code>view</code> command.</p>
+</div>
+<div class="paragraph">
+<p><code>Coming in v2.0</code><br>
+Details of your team will be displayed on the right panel when <code>view</code> command is executed.</p>
 </div>
 <div class="paragraph">
 <p>Format: <code>view TEAM_NAME</code><br>
@@ -441,7 +453,7 @@ Display the list of players in team "Arsenal" and set an upcoming match for Arse
 <div class="sect3">
 <h4 id="viewing-the-team-s-next-upcoming-match-code-nextmatch-code-code-coming-in-v2-0-code"><a class="link" href="#viewing-the-team-s-next-upcoming-match-code-nextmatch-code-code-coming-in-v2-0-code">Viewing the team&#8217;s next upcoming match: <code>nextmatch</code> <code>[Coming in v2.0]</code></a></h4>
 <div class="paragraph">
-<p>Easily determine the up and coming match with the team so that you never miss an important date.</p>
+<p>You can easily determine the up and coming match with the team so that you never miss an important date.</p>
 </div>
 <div class="paragraph">
 <p>Format: <code>nextmatch TEAM_NAME</code>
@@ -463,7 +475,7 @@ Alias: <code>nm</code></p>
 </table>
 </div>
 <div class="paragraph">
-<p>Here are a few valid examples on how you can use the <code>create</code> command:</p>
+<p>Here are a few valid examples on how you can use the <code>nextmatch</code> command:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -478,188 +490,6 @@ Displays the list of players in team "Arsenal" and view the next upcoming match 
 </div>
 </div>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="command-summary"><a class="link" href="#command-summary">Command Summary</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Just a quick reference sheet for all your needs. Never forget how to use MTM ever again.</p>
-</div>
-<table class="tableblock frame-all grid-all spread">
-<colgroup>
-<col style="width: 16.6666%;">
-<col style="width: 16.6666%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3335%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-center valign-top">Command</th>
-<th class="tableblock halign-center valign-top">Alias</th>
-<th class="tableblock halign-center valign-top">Parameter</th>
-<th class="tableblock halign-center valign-top">Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-center valign-top" colspan="4"><p class="tableblock"><strong>General Commands</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>help</code></strong></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>NONE</code></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>help</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Shows the user guide</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>history</code></strong></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>h</code></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>history</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Display the list of commands entered previously</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>undo</code></strong></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>u</code></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>undo</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Undo the previous command</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>redo</code></strong></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>r</code></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>redo</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Redo the previous command</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>changeTheme</code></strong></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>ct</code></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>changeTheme THEME_NAME</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">changes current theme to theme of choice</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>clear</code></strong></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>c</code></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>clear</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Removes all information in the application</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>exit</code></strong></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>NONE</code></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>exit</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Exits the application</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top" colspan="4"><p class="tableblock"><strong>Player Related Commands</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>add</code></strong></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>a</code></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>add n/NAME e/EMAIL [tm/TEAM] [p/PHONE_NUMBER] [a/ADDRESS] [j/JERSEY_NUMBER] [ra/RATING] [po/POSITION] [t/TAG]&#8230;&#8203;</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>add n/Ronaldo e/ronaldo@soccer.com tm/Real Madrid p/92331322 a/Portugal j/17 po/Striker t/famous</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>edit</code></strong></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>e</code></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>edit INDEX [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [a/ADDRESS] [j/JERSEY_NUMBER] [ra/RATING] [po/POSITION] [t/TAG]&#8230;&#8203;</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>edit 2 n/James Lee e/jameslee@example.com</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>delete</code></strong></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>d</code></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>delete INDEX</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>delete 3</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>remark</code></strong></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>rm</code></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>remark INDEX [r/REMARK]</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>remark 4 r/Gotta go faster</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>list</code></strong></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>l</code></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>list</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">List all the players</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>sort</code></strong></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>so</code></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort FIELD ORDER</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sort name asc</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>find</code></strong></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>f</code></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>find KEYWORD [MORE_KEYWORDS]</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>find James Jake</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>select</code></strong></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>s</code></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>select INDEX</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>select 2</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top" colspan="4"><p class="tableblock"><strong>Team Related Commands</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>create</code></strong></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>ct</code></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>create TEAM_NAME</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>create Arsenal</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>remove</code></strong></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>rt</code></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>remove TEAM_NAME</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>remove Real Madrid</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>rename</code></strong></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>rnt</code></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rename TEAM_NAME tm/RENAME_TEAM_NAME</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rename Arsenal tm/Neo Arsenal</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>assign</code></strong></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>at</code></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>assign tm/TEAM_NAME i/INDEX [INDEX]&#8230;&#8203;</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>assign tm/Barcelona i/1 2 3</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>view</code></strong></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>vt</code></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>view TEAM_NAME</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>view Liverpool</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>setmatch</code></strong></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>sm</code></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>setmatch TEAM_NAME OPPONENT_TEAM_NAME DATE</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><code>Coming in v2.0</code></code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>nextmatch</code></strong></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>nm</code></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nextmatch TEAM_NAME</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><code>Coming in v2.0</code></code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top" colspan="4"><p class="tableblock"><strong>Useful Commands</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>setTagColour</code></strong></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>stc</code></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>setTagColour TAG COLOUR</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>setTagColour friends yellow</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>toggleprivacy</code></strong></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><code>tp</code></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>toggleprivacy INDEX [p/] [e/] [a/]</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>toggleprivacy 2 a/</code></p></td>
-</tr>
-</tbody>
-</table>
 </div>
 </div>
 <div class="sect1">
@@ -1050,7 +880,7 @@ All functions related to <code>remark</code> is done strictly via the <code>rema
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-04-11 04:42:54 UTC
+Last updated 2018-04-12 03:46:55 UTC
 </div>
 </div>
 </body>

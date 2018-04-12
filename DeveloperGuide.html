@@ -59,27 +59,31 @@
 <li><a href="#Implementation-Configuration">4.1.3. Undo/Redo feature</a></li>
 </ul>
 </li>
-<li><a href="#additional-functions-enhancements">4.2. Additional Functions Enhancements</a>
+<li><a href="#player-related-enhancements">4.2. Player-Related Enhancements</a>
 <ul class="sectlevel3">
 <li><a href="#remark-mechanism">4.2.1. Remark Mechanism</a></li>
 <li><a href="#setting-various-player-fields-to-private-code-coming-in-v1-5-code">4.2.2. Setting various player fields to private <code>[coming in v1.5]</code></a></li>
 <li><a href="#sorting-players-by-fields">4.2.3. Sorting players by fields</a></li>
-<li><a href="#team-mechanism">4.2.4. Team Mechanism</a></li>
-<li><a href="#show-best-xi-code-coming-in-v1-5-code">4.2.5. Show Best XI <code>[coming in v1.5]</code></a></li>
+<li><a href="#show-best-xi-code-coming-in-v1-5-code">4.2.4. Show Best XI <code>[coming in v1.5]</code></a></li>
 </ul>
 </li>
-<li><a href="#usability-enhancements">4.3. Usability Enhancements</a>
+<li><a href="#team-related-enhancements">4.3. Team-Related Enhancements</a>
 <ul class="sectlevel3">
-<li><a href="#tab-autocomplete">4.3.1. Tab Autocomplete</a></li>
-<li><a href="#optional-fields-for-add-mechanism">4.3.2. Optional Fields for Add Mechanism</a></li>
-<li><a href="#set-tag-colour-feature">4.3.3. Set Tag Colour feature</a></li>
+<li><a href="#team-mechanism">4.3.1. Team Mechanism</a></li>
 </ul>
 </li>
-<li><a href="#ui-enhancements">4.4. UI Enhancements</a>
+<li><a href="#user-experience-enhancements">4.4. User Experience Enhancements</a>
 <ul class="sectlevel3">
-<li><a href="#team-display-bar">4.4.1. Team Display Bar</a></li>
-<li><a href="#player-details-pane">4.4.2. Player Details Pane</a></li>
-<li><a href="#change-theme-command-code-coming-in-v1-5-code">4.4.3. Change Theme Command <code>[coming in v1.5]</code></a></li>
+<li><a href="#tab-autocomplete">4.4.1. Tab Autocomplete</a></li>
+<li><a href="#optional-fields-for-add-mechanism">4.4.2. Optional Fields for Add Mechanism</a></li>
+</ul>
+</li>
+<li><a href="#ui-enhancements">4.5. UI Enhancements</a>
+<ul class="sectlevel3">
+<li><a href="#team-display-bar-code-since-v1-3-code">4.5.1. Team Display Bar <code>[since v1.3]</code></a></li>
+<li><a href="#player-details-pane-code-since-v1-4-code">4.5.2. Player Details Pane <code>[since v1.4]</code></a></li>
+<li><a href="#change-theme-command-code-since-v1-5-code">4.5.3. Change Theme Command <code>[since v1.5]</code></a></li>
+<li><a href="#set-tag-colour-feature-code-since-v1-1-code">4.5.4. Set Tag Colour feature <code>[since v1.1]</code></a></li>
 </ul>
 </li>
 </ul>
@@ -1011,7 +1015,7 @@ If the <code>redoStack</code> is empty, then there are no other commands left to
 </div>
 </div>
 <div class="sect2">
-<h3 id="additional-functions-enhancements"><a class="link" href="#additional-functions-enhancements">4.2. Additional Functions Enhancements</a></h3>
+<h3 id="player-related-enhancements"><a class="link" href="#player-related-enhancements">4.2. Player-Related Enhancements</a></h3>
 <div class="sect3">
 <h4 id="remark-mechanism"><a class="link" href="#remark-mechanism">4.2.1. Remark Mechanism</a></h4>
 <div class="sect4">
@@ -1366,9 +1370,25 @@ If address book is empty, a <code>NoPlayerException</code> will be thrown by <co
 </div>
 </div>
 <div class="sect3">
-<h4 id="team-mechanism"><a class="link" href="#team-mechanism">4.2.4. Team Mechanism</a></h4>
+<h4 id="show-best-xi-code-coming-in-v1-5-code"><a class="link" href="#show-best-xi-code-coming-in-v1-5-code">4.2.4. Show Best XI <code>[coming in v1.5]</code></a></h4>
 <div class="sect4">
 <h5 id="current-implementation-5"><a class="link" href="#current-implementation-5">Current Implementation</a></h5>
+<div class="paragraph">
+<p>The <code>showBest</code> command is able to show the current team&#8217;s best 11 players. There is however functional implementation for this feature yet. Coming soon!</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="design-consideration-3"><a class="link" href="#design-consideration-3">Design Consideration</a></h5>
+
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="team-related-enhancements"><a class="link" href="#team-related-enhancements">4.3. Team-Related Enhancements</a></h3>
+<div class="sect3">
+<h4 id="team-mechanism"><a class="link" href="#team-mechanism">4.3.1. Team Mechanism</a></h4>
+<div class="sect4">
+<h5 id="current-implementation-6"><a class="link" href="#current-implementation-6">Current Implementation</a></h5>
 <div class="paragraph">
 <p>The team mechanism is created to provide better organizational methods to the user for organizing their players. We achieved it by introducing a <code>UniqueTeamList</code> into the application which consists of a list of <code>Team</code> objects.</p>
 </div>
@@ -1447,24 +1467,11 @@ If address book is empty, a <code>NoPlayerException</code> will be thrown by <co
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="show-best-xi-code-coming-in-v1-5-code"><a class="link" href="#show-best-xi-code-coming-in-v1-5-code">4.2.5. Show Best XI <code>[coming in v1.5]</code></a></h4>
-<div class="sect4">
-<h5 id="current-implementation-6"><a class="link" href="#current-implementation-6">Current Implementation</a></h5>
-<div class="paragraph">
-<p>The <code>showBest</code> command is able to show the current team&#8217;s best 11 players. There is however functional implementation for this feature yet. Coming soon!</p>
-</div>
-</div>
-<div class="sect4">
-<h5 id="design-consideration-3"><a class="link" href="#design-consideration-3">Design Consideration</a></h5>
-
-</div>
-</div>
 </div>
 <div class="sect2">
-<h3 id="usability-enhancements"><a class="link" href="#usability-enhancements">4.3. Usability Enhancements</a></h3>
+<h3 id="user-experience-enhancements"><a class="link" href="#user-experience-enhancements">4.4. User Experience Enhancements</a></h3>
 <div class="sect3">
-<h4 id="tab-autocomplete"><a class="link" href="#tab-autocomplete">4.3.1. Tab Autocomplete</a></h4>
+<h4 id="tab-autocomplete"><a class="link" href="#tab-autocomplete">4.4.1. Tab Autocomplete</a></h4>
 <div class="sect4">
 <h5 id="current-implementation-7"><a class="link" href="#current-implementation-7">Current Implementation</a></h5>
 <div class="paragraph">
@@ -1506,7 +1513,7 @@ it will provide the user with possible commands for a given input. In this case,
 </div>
 </div>
 <div class="sect3">
-<h4 id="optional-fields-for-add-mechanism"><a class="link" href="#optional-fields-for-add-mechanism">4.3.2. Optional Fields for Add Mechanism</a></h4>
+<h4 id="optional-fields-for-add-mechanism"><a class="link" href="#optional-fields-for-add-mechanism">4.4.2. Optional Fields for Add Mechanism</a></h4>
 <div class="sect4">
 <h5 id="current-implementation-8"><a class="link" href="#current-implementation-8">Current Implementation</a></h5>
 <div class="paragraph">
@@ -1628,144 +1635,22 @@ it will provide the user with possible commands for a given input. In this case,
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="set-tag-colour-feature"><a class="link" href="#set-tag-colour-feature">4.3.3. Set Tag Colour feature</a></h4>
-<div class="sect4">
-<h5 id="current-implementation-9"><a class="link" href="#current-implementation-9">Current Implementation</a></h5>
-<div class="ulist">
-<ul>
-<li>
-<p>The <code>Set</code> Command is an entirely new command that will allow the user to assign a colour to a specific tag.</p>
-</li>
-<li>
-<p>This mechanism is facilitated by the <code>SetCommandParser</code>, which creates and returns a new <code>SetCommand</code>.</p>
-</li>
-<li>
-<p>The following diagrams show the inheritance for the commands: &lt;image&gt;</p>
-</li>
-<li>
-<p>In <code>SetCommandParser</code>, which implements the <code>Parser</code> interface, it parses the arguments inputted into the CLI, and checks whether the arguments are valid.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><code>SetCommandParser</code> is implemented as such:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">SetCommandParser</span> <span class="directive">implements</span> <span class="predefined-type">Parser</span>&lt;SetCommand&gt; {
-
-    <span class="directive">public</span> SetCommand parse(<span class="predefined-type">String</span> args) <span class="directive">throws</span> <span class="exception">ParseException</span> {
-
-    <span class="comment">// ...parse arguments and check for invalid arguments...</span>
-  }
-}</code></pre>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>SetCommand</code> inherits the abstract <code>Command</code> class. After <code>execute()</code> is called in <code>SetCommand</code>, the tag colour is set through the logic portions of <code>ModelManager</code> and <code>AddressBook</code>, then
-lastly changes <code>tagColour</code> attribute within the <code>Tag</code> object itself.<br></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><code>SetCommand</code> is implemented in this way:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">SetCommand</span> <span class="directive">extends</span> Command {
-
-    <span class="directive">private</span> <span class="directive">final</span> Tag tagToSet;
-    <span class="directive">private</span> <span class="directive">final</span> <span class="predefined-type">String</span> tagColour;
-
-    <span class="directive">public</span> SetCommand(Tag tag, <span class="predefined-type">String</span> colour) {
-        requireNonNull(tag);
-        tagToSet = tag;
-        tagColour = colour;
-    }
-
-    <span class="annotation">@Override</span>
-    <span class="directive">public</span> CommandResult execute() {
-    <span class="comment">// ...set colour logic...</span>
-    }
-
-}</code></pre>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>The following sequence diagram shows how the set command operation works:
-&lt;image&gt;</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect4">
-<h5 id="design-considerations-4"><a class="link" href="#design-considerations-4">Design Considerations</a></h5>
-<div class="sect5">
-<h6 id="aspect-implementation-of-code-undoablecommand-code-2"><a class="link" href="#aspect-implementation-of-code-undoablecommand-code-2">Aspect: Implementation of <code>UndoableCommand</code></a></h6>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Alternative 1 (current choice):</strong> Inherit from <code>Command</code>.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Pros: Does not involve complicated undo/redo tests, simple and quicker implementation,
-lessen chances of mistakes made in implementation.</p>
-</li>
-<li>
-<p>Cons: User cannot use the <code>undo/redo</code> command.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><strong>Alternative 2 :</strong> Inherit from <code>UndoableCommand</code>.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Pros: User can utilise the <code>undo/redo</code> command.</p>
-</li>
-<li>
-<p>Cons: Hard for developers to implement extra tests, not very necessary as users can just as easily type
-out the colour they would like to change their tag to; it is a short command, especially with the <code>stc</code> alias.</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="sect2">
-<h3 id="ui-enhancements"><a class="link" href="#ui-enhancements">4.4. UI Enhancements</a></h3>
+<h3 id="ui-enhancements"><a class="link" href="#ui-enhancements">4.5. UI Enhancements</a></h3>
 <div class="sect3">
-<h4 id="team-display-bar"><a class="link" href="#team-display-bar">4.4.1. Team Display Bar</a></h4>
+<h4 id="team-display-bar-code-since-v1-3-code"><a class="link" href="#team-display-bar-code-since-v1-3-code">4.5.1. Team Display Bar <code>[since v1.3]</code></a></h4>
 <div class="sect4">
-<h5 id="current-implementation-10"><a class="link" href="#current-implementation-10">Current Implementation</a></h5>
-<div class="ulist">
-<ul>
-<li>
-<p>The Team Display Bar is implemented as <code>TeamDisplay</code> in the UI Component and renders <code>TeamDisplay.fxml</code>.</p>
-</li>
-<li>
-<p>It is called from <code>MainWindow</code> and will be highlighting
-the current team that has been selected in the Command Line Interface by the user.</p>
-</li>
-<li>
-<p>It calls the <code>Team</code> model and displays the <code>Person</code> cards associated with that <code>Team</code>.</p>
-</li>
-<li>
-<p>It contains event handler methods such as handleShowNewTeamEvent(), handleHighlightSelectedTeamEvent(),
-and handleDeselectTeamEvent().</p>
-</li>
-</ul>
+<h5 id="current-implementation-9"><a class="link" href="#current-implementation-9">Current Implementation</a></h5>
+<div class="paragraph">
+<p>The Team Display Bar is implemented as <code>TeamDisplay</code> in the UI Component and renders <code>TeamDisplay.fxml</code>.
+It is called from <code>MainWindow</code> and will be highlighting
+the current team that has been selected in the Command Line Interface by the user.<br></p>
+</div>
+<div class="paragraph">
+<p>It calls the <code>Team</code> model and displays the <code>Person</code> cards associated with that <code>Team</code>.
+It contains event handler methods such as handleShowNewTeamEvent(), handleHighlightSelectedTeamEvent(),
+and handleDeselectTeamEvent(), which update the display accordingly</p>
 </div>
 <div class="paragraph">
 <p>Code snippet from 'TeamDisplay' to show initialisation of UI component and event handlers:</p>
@@ -1803,7 +1688,7 @@ and handleDeselectTeamEvent().</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="design-considerations-5"><a class="link" href="#design-considerations-5">Design Considerations</a></h5>
+<h5 id="design-considerations-4"><a class="link" href="#design-considerations-4">Design Considerations</a></h5>
 <div class="sect5">
 <h6 id="aspect-user-experience"><a class="link" href="#aspect-user-experience">Aspect: User Experience</a></h6>
 <div class="ulist">
@@ -1840,21 +1725,13 @@ and handleDeselectTeamEvent().</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="player-details-pane"><a class="link" href="#player-details-pane">4.4.2. Player Details Pane</a></h4>
+<h4 id="player-details-pane-code-since-v1-4-code"><a class="link" href="#player-details-pane-code-since-v1-4-code">4.5.2. Player Details Pane <code>[since v1.4]</code></a></h4>
 <div class="sect4">
-<h5 id="current-implementation-11"><a class="link" href="#current-implementation-11">Current Implementation</a></h5>
-<div class="ulist">
-<ul>
-<li>
-<p>The <code>Player Details</code> pane is implemented as <code>PlayerDetails</code> in the UI Component. It is called from <code>PlayerListPanel</code>.</p>
-</li>
-<li>
-<p>It renders <code>PlayerDetails.fxml</code> and displays the selected <code>PersonCard</code>.</p>
-</li>
-<li>
-<p>It calls the <code>Person</code> model and displays the fields in the <code>Person</code> model that are not displayed in the left panel.</p>
-</li>
-</ul>
+<h5 id="current-implementation-10"><a class="link" href="#current-implementation-10">Current Implementation</a></h5>
+<div class="paragraph">
+<p>The <code>Player Details</code> pane is implemented as <code>PlayerDetails</code> in the UI Component.
+It is called from <code>PlayerListPanel</code>. It renders <code>PlayerDetails.fxml</code> and displays the selected <code>PersonCard</code>.
+It calls the <code>Person</code> model and displays the fields in the <code>Person</code> model that are not displayed in the left panel.</p>
 </div>
 <div class="paragraph">
 <p>Code snippet from 'PlayerDetails' to show initialisation of UI component:</p>
@@ -1877,7 +1754,7 @@ and handleDeselectTeamEvent().</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="design-considerations-6"><a class="link" href="#design-considerations-6">Design Considerations</a></h5>
+<h5 id="design-considerations-5"><a class="link" href="#design-considerations-5">Design Considerations</a></h5>
 <div class="sect5">
 <h6 id="aspect-user-experience-2"><a class="link" href="#aspect-user-experience-2">Aspect: User Experience</a></h6>
 <div class="ulist">
@@ -1915,31 +1792,55 @@ place to look at after selection of a person card.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="change-theme-command-code-coming-in-v1-5-code"><a class="link" href="#change-theme-command-code-coming-in-v1-5-code">4.4.3. Change Theme Command <code>[coming in v1.5]</code></a></h4>
+<h4 id="change-theme-command-code-since-v1-5-code"><a class="link" href="#change-theme-command-code-since-v1-5-code">4.5.3. Change Theme Command <code>[since v1.5]</code></a></h4>
 <div class="sect4">
-<h5 id="current-implementation-12"><a class="link" href="#current-implementation-12">Current Implementation</a></h5>
-<div class="ulist">
-<ul>
-<li>
-<p>The <code>ChangThemeCommand</code> is a new feature that allows user to change the current theme to another theme.</p>
-</li>
-<li>
-<p>New css classes are implemented to accommodate the new themes.</p>
-</li>
-<li>
-<p>The <code>MainWindow</code> class is also changed to allow for switch cases depending on which theme is selected.<br>
-Code snippet from 'ChangThemeCommand':</p>
-</li>
-</ul>
+<h5 id="current-implementation-11"><a class="link" href="#current-implementation-11">Current Implementation</a></h5>
+<div class="paragraph">
+<p>The <code>ChangeThemeCommand</code> is a new feature that allows user to change the current theme to another theme. A new css class is implemented to accommodate the new theme, LightTheme.
+The <code>MainWindow</code> class is also changed to contain a handleChangeThemeRequestEvent() method which is an event handler to <code>setAddressBookTheme</code>,
+which is a method in <code>UserPrefs</code>.<br></p>
+</div>
+<div class="paragraph">
+<p>Below is the sequence diagram for how the <code>ChangeThemeCommand</code> works:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ChangeThemeCommandDiagram.png" alt="ChangeThemeCommandDiagram" width="800">
+</div>
+</div>
+<div class="paragraph">
+<p>Code snippet from 'ChangThemeCommand':</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="comment">//code snippet</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">ChangeThemeCommand</span> <span class="directive">extends</span> Command {
+
+    <span class="directive">public</span> ChangeThemeCommand(<span class="predefined-type">String</span> theme) {
+            <span class="local-variable">this</span>.theme = theme.trim();
+    }
+
+   <span class="annotation">@Override</span>
+    <span class="directive">public</span> CommandResult execute() <span class="directive">throws</span> CommandException {
+        <span class="keyword">if</span> (!isValidTheme(<span class="local-variable">this</span>.theme)) {
+            <span class="keyword">throw</span> <span class="keyword">new</span> CommandException(Messages.MESSAGE_INVALID_THEME);
+        }
+        <span class="keyword">if</span> ((MainWindow.getCurrentTheme()).contains(<span class="local-variable">this</span>.theme)) {
+            <span class="keyword">throw</span> <span class="keyword">new</span> CommandException(<span class="string"><span class="delimiter">&quot;</span><span class="content">Theme is already set to </span><span class="delimiter">&quot;</span></span> + <span class="local-variable">this</span>.theme + <span class="string"><span class="delimiter">&quot;</span><span class="content">!</span><span class="delimiter">&quot;</span></span>);
+        }
+        EventsCenter.getInstance().post(<span class="keyword">new</span> ChangeThemeEvent(<span class="local-variable">this</span>.theme));
+        <span class="keyword">return</span> <span class="keyword">new</span> CommandResult(<span class="predefined-type">String</span>.format(MESSAGE_THEME_SUCCESS, <span class="local-variable">this</span>.theme));
+    }
+
+    <span class="directive">private</span> <span class="type">boolean</span> isValidTheme(<span class="predefined-type">String</span> theme) {
+        <span class="keyword">return</span> theme.equals(<span class="string"><span class="delimiter">&quot;</span><span class="content">Light</span><span class="delimiter">&quot;</span></span>) || theme.equals(<span class="string"><span class="delimiter">&quot;</span><span class="content">Dark</span><span class="delimiter">&quot;</span></span>);
+    }
+
+}</code></pre>
 </div>
 </div>
 </div>
 <div class="sect4">
-<h5 id="design-considerations-7"><a class="link" href="#design-considerations-7">Design Considerations</a></h5>
+<h5 id="design-considerations-6"><a class="link" href="#design-considerations-6">Design Considerations</a></h5>
 <div class="sect5">
 <h6 id="aspect-user-experience-3"><a class="link" href="#aspect-user-experience-3">Aspect: User Experience</a></h6>
 <div class="ulist">
@@ -1966,6 +1867,109 @@ Code snippet from 'ChangThemeCommand':</p>
 </li>
 <li>
 <p>Cons: Inconsistent with the rest of the application, which is CLI-based.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="set-tag-colour-feature-code-since-v1-1-code"><a class="link" href="#set-tag-colour-feature-code-since-v1-1-code">4.5.4. Set Tag Colour feature <code>[since v1.1]</code></a></h4>
+<div class="sect4">
+<h5 id="current-implementation-12"><a class="link" href="#current-implementation-12">Current Implementation</a></h5>
+<div class="paragraph">
+<p>The <code>Set</code> Command is an entirely new command that allows the user to assign a colour to a specific tag.
+This mechanism is facilitated by the <code>SetCommandParser</code>, which creates and returns a new <code>SetCommand</code>.
+In <code>SetCommandParser</code>, which implements the <code>Parser</code> interface, it parses the arguments inputted into the CLI, and checks whether the arguments are valid.</p>
+</div>
+<div class="paragraph">
+<p><code>SetCommandParser</code> is implemented as such:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">SetCommandParser</span> <span class="directive">implements</span> <span class="predefined-type">Parser</span>&lt;SetCommand&gt; {
+
+    <span class="directive">public</span> SetCommand parse(<span class="predefined-type">String</span> args) <span class="directive">throws</span> <span class="exception">ParseException</span> {
+
+    <span class="comment">// ...parse arguments and check for invalid arguments...</span>
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>SetCommand</code> inherits the abstract <code>Command</code> class. After <code>execute()</code> is called in <code>SetCommand</code>, the tag colour is set through the logic portions of <code>ModelManager</code> and <code>AddressBook</code>, then
+lastly changes <code>tagColour</code> attribute within the <code>Tag</code> object itself. It also posts an event in <code>SetCommand</code>, to which
+its handler in <code>PersonCard</code> responds and performs the UI update.<br></p>
+</div>
+<div class="paragraph">
+<p><code>SetCommand</code> is implemented in this way:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">SetCommand</span> <span class="directive">extends</span> Command {
+
+    <span class="directive">private</span> <span class="directive">final</span> Tag tagToSet;
+    <span class="directive">private</span> <span class="directive">final</span> <span class="predefined-type">String</span> tagColour;
+
+    <span class="directive">public</span> SetCommand(Tag tag, <span class="predefined-type">String</span> colour) {
+        requireNonNull(tag);
+        tagToSet = tag;
+        tagColour = colour;
+    }
+
+    <span class="annotation">@Override</span>
+    <span class="directive">public</span> CommandResult execute() {
+    requireNonNull(model);
+        <span class="type">boolean</span> isTagValid = model.setTagColour(tagToSet, tagColour);
+        <span class="comment">//...check for valid tagName code....</span>
+        EventsCenter.getInstance().post(<span class="keyword">new</span> ChangeTagColourEvent(tagToSet.getTagName(), tagColour));
+        <span class="keyword">return</span> <span class="keyword">new</span> CommandResult(<span class="predefined-type">String</span>.format(MESSAGE_SUCCESS, tagToSet.toString(), tagColour));
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The following sequence diagram shows how the set command operation works:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/SetTagCommandSequence.png" alt="SetTagCommandSequence" width="800">
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="design-considerations-7"><a class="link" href="#design-considerations-7">Design Considerations</a></h5>
+<div class="sect5">
+<h6 id="aspect-implementation-of-code-command-code-vs-code-undoablecommand-code"><a class="link" href="#aspect-implementation-of-code-command-code-vs-code-undoablecommand-code">Aspect: Implementation of <code>Command</code> vs  <code>UndoableCommand</code></a></h6>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Alternative 1 (current choice):</strong> Inherit from <code>Command</code>.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: Does not involve complicated undo/redo tests, simple and quicker implementation,
+lessen chances of mistakes made in implementation.</p>
+</li>
+<li>
+<p>Cons: User cannot use the <code>undo/redo</code> command.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Alternative 2 :</strong> Inherit from <code>UndoableCommand</code>.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: User can utilise the <code>undo/redo</code> command.</p>
+</li>
+<li>
+<p>Cons: Hard for developers to implement extra tests, not very necessary as users can just as easily type
+out the colour they would like to change their tag to; it is a short command, especially with the <code>stc</code> alias.</p>
 </li>
 </ul>
 </div>
@@ -3019,7 +3023,7 @@ Expected: Similar to previous.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-04-11 04:42:54 UTC
+Last updated 2018-04-12 03:46:55 UTC
 </div>
 </div>
 </body>

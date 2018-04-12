@@ -16,7 +16,7 @@
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="project-addressbook-level-4"><a class="link" href="#project-addressbook-level-4">PROJECT: AddressBook - Level 4</a></h2>
+<h2 id="project-my-team-manager-mtm"><a class="link" href="#project-my-team-manager-mtm">PROJECT: My Team Manager (MTM)</a></h2>
 <div class="sectionbody">
 <hr>
 </div>
@@ -25,8 +25,11 @@
 <h2 id="overview"><a class="link" href="#overview">Overview</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>My Team Manager is a desktop application for soccer team managers to organise the information of the players under them.
-The user interacts with it using a CLI, and it has a GUI created with JavaFX.</p>
+<p>My Team Manager (MTM) is a desktop application for <strong>football team managers</strong> to organise the information of players they are in charge of.
+The primary usage of this application is to add and assign players to teams, and then edit and remove information related to
+the players as and when it is required. MTM is value added with usability features that help the team manager manage his/her
+teams and players efficiently.
+The user interacts with MTM using a <strong>Command Line Interface</strong>, and it has a GUI created with JavaFX.</p>
 </div>
 </div>
 </div>
@@ -36,29 +39,29 @@ The user interacts with it using a CLI, and it has a GUI created with JavaFX.</p
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Major enhancement</strong>:</p>
+<p><strong>Major enhancement</strong>: Revamped the original user interface to one that suits the usage of an application for <strong>team managers</strong>.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>What it does:</p>
+<p>What it does: The change in  UI allows the user to <strong>keep track</strong> of which team he/she is looking at, to <strong>view his/her players' details</strong>,
+and even perform some <strong>customisation</strong> of the application theme.</p>
 </li>
 <li>
-<p>Justification:</p>
+<p>Justification: The overhaul of the UI is absolutely necessary to ensure the <strong>best user experience</strong> for users of My Team Manager. Previously,
+the existing UI components were neither sufficient nor suitable for management of sports teams.</p>
 </li>
 <li>
-<p>Highlights:</p>
-</li>
-<li>
-<p>Credits: <em>{mention here if you reused any code/ideas from elsewhere or if a third-party library is heavily used in the feature so that a reader can make a more accurate judgement of how much effort went into the feature}</em></p>
+<p>Highlights: Addition of the <strong>team display bar</strong>, the <strong>player details pane</strong> when a player is selected, addition of <strong>MTM logo</strong>,
+and <strong>changeTheme</strong> command.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p><strong>Minor enhancement</strong>:</p>
+<p><strong>Minor enhancement</strong>: addition of a <strong>setTagCommand</strong> that allows the user to change existing tags to a colour of their choice.</p>
 </li>
 <li>
-<p><strong>Code contributed</strong>: [<a href="https://github.com/CS2103JAN2018-F14-B1/main/blob/master/collated/functional/Codee.md">Functional code</a>] [<a href="https://github.com/CS2103JAN2018-F14-B1/main/blob/master/collated/test/Codee.md">Test code</a>]_</p>
+<p><strong>Code contributed</strong>: [<a href="https://github.com/CS2103JAN2018-F14-B1/main/blob/master/collated/functional/Codee.md">Functional code</a>] [<a href="https://github.com/CS2103JAN2018-F14-B1/main/blob/master/collated/test/Codee.md">Test code</a>]</p>
 </li>
 <li>
 <p><strong>Other contributions</strong>:</p>
@@ -69,30 +72,48 @@ The user interacts with it using a CLI, and it has a GUI created with JavaFX.</p
 <div class="ulist">
 <ul>
 <li>
-<p>Managed releases</p>
+<p>Generated release file (.jar) in <code>v1.4</code> (1 release) and contributed release description on GitHub.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
 <p>Enhancements to existing features:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>changed the original GUI colour scheme [<a href="https://github.com/CS2103JAN2018-F14-B1/main/pull/89">PR #89</a>]</p>
+</li>
+</ul>
+</div>
 </li>
 <li>
 <p>Documentation:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>changed the project name in all the relevant files so that it will be "My Team Manager" and not "Address Book App", including the data files. [<a href="https://github.com/CS2103JAN2018-F14-B1/main/pull/120">PR #120</a>]</p>
+</li>
+<li>
+<p>Constantly updated the README and UserGuide&#8217;s application preview image. [<a href="https://github.com/CS2103JAN2018-F14-B1/main/pull/99">PR #99</a>][<a href="https://github.com/CS2103JAN2018-F14-B1/main/pull/160">PR #160</a>]</p>
+</li>
+</ul>
+</div>
 </li>
 <li>
 <p>Community:</p>
-</li>
+<div class="ulist">
+<ul>
 <li>
-<p>Tools:</p>
+<p>PRs Reviewed (with non trivial comments) [<a href="https://github.com/CS2103JAN2018-F14-B1/main/pull/95">PR #95</a>][<a href="https://github.com/CS2103JAN2018-F14-B1/main/pull/169">PR #169</a>][<a href="https://github.com/CS2103JAN2018-F14-B1/main/pull/175">PR #175</a>]</p>
 </li>
 </ul>
 </div>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p><em>{you can add/remove categories in the list above}</em></p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -110,16 +131,14 @@ The user interacts with it using a CLI, and it has a GUI created with JavaFX.</p
 </tbody>
 </table>
 <div class="sect3">
-<h4 id="undoing-previous-command-code-undo-code"><a class="link" href="#undoing-previous-command-code-undo-code">Undoing previous command : <code>undo</code></a></h4>
+<h4 id="changing-theme-code-changetheme-code-code-since-v1-5-code"><a class="link" href="#changing-theme-code-changetheme-code-code-since-v1-5-code">Changing theme : <code>changeTheme</code> <code>[Since v1.5]</code></a></h4>
 <div class="paragraph">
-<p>Have you entered a wrong command or might have accidentally entered the wrong values to the specified fields to a command?<br></p>
+<p>If you feel that the light theme is not for you, and you prefer to work on a darker interface,
+you can change the theme from the default LightTheme to DarkTheme with the 'changeTheme' command.</p>
 </div>
 <div class="paragraph">
-<p>You don&#8217;t have to worry, as MTM provides you with the command to undo most mistakes that you might have made. MTM will restore itself to the state before the previous command was executed.</p>
-</div>
-<div class="paragraph">
-<p>Format: <code>undo</code><br>
-Alias: <code>u</code></p>
+<p>Format: <code>changeTheme</code><br>
+Alias: <code>ct</code></p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -129,24 +148,8 @@ Alias: <code>u</code></p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>There are a few commands that can be undoable: commands that modify MTM&#8217;s content that are related to players or teams<br>
-Player related commands: <code>add</code>, <code>delete</code>, <code>edit</code>, <code>clear</code>, <code>remark</code><br>
-Team related commands: <code>create</code>, <code>assign</code>, <code>remove</code>, <code>rename</code></p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-<div class="title"><strong>What to expect</strong></div>
-<div class="paragraph">
-<p>Commands that are <em>undoAble</em> will be reversed and MTM will be in the state before the command was executed.</p>
+<p>The current version of <code>changTheme</code> is NOT an UndoableCommand. i.e. You cannot <code>undo</code> a <code>changeTheme</code> command.
+Instead, just enter <code>cte &lt;your desired theme&gt;</code> to change the colour back!</p>
 </div>
 </td>
 </tr>
@@ -154,13 +157,13 @@ Team related commands: <code>create</code>, <code>assign</code>, <code>remove</c
 </div>
 </div>
 <div class="sect3">
-<h4 id="redoing-the-previously-undone-command-code-redo-code"><a class="link" href="#redoing-the-previously-undone-command-code-redo-code">Redoing the previously undone command : <code>redo</code></a></h4>
+<h4 id="displaying-lineup-for-next-match-code-showlineup-code-code-coming-in-v2-0-code"><a class="link" href="#displaying-lineup-for-next-match-code-showlineup-code-code-coming-in-v2-0-code">Displaying lineup for next match: <code>showLineup</code> <code>[Coming in v2.0]</code></a></h4>
 <div class="paragraph">
-<p>If you accidentally call the <code>undo</code> command too many times and need a way to quickly reverse that, MTM allows you to redo the most recent <code>undo</code> command.</p>
+<p>You can view the lineup for the current best 11 players.</p>
 </div>
 <div class="paragraph">
-<p>Format: <code>redo</code><br>
-Alias: <code>r</code></p>
+<p>Format: <code>showLineup TEAM_NAME</code>
+Alias: <code>sl</code></p>
 </div>
 <div class="admonitionblock important">
 <table>
@@ -171,11 +174,22 @@ Alias: <code>r</code></p>
 <td class="content">
 <div class="title"><strong>What to expect</strong></div>
 <div class="paragraph">
-<p>Previously executed <code>undo</code> command will be reversed and MTM will be in its previous state.</p>
+<p>The panel on the right will show the avatars of the 11 players that will be playing for the next match.</p>
 </div>
 </td>
 </tr>
 </table>
+</div>
+<div class="paragraph">
+<p>Here is an valid example on how you can use the <code>showLineup</code> command:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>showLineup Arsenal</code><br>
+Displays the 11 main players that will be playing for the next match.</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -194,221 +208,99 @@ Alias: <code>r</code></p>
 </tbody>
 </table>
 <div class="sect3">
-<h4 id="undo-redo-feature"><a class="link" href="#undo-redo-feature">Undo/Redo feature</a></h4>
+<h4 id="set-tag-colour-feature-code-since-v1-1-code"><a class="link" href="#set-tag-colour-feature-code-since-v1-1-code">Set Tag Colour feature <code>[since v1.1]</code></a></h4>
 <div class="sect4">
 <h5 id="current-implementation"><a class="link" href="#current-implementation">Current Implementation</a></h5>
 <div class="paragraph">
-<p>The undo/redo mechanism is facilitated by an <code>UndoRedoStack</code>, which resides inside <code>LogicManager</code>. It supports undoing and redoing of commands that modifies the state of the address book (e.g. <code>add</code>, <code>edit</code>). Such commands will inherit from <code>UndoableCommand</code>.</p>
+<p>The <code>Set</code> Command is an entirely new command that allows the user to assign a colour to a specific tag.
+This mechanism is facilitated by the <code>SetCommandParser</code>, which creates and returns a new <code>SetCommand</code>.
+In <code>SetCommandParser</code>, which implements the <code>Parser</code> interface, it parses the arguments inputted into the CLI, and checks whether the arguments are valid.</p>
 </div>
 <div class="paragraph">
-<p><code>UndoRedoStack</code> only deals with <code>UndoableCommands</code>. Commands that cannot be undone will inherit from <code>Command</code> instead. The following diagram shows the inheritance diagram for commands:</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../images/LogicCommandClassDiagram.png" alt="LogicCommandClassDiagram" width="800">
-</div>
-</div>
-<div class="paragraph">
-<p>As you can see from the diagram, <code>UndoableCommand</code> adds an extra layer between the abstract <code>Command</code> class and concrete commands that can be undone, such as the <code>DeleteCommand</code>. Note that extra tasks need to be done when executing a command in an <em>undoable</em> way, such as saving the state of the address book before execution. <code>UndoableCommand</code> contains the high-level algorithm for those extra tasks while the child classes implements the details of how to execute the specific command. Note that this technique of putting the high-level algorithm in the parent class and lower-level steps of the algorithm in child classes is also known as the <a href="https://www.tutorialspoint.com/design_pattern/template_pattern.htm">template pattern</a>.</p>
-</div>
-<div class="paragraph">
-<p>Commands that are not undoable are implemented this way:</p>
+<p><code>SetCommandParser</code> is implemented as such:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">ListCommand</span> <span class="directive">extends</span> Command {
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">SetCommandParser</span> <span class="directive">implements</span> <span class="predefined-type">Parser</span>&lt;SetCommand&gt; {
+
+    <span class="directive">public</span> SetCommand parse(<span class="predefined-type">String</span> args) <span class="directive">throws</span> <span class="exception">ParseException</span> {
+
+    <span class="comment">// ...parse arguments and check for invalid arguments...</span>
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>SetCommand</code> inherits the abstract <code>Command</code> class. After <code>execute()</code> is called in <code>SetCommand</code>, the tag colour is set through the logic portions of <code>ModelManager</code> and <code>AddressBook</code>, then
+lastly changes <code>tagColour</code> attribute within the <code>Tag</code> object itself. It also posts an event in <code>SetCommand</code>, to which
+its handler in <code>PersonCard</code> responds and performs the UI update.<br></p>
+</div>
+<div class="paragraph">
+<p><code>SetCommand</code> is implemented in this way:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">SetCommand</span> <span class="directive">extends</span> Command {
+
+    <span class="directive">private</span> <span class="directive">final</span> Tag tagToSet;
+    <span class="directive">private</span> <span class="directive">final</span> <span class="predefined-type">String</span> tagColour;
+
+    <span class="directive">public</span> SetCommand(Tag tag, <span class="predefined-type">String</span> colour) {
+        requireNonNull(tag);
+        tagToSet = tag;
+        tagColour = colour;
+    }
+
     <span class="annotation">@Override</span>
     <span class="directive">public</span> CommandResult execute() {
-        <span class="comment">// ... list logic ...</span>
+    requireNonNull(model);
+        <span class="type">boolean</span> isTagValid = model.setTagColour(tagToSet, tagColour);
+        <span class="comment">//...check for valid tagName code....</span>
+        EventsCenter.getInstance().post(<span class="keyword">new</span> ChangeTagColourEvent(tagToSet.getTagName(), tagColour));
+        <span class="keyword">return</span> <span class="keyword">new</span> CommandResult(<span class="predefined-type">String</span>.format(MESSAGE_SUCCESS, tagToSet.toString(), tagColour));
     }
 }</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>With the extra layer, the commands that are undoable are implemented this way:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="directive">abstract</span> <span class="type">class</span> <span class="class">UndoableCommand</span> <span class="directive">extends</span> Command {
-    <span class="annotation">@Override</span>
-    <span class="directive">public</span> CommandResult execute() {
-        <span class="comment">// ... undo logic ...</span>
-
-        executeUndoableCommand();
-    }
-}
-
-<span class="directive">public</span> <span class="type">class</span> <span class="class">DeleteCommand</span> <span class="directive">extends</span> UndoableCommand {
-    <span class="annotation">@Override</span>
-    <span class="directive">public</span> CommandResult executeUndoableCommand() {
-        <span class="comment">// ... delete logic ...</span>
-    }
-}</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Suppose that the user has just launched the application. The <code>UndoRedoStack</code> will be empty at the beginning.</p>
-</div>
-<div class="paragraph">
-<p>The user executes a new <code>UndoableCommand</code>, <code>delete 5</code>, to delete the 5th person in the address book. The current state of the address book is saved before the <code>delete 5</code> command executes. The <code>delete 5</code> command will then be pushed onto the <code>undoStack</code> (the current state is saved together with the command).</p>
+<p>The following sequence diagram shows how the set command operation works:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../images/UndoRedoStartingStackDiagram.png" alt="UndoRedoStartingStackDiagram" width="800">
-</div>
-</div>
-<div class="paragraph">
-<p>As the user continues to use the program, more commands are added into the <code>undoStack</code>. For example, the user may execute <code>add n/David &#8230;&#8203;</code> to add a new person.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../images/UndoRedoNewCommand1StackDiagram.png" alt="UndoRedoNewCommand1StackDiagram" width="800">
-</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-If a command fails its execution, it will not be pushed to the <code>UndoRedoStack</code> at all.
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>The user now decides that adding the person was a mistake, and decides to undo that action using <code>undo</code>.</p>
-</div>
-<div class="paragraph">
-<p>We will pop the most recent command out of the <code>undoStack</code> and push it back to the <code>redoStack</code>. We will restore the address book to the state before the <code>add</code> command executed.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../images/UndoRedoExecuteUndoStackDiagram.png" alt="UndoRedoExecuteUndoStackDiagram" width="800">
-</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-If the <code>undoStack</code> is empty, then there are no other commands left to be undone, and an <code>Exception</code> will be thrown when popping the <code>undoStack</code>.
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>The following sequence diagram shows how the undo operation works:</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../images/UndoRedoSequenceDiagram.png" alt="UndoRedoSequenceDiagram" width="800">
-</div>
-</div>
-<div class="paragraph">
-<p>The redo does the exact opposite (pops from <code>redoStack</code>, push to <code>undoStack</code>, and restores the address book to the state after the command is executed).</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-If the <code>redoStack</code> is empty, then there are no other commands left to be redone, and an <code>Exception</code> will be thrown when popping the <code>redoStack</code>.
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>The user now decides to execute a new command, <code>clear</code>. As before, <code>clear</code> will be pushed into the <code>undoStack</code>. This time the <code>redoStack</code> is no longer empty. It will be purged as it no longer make sense to redo the <code>add n/David</code> command (this is the behavior that most modern desktop applications follow).</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../images/UndoRedoNewCommand2StackDiagram.png" alt="UndoRedoNewCommand2StackDiagram" width="800">
-</div>
-</div>
-<div class="paragraph">
-<p>Commands that are not undoable are not added into the <code>undoStack</code>. For example, <code>list</code>, which inherits from <code>Command</code> rather than <code>UndoableCommand</code>, will not be added after execution:</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../images/UndoRedoNewCommand3StackDiagram.png" alt="UndoRedoNewCommand3StackDiagram" width="800">
-</div>
-</div>
-<div class="paragraph">
-<p>The following activity diagram summarize what happens inside the <code>UndoRedoStack</code> when a user executes a new command:</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../images/UndoRedoActivityDiagram.png" alt="UndoRedoActivityDiagram" width="650">
+<img src="../images/SetTagCommandSequence.png" alt="SetTagCommandSequence" width="800">
 </div>
 </div>
 </div>
 <div class="sect4">
 <h5 id="design-considerations"><a class="link" href="#design-considerations">Design Considerations</a></h5>
 <div class="sect5">
-<h6 id="aspect-implementation-of-code-undoablecommand-code"><a class="link" href="#aspect-implementation-of-code-undoablecommand-code">Aspect: Implementation of <code>UndoableCommand</code></a></h6>
+<h6 id="aspect-implementation-of-code-command-code-vs-code-undoablecommand-code"><a class="link" href="#aspect-implementation-of-code-command-code-vs-code-undoablecommand-code">Aspect: Implementation of <code>Command</code> vs  <code>UndoableCommand</code></a></h6>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Alternative 1 (current choice):</strong> Add a new abstract method <code>executeUndoableCommand()</code>.</p>
+<p><strong>Alternative 1 (current choice):</strong> Inherit from <code>Command</code>.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Pros: We will not lose any undone/redone functionality as it is now part of the default behaviour. Classes that deal with <code>Command</code> do not have to know that <code>executeUndoableCommand()</code> exist.</p>
+<p>Pros: Does not involve complicated undo/redo tests, simple and quicker implementation,
+lessen chances of mistakes made in implementation.</p>
 </li>
 <li>
-<p>Cons: Hard for new developers to understand the template pattern.</p>
+<p>Cons: User cannot use the <code>undo/redo</code> command.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p><strong>Alternative 2:</strong> Just override <code>execute()</code>.</p>
+<p><strong>Alternative 2 :</strong> Inherit from <code>UndoableCommand</code>.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Pros: Does not involve the template pattern, easier for new developers to understand.</p>
+<p>Pros: User can utilise the <code>undo/redo</code> command.</p>
 </li>
 <li>
-<p>Cons: Classes that inherit from <code>UndoableCommand</code> must remember to call <code>super.execute()</code>, or lose the ability to undo/redo.</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect5">
-<h6 id="aspect-how-undo-redo-executes"><a class="link" href="#aspect-how-undo-redo-executes">Aspect: How undo &amp; redo executes</a></h6>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Alternative 1 (current choice):</strong> Saves the entire address book.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Pros: Easy to implement.</p>
-</li>
-<li>
-<p>Cons: May have performance issues in terms of memory usage.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><strong>Alternative 2:</strong> Individual command knows how to undo/redo by itself.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Pros: Will use less memory (e.g. for <code>delete</code>, just save the person being deleted).</p>
-</li>
-<li>
-<p>Cons: We must ensure that the implementation of each individual command are correct.</p>
+<p>Cons: Hard for developers to implement extra tests, not very necessary as users can just as easily type
+out the colour they would like to change their tag to; it is a short command, especially with the <code>stc</code> alias.</p>
 </li>
 </ul>
 </div>
@@ -416,72 +308,243 @@ If the <code>redoStack</code> is empty, then there are no other commands left to
 </ul>
 </div>
 </div>
-<div class="sect5">
-<h6 id="aspect-type-of-commands-that-can-be-undone-redone"><a class="link" href="#aspect-type-of-commands-that-can-be-undone-redone">Aspect: Type of commands that can be undone/redone</a></h6>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Alternative 1 (current choice):</strong> Only include commands that modifies the address book (<code>add</code>, <code>clear</code>, <code>edit</code>).</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Pros: We only revert changes that are hard to change back (the view can easily be re-modified as no data are * lost).</p>
-</li>
-<li>
-<p>Cons: User might think that undo also applies when the list is modified (undoing filtering for example), * only to realize that it does not do that, after executing <code>undo</code>.</p>
-</li>
-</ul>
 </div>
-</li>
-<li>
-<p><strong>Alternative 2:</strong> Include all commands.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Pros: Might be more intuitive for the user.</p>
-</li>
-<li>
-<p>Cons: User have no way of skipping such commands if he or she just want to reset the state of the address * book and not the view.
-<strong>Additional Info:</strong> See our discussion  <a href="https://github.com/se-edu/addressbook-level4/issues/390#issuecomment-298936672">here</a>.</p>
-</li>
-</ul>
 </div>
-</li>
-</ul>
+<div class="sect3">
+<h4 id="team-display-bar-code-since-v1-3-code"><a class="link" href="#team-display-bar-code-since-v1-3-code">Team Display Bar <code>[since v1.3]</code></a></h4>
+<div class="sect4">
+<h5 id="current-implementation-2"><a class="link" href="#current-implementation-2">Current Implementation</a></h5>
+<div class="paragraph">
+<p>The Team Display Bar is implemented as <code>TeamDisplay</code> in the UI Component and renders <code>TeamDisplay.fxml</code>.
+It is called from <code>MainWindow</code> and will be highlighting
+the current team that has been selected in the Command Line Interface by the user.<br></p>
+</div>
+<div class="paragraph">
+<p>It calls the <code>Team</code> model and displays the <code>Person</code> cards associated with that <code>Team</code>.
+It contains event handler methods such as handleShowNewTeamEvent(), handleHighlightSelectedTeamEvent(),
+and handleDeselectTeamEvent(), which update the display accordingly</p>
+</div>
+<div class="paragraph">
+<p>Code snippet from 'TeamDisplay' to show initialisation of UI component and event handlers:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">TeamDisplay</span> <span class="directive">extends</span> UiPart&lt;<span class="predefined-type">Region</span>&gt; {
+
+    <span class="directive">private</span> <span class="directive">static</span> <span class="directive">final</span> <span class="predefined-type">String</span> FXML = <span class="string"><span class="delimiter">&quot;</span><span class="content">TeamDisplay.fxml</span><span class="delimiter">&quot;</span></span>;
+
+    <span class="directive">public</span> TeamDisplay() {
+        <span class="local-variable">super</span>(FXML);
+            <span class="local-variable">this</span>.teamList = teamList;
+            initTeams();
+            getTeams();
+            registerAsAnEventHandler(<span class="local-variable">this</span>);
+    }
+
+    <span class="annotation">@Subscribe</span>
+    <span class="directive">private</span> <span class="type">void</span> handleShowNewTeamEvent(ShowNewTeamNameEvent event) {
+        ...handleShowNewTeamEvent code...
+    }
+
+    <span class="annotation">@Subscribe</span>
+    <span class="directive">private</span> <span class="type">void</span> handleHighlightSelectedTeamEvent(HighlightSelectedTeamEvent event) {
+        ...handleHighlightSelectedTeamEvent code...
+    }
+
+    <span class="annotation">@Subscribe</span>
+    <span class="directive">private</span> <span class="type">void</span> handleDeselectTeamEvent(DeselectTeamEvent event) {
+        ...handleDeselectTeamEvent code...
+    }
+}</code></pre>
 </div>
 </div>
 </div>
 <div class="sect4">
-<h5 id="aspect-data-structure-to-support-the-undo-redo-commands"><a class="link" href="#aspect-data-structure-to-support-the-undo-redo-commands">Aspect: Data structure to support the undo/redo commands</a></h5>
+<h5 id="design-considerations-2"><a class="link" href="#design-considerations-2">Design Considerations</a></h5>
+<div class="sect5">
+<h6 id="aspect-user-experience"><a class="link" href="#aspect-user-experience">Aspect: User Experience</a></h6>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Alternative 1 (current choice):</strong> Use separate stack for undo and redo.</p>
+<p><strong>Alternative 1 (current choice):</strong> <code>TeamDisplay</code> is placed underneath the <code>ResultDisplay</code> and above the <code>PersonListPanel</code>.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Pros: Easy to understand for new Computer Science student undergraduates to understand, who are likely to be * the new incoming developers of our project.</p>
+<p>Pros: Located at an obvious location for the user to view the team currently selected.</p>
 </li>
 <li>
-<p>Cons: Logic is duplicated twice. For example, when a new command is executed, we must remember to update * both <code>HistoryManager</code> and <code>UndoRedoStack</code>.</p>
+<p>Cons: There will be less space for the <code>ResultDisplay</code> and <code>CommandBox</code>.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p><strong>Alternative 2:</strong> Use <code>HistoryManager</code> for undo/redo.</p>
+<p><strong>Alternative 2:</strong> <code>TeamDisplay</code> is placed on the left of the <code>PersonListPanel</code> as a vertical bar.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Pros: We do not need to maintain a separate stack, and just reuse what is already in the codebase.</p>
+<p>Pros: There will be more space for the <code>ResultDisplay</code> and <code>CommandBox</code>.</p>
 </li>
 <li>
-<p>Cons: Requires dealing with commands that have already been undone: We must remember to skip these commands. Violates Single Responsibility Principle and Separation of Concerns as <code>HistoryManager</code> now needs to do two * different things.</p>
+<p>Cons: It is less obvious to the user as it is at the side.</p>
 </li>
 </ul>
 </div>
 </li>
 </ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="player-details-pane-code-since-v1-4-code"><a class="link" href="#player-details-pane-code-since-v1-4-code">Player Details Pane <code>[since v1.4]</code></a></h4>
+<div class="sect4">
+<h5 id="current-implementation-3"><a class="link" href="#current-implementation-3">Current Implementation</a></h5>
+<div class="paragraph">
+<p>The <code>Player Details</code> pane is implemented as <code>PlayerDetails</code> in the UI Component.
+It is called from <code>PlayerListPanel</code>. It renders <code>PlayerDetails.fxml</code> and displays the selected <code>PersonCard</code>.
+It calls the <code>Person</code> model and displays the fields in the <code>Person</code> model that are not displayed in the left panel.</p>
+</div>
+<div class="paragraph">
+<p>Code snippet from 'PlayerDetails' to show initialisation of UI component:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">PlayerDetails</span> <span class="directive">extends</span> UiPart&lt;<span class="predefined-type">Region</span>&gt; {
+
+    <span class="directive">private</span> <span class="directive">static</span> <span class="directive">final</span> <span class="predefined-type">String</span> FXML = <span class="string"><span class="delimiter">&quot;</span><span class="content">PlayerDetails.fxml</span><span class="delimiter">&quot;</span></span>;
+    <span class="directive">public</span> <span class="directive">final</span> Person person;
+
+    <span class="directive">public</span> PlayerDetails(Person person) {
+        <span class="local-variable">super</span>(FXML);
+        <span class="local-variable">this</span>.person = person;
+        <span class="comment">//....player details code...</span>
+    }
+
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="design-considerations-3"><a class="link" href="#design-considerations-3">Design Considerations</a></h5>
+<div class="sect5">
+<h6 id="aspect-user-experience-2"><a class="link" href="#aspect-user-experience-2">Aspect: User Experience</a></h6>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Alternative 1 (current choice):</strong> <code>PlayerDetails</code> is placed on the right of <code>Person List Panel</code>, replacing the <code>BrowserPanel</code>.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: It is the only large unused space in the software left and is right beside the <code>Person List Panel</code>, thus is the logical
+place to look at after selection of a person card.</p>
+</li>
+<li>
+<p>Cons: This is a lot of whitespace in the pane as are not many fields.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Alternative 2:</strong> <code>PlayerDetails</code> pane size is reduced and the extra space is repurposed.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: There will be more space for another new feature e.g. calendar.</p>
+</li>
+<li>
+<p>Cons: It can only be implemented in v2.0 due to time constraints in development.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="change-theme-command-code-since-v1-5-code"><a class="link" href="#change-theme-command-code-since-v1-5-code">Change Theme Command <code>[since v1.5]</code></a></h4>
+<div class="sect4">
+<h5 id="current-implementation-4"><a class="link" href="#current-implementation-4">Current Implementation</a></h5>
+<div class="paragraph">
+<p>The <code>ChangeThemeCommand</code> is a new feature that allows user to change the current theme to another theme. A new css class is implemented to accommodate the new theme, LightTheme.
+The <code>MainWindow</code> class is also changed to contain a handleChangeThemeRequestEvent() method which is an event handler to <code>setAddressBookTheme</code>,
+which is a method in <code>UserPrefs</code>.<br></p>
+</div>
+<div class="paragraph">
+<p>Below is the sequence diagram for how the <code>ChangeThemeCommand</code> works:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/ChangeThemeCommandDiagram.png" alt="ChangeThemeCommandDiagram" width="800">
+</div>
+</div>
+<div class="paragraph">
+<p>Code snippet from 'ChangThemeCommand':</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">ChangeThemeCommand</span> <span class="directive">extends</span> Command {
+
+    <span class="directive">public</span> ChangeThemeCommand(<span class="predefined-type">String</span> theme) {
+            <span class="local-variable">this</span>.theme = theme.trim();
+    }
+
+   <span class="annotation">@Override</span>
+    <span class="directive">public</span> CommandResult execute() <span class="directive">throws</span> CommandException {
+        <span class="keyword">if</span> (!isValidTheme(<span class="local-variable">this</span>.theme)) {
+            <span class="keyword">throw</span> <span class="keyword">new</span> CommandException(Messages.MESSAGE_INVALID_THEME);
+        }
+        <span class="keyword">if</span> ((MainWindow.getCurrentTheme()).contains(<span class="local-variable">this</span>.theme)) {
+            <span class="keyword">throw</span> <span class="keyword">new</span> CommandException(<span class="string"><span class="delimiter">&quot;</span><span class="content">Theme is already set to </span><span class="delimiter">&quot;</span></span> + <span class="local-variable">this</span>.theme + <span class="string"><span class="delimiter">&quot;</span><span class="content">!</span><span class="delimiter">&quot;</span></span>);
+        }
+        EventsCenter.getInstance().post(<span class="keyword">new</span> ChangeThemeEvent(<span class="local-variable">this</span>.theme));
+        <span class="keyword">return</span> <span class="keyword">new</span> CommandResult(<span class="predefined-type">String</span>.format(MESSAGE_THEME_SUCCESS, <span class="local-variable">this</span>.theme));
+    }
+
+    <span class="directive">private</span> <span class="type">boolean</span> isValidTheme(<span class="predefined-type">String</span> theme) {
+        <span class="keyword">return</span> theme.equals(<span class="string"><span class="delimiter">&quot;</span><span class="content">Light</span><span class="delimiter">&quot;</span></span>) || theme.equals(<span class="string"><span class="delimiter">&quot;</span><span class="content">Dark</span><span class="delimiter">&quot;</span></span>);
+    }
+
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="design-considerations-4"><a class="link" href="#design-considerations-4">Design Considerations</a></h5>
+<div class="sect5">
+<h6 id="aspect-user-experience-3"><a class="link" href="#aspect-user-experience-3">Aspect: User Experience</a></h6>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Alternative 1 (current choice):</strong> <code>ChangeThemeCommand</code> is implemented as a CLI command.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: Consistent with the rest of the application, of which all changes are made by the CLI.</p>
+</li>
+<li>
+<p>Cons: User has yet another command to remember the syntax of.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Alternative 2:</strong> Change of theme is implemented as a button to change onClick.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: User does not have to type anything to change the theme, so it might be more user friendly.</p>
+</li>
+<li>
+<p>Cons: Inconsistent with the rest of the application, which is CLI-based.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
@@ -490,7 +553,7 @@ If the <code>redoStack</code> is empty, then there are no other commands left to
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-04-11 04:42:54 UTC
+Last updated 2018-04-12 03:46:55 UTC
 </div>
 </div>
 </body>
