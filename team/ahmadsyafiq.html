@@ -133,9 +133,6 @@ the forget.</p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p><em>{you can add/remove categories in the list above}</em></p>
-</div>
 </div>
 </div>
 <div class="sect1">
@@ -287,6 +284,249 @@ players can be assign to teams.</p>
 <p>The player&#8217;s <em>avatar</em> is also shown on the right column.</p>
 </li>
 </ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="Using_Commands"><a class="link" href="#Using_Commands">Using Commands</a></h3>
+<div class="sidebarblock">
+<div class="content">
+<div class="title"><strong>Getting started with Commands</strong></div>
+<div class="exampleblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Words in <code>UPPER_CASE</code> are the parameters to be supplied by the user.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>An example in <code>add n/NAME</code>, <code>NAME</code> is a parameter which can be used as <code>add n/John Doe</code>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Fields that are in enclosed with <code>[ ]</code> are optional.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>An example, <code>n/NAME [t/TAG]</code>, can be used as, <code>n/John Doe t/friend</code>, or as, <code>n/John Doe</code>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Items with <code>…</code>​ after them can be used multiple times including zero times.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>In this example, <code>[t/TAG]&#8230;&#8203;</code>, these parameters are valid, <code>t/friend</code>, <code>t/friend t/family</code>, and even <code>&#160;</code> (no parameter).</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Parameters can be entered in any order.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>For example, if the command specifies <code>n/NAME p/PHONE_NUMBER</code>, <code>p/PHONE_NUMBER n/NAME</code> is also acceptable.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title"><strong>The Use of Alias</strong></div>
+<div class="exampleblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Some commands have an alias that you can use to execute the command. This alias acts as a shortcut to execute the commands you want without typing the full command out.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>For example, you can type the alias <code>a</code> instead of the <code>add</code> command word to add a player into MTM.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title"><strong>Lookout for Tips, Notes, and Expected Outcomes</strong></div>
+<div class="exampleblock">
+<div class="content">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+This box give <em>tips</em> that <strong>might be useful</strong>.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+This box <em>notes</em> down <strong>important details</strong> regarding a feature.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+This box will let you know the <em>outcome</em> and what MTM should be <strong>expected to do</strong>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Now that you are familiar with the interface and using commands, you are now ready to begin using My Team Manager!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="three-steps-to-get-started"><a class="link" href="#three-steps-to-get-started">Three steps to get started</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="add-your-first-player"><a class="link" href="#add-your-first-player">Add your first player</a></h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Add your first player, <code>Ronaldo</code> by typing the command <code>add n/Ronaldo e/Ronaldo@arsenal.com</code> in the command box and pressing <kbd>Enter</kbd> to execute it.</p>
+<div class="imageblock">
+<div class="content">
+<img src="../images/add.png" alt="add" width="400">
+</div>
+</div>
+</li>
+<li>
+<p>Your new player, <code>Ronaldo</code> should appear in the player list as shown in the white box above.</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+The <code>Add</code> command has additional optional parameters for you to include more information. For the full list,
+refer to <a href="#add">Adding a player</a>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="create-your-first-team"><a class="link" href="#create-your-first-team">Create your first team</a></h3>
+<div class="paragraph">
+<p>Now that you have a player, let&#8217;s explore teams. Teams allow you to manage and group your players together according to
+the teams they belong to.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Create your first team, <code>NUS</code> by typing the command <code>create NUS</code> in the command box and pressing <kbd>Enter</kbd> to execute it.</p>
+<div class="imageblock">
+<div class="content">
+<img src="../images/create.PNG" alt="create" width="300">
+</div>
+</div>
+</li>
+<li>
+<p>Your new team, <code>NUS</code> should appear in the team list.</p>
+</li>
+<li>
+<p>You can now assign <code>Ronaldo</code> to <code>NUS</code> by typing the command <code>assign tm/NUS i/1</code> in the command box and pressing <kbd>Enter</kbd> to execute it.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>The Team List should now show NUS highlighted as shown in the white box labeled 1 above.</p>
+</li>
+<li>
+<p><code>Ronaldo</code> 's player card should now show NUS in the team field as shown in the white box labeled 2 above.</p>
+</li>
+<li>
+<p>The player list shows only players assigned to the team <code>NUS</code></p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="viewing-more-details"><a class="link" href="#viewing-more-details">Viewing more details</a></h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>View more details about a player, by entering <code>select</code> followed by the <a href="#Index"><code>INDEX</code></a> of the player. For example, to view
+<code>Ronaldo</code> 's details, enter <code>select 1</code>.</p>
+</li>
+<li>
+<p>The details panel should now show the player&#8217;s details.</p>
+<div class="imageblock">
+<div class="content">
+<img src="../images/select.png" alt="select" width="790">
+</div>
+</div>
+</li>
+<li>
+<p>You may notice that there are fields that show <code>&lt;UNSPECIFIED&gt;</code>. These are optional fields that you can edit later on.
+There are also many ways you can customize and add to My Team Manager. Here are a few ways to start:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><a href="#edit">Editing a player</a></p>
+</li>
+<li>
+<p><a href="#changeTheme">Changing MTM theme</a></p>
+</li>
+<li>
+<p><a href="#setTagColour">Setting Tag Colour</a></p>
+</li>
+<li>
+<p><a href="#toggleprivacy">Setting privacy</a></p>
+</li>
+<li>
+<p><a href="#sort">Sorting players in the list</a></p>
+</li>
+</ol>
 </div>
 </li>
 </ol>
@@ -698,7 +938,7 @@ This implementation of making fields optional for <code>AddCommand</code> allows
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-04-15 04:31:13 UTC
+Last updated 2018-04-15 07:57:59 UTC
 </div>
 </div>
 </body>
