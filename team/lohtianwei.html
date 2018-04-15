@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.6.1">
+<title>Loh Tian Wei - Project Portfolio</title>
+<link rel="stylesheet" href="../stylesheets/gh-pages.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="../stylesheets/coderay-asciidoctor.css">
+</head>
+<body class="article">
+<div id="header">
+<h1>Loh Tian Wei - Project Portfolio</h1>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="project-my-team-manager-mtm"><a class="link" href="#project-my-team-manager-mtm">PROJECT: My Team Manager (MTM)</a></h2>
+<div class="sectionbody">
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="overview"><a class="link" href="#overview">Overview</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>My Team Manager (MTM) is a dekstop address book application for <strong>football team managers</strong>.
+It can also be personalised to be used for other sports team management too such as basketball.
+With the features it provides, management of your players' contact details and team information is made easy. While
+interactions between user and application is mainly by a <strong>Command Line Interface (CLI)</strong>, it features a JavaFx GUI display.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="summary-of-contributions"><a class="link" href="#summary-of-contributions">Summary of contributions</a></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Major enhancement</strong>: Added <strong>security and privacy features</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>What it does</strong>: Ensures the information stored in MTM is <strong>secured and kept private</strong> when needed</p>
+</li>
+<li>
+<p><strong>Justification</strong>: This feature is crucial for protecting the <strong>confidentiality and integrity</strong> of the details stored in MTM.
+It prevents unauthorised tampering of information while also maintaining confidentiality.</p>
+</li>
+<li>
+<p><strong>Highlights</strong>: Addition of a <strong>locking mechanism</strong> to limit functionality of MTM and changing <strong>privacy of fields</strong> that would maintain
+confidentiality of certain information</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Minor enhancement</strong>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Added a sort function that allows the list to be sorted by fields for quick viewing of relevant information</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Code contributed</strong>: [<a href="https://github.com/CS2103JAN2018-F14-B1/main/collated/functional/lohtianwei.md">Functional code</a>] [<a href="https://github.com/CS2103JAN2018-F14-B1/main/collated/test/lohtianwei.md">Test code</a>]</p>
+</li>
+<li>
+<p><strong>Other contributions</strong>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Project management:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Documented issues of project using GitHub&#8217;s Issue Tracker and address the issues accordingly.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Enhancements to existing features:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Changes are mentioned in <a href="#Minor Enhancement">Minor enhancement</a>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Documentation:</p>
+</li>
+<li>
+<p>Community:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>PRs reviewed (with non-trivial review comments) [<a href="https://github.com/CS2103JAN2018-F14-B1/main/pull/169">PR#169</a>]</p>
+</li>
+<li>
+<p>Reported bugs and suggestions for other teams in the class (<a href="https://github.com/CS2103JAN2018-W09-B2/main/issues/198">1</a>,
+<a href="https://github.com/CS2103JAN2018-W09-B2/main/issues/194">2</a>,
+<a href="https://github.com/CS2103JAN2018-W09-B2/main/issues/182">3</a>,
+<a href="https://github.com/CS2103JAN2018-W09-B2/main/issues/174">4</a>)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="contributions-to-the-user-guide"><a class="link" href="#contributions-to-the-user-guide">Contributions to the User Guide</a></h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Given below are sections I contributed to the User Guide. They showcase my ability to write documentation targeting end-users.</em></p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect3">
+<h4 id="toggleprivacy"><a class="link" href="#toggleprivacy">Toggling various fields to private: <code>toggleprivacy</code> <code>[Since v1.4]</code></a></h4>
+<div class="paragraph">
+<p>You can toggle the privacy of various fields of players in MTM.</p>
+</div>
+<div class="paragraph">
+<p>Format: <code>toggleprivacy INDEX [p/] [e/] [r/] [ra/] [a/]</code><br>
+Alias: <code>tp</code></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Current version of <code>toggleprivacy</code> supports the field to be privated:<br></p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>p/</code>: PHONE, <code>e/</code>: EMAIL, <code>r/</code>: REMARK, <code>ra/</code>:RATING &amp; <code>a/</code>: ADDRESS.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="title"><strong>What to expect</strong></div>
+<div class="paragraph">
+<p>Privacy of field will be toggled between private or public.<br>
+If Phone: <code>p/</code> of player at <a href="#Index"><code>INDEX</code></a> 1 is private, running command: <code>tp 1 p/</code> would change phone field to public.<br>
+Private fields are shown as &lt;Private <code>FIELD</code>&gt;.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Here are some examples on how you can use the <code>toggleprivacy</code> command:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>tp 1 p/ ra/</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Toggles privacy of phone and rating of player at <a href="#Index"><code>INDEX</code></a> 1.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sort"><a class="link" href="#sort">Sorting players by field: <code>sort</code> <code>[Since v1.2]</code></a></h4>
+<div class="paragraph">
+<p>You can sort the players by fields with the 'sort' command. Players can be sorted in both ascending or descending order.</p>
+</div>
+<div class="paragraph">
+<p>Format: <code>sort FIELD ORDER</code><br>
+Alias: <code>so</code></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Current version of <code>sort</code> supports the following fields and order:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>FIELD</code>: <code>name</code>, <code>email</code>, <code>address</code>, <code>rating</code>, <code>jersey</code> &amp; <code>position</code></p>
+</li>
+<li>
+<p><code>ORDER</code>: <code>asc</code> &amp; <code>desc</code></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Here are a few valid examples on how you can use the <code>sort</code> command:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>sort name asc</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This will sort MTM by names, in alphabetical order.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>sort name desc</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This will sort MTM by names, in reverse alphabetical order.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="key"><a class="link" href="#key">Toggling lock on MTM: <code>key</code> <code>[Since v1.5]</code></a></h4>
+<div class="paragraph">
+<p>You can toggle a lock on MTM to prevent unauthorised changes to your details in MTM. When MTM is in a locked state, functionality will be limited.</p>
+</div>
+<div class="paragraph">
+<p>Format: <code>key PASSWORD</code><br>
+Alias: <code>k</code></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Current version of <code>key</code> uses a fixed default <code>PASSWORD</code>: <strong>ilikesports</strong></p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="title"><strong>What to expect</strong></div>
+<div class="paragraph">
+<p>When MTM is locked, only the following commands can be executed:<br>
+<code>changeTheme</code>, <code>exit</code>, <code>find</code>, <code>help</code>, <code>key</code>, <code>list</code>, <code>sort</code> and <code>view</code></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Here are examples on how to use <code>key</code>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>key ilikesports</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If MTM is in a lock state, use this command to unlock it.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>key ilikesports</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>To lock MTM, use this command to lock.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="contributions-to-the-developer-guide"><a class="link" href="#contributions-to-the-developer-guide">Contributions to the Developer Guide</a></h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Given below are sections I contributed to the Developer Guide. They showcase my ability to write technical documentation and the technical depth of my contributions to the project.</em></p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect3">
+<h4 id="sorting-players-by-fields"><a class="link" href="#sorting-players-by-fields">Sorting players by fields</a></h4>
+<div class="sect4">
+<h5 id="current-implementation"><a class="link" href="#current-implementation">Current Implementation</a></h5>
+<div class="paragraph">
+<p>The <code>sort</code> command is currently able to sort players by name, email, address, rating, jersey and postition in either ascending or descending order. Support for more fields will be added in subsequent updates.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The <code>sort</code> command is parsed through <code>SortCommandParser</code> which hands control to the <code>SortCommand</code> class.</p>
+</li>
+<li>
+<p>Java Collections Sort API is used together with a custom <code>Comparator</code> in this implementation</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Sorting is facilitated by the <code>SortCommand</code> which uses method <code>sortPlayers</code> to ultimately call method <code>sortBy</code> in UniquePersonList for the actual sorting as shown in this code snippet:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java">        <span class="keyword">switch</span> (field) {
+                <span class="keyword">case</span> <span class="string"><span class="delimiter">&quot;</span><span class="content">name</span><span class="delimiter">&quot;</span></span>:
+                    comparator = nameComparator;
+                    <span class="keyword">break</span>;
+
+                <span class="keyword">case</span> <span class="string"><span class="delimiter">&quot;</span><span class="content">jersey</span><span class="delimiter">&quot;</span></span>:
+                    comparator = jerseyComparator;
+                    <span class="keyword">break</span>;
+
+                <span class="keyword">case</span> <span class="string"><span class="delimiter">&quot;</span><span class="content">pos</span><span class="delimiter">&quot;</span></span>:
+                    comparator = posComparator;
+                    <span class="keyword">break</span>;
+
+                <span class="keyword">case</span> <span class="string"><span class="delimiter">&quot;</span><span class="content">rating</span><span class="delimiter">&quot;</span></span>:
+                    comparator = ratingComparator;
+                    <span class="keyword">break</span>;
+
+                <span class="keyword">case</span> <span class="string"><span class="delimiter">&quot;</span><span class="content">email</span><span class="delimiter">&quot;</span></span>:
+                    comparator = emailComparator;
+                    <span class="keyword">break</span>;
+
+                <span class="keyword">case</span> <span class="string"><span class="delimiter">&quot;</span><span class="content">address</span><span class="delimiter">&quot;</span></span>:
+                    comparator = addressComparator;
+                    <span class="keyword">break</span>;
+
+                <span class="keyword">default</span>:
+                    <span class="keyword">throw</span> <span class="keyword">new</span> <span class="exception">AssertionError</span>(<span class="string"><span class="delimiter">&quot;</span><span class="content">Invalid field parameter entered...</span><span class="char">\n</span><span class="delimiter">&quot;</span></span>);
+                }
+
+        <span class="keyword">switch</span> (order) {
+        <span class="keyword">case</span> <span class="string"><span class="delimiter">&quot;</span><span class="content">asc</span><span class="delimiter">&quot;</span></span>:
+            <span class="predefined-type">Collections</span>.sort(internalList, comparator);
+            <span class="keyword">break</span>;
+
+        <span class="keyword">case</span> <span class="string"><span class="delimiter">&quot;</span><span class="content">desc</span><span class="delimiter">&quot;</span></span>:
+            <span class="predefined-type">Collections</span>.sort(internalList, <span class="predefined-type">Collections</span>.reverseOrder(comparator));
+            <span class="keyword">break</span>;
+
+        <span class="keyword">default</span>:
+            <span class="keyword">throw</span> <span class="keyword">new</span> <span class="exception">AssertionError</span>(<span class="string"><span class="delimiter">&quot;</span><span class="content">Invalid field parameter entered...</span><span class="char">\n</span><span class="delimiter">&quot;</span></span>);
+        }
+    }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The code above utilises a custom <code>Comparator</code> defined in the code below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java">        <span class="predefined-type">Comparator</span>&lt;Person&gt; nameComparator = <span class="keyword">new</span> <span class="predefined-type">Comparator</span>&lt;Person&gt;() {
+                    <span class="annotation">@Override</span>
+                    <span class="directive">public</span> <span class="type">int</span> compare(Person p1, Person p2) {
+                        <span class="keyword">return</span> p1.getName().fullName.compareTo(p2.getName().fullName);
+                    }
+                };
+
+                <span class="predefined-type">Comparator</span>&lt;Person&gt; jerseyComparator = <span class="keyword">new</span> <span class="predefined-type">Comparator</span>&lt;Person&gt;() {
+                    <span class="annotation">@Override</span>
+                    <span class="directive">public</span> <span class="type">int</span> compare(Person p1, Person p2) {
+                        <span class="keyword">return</span> p1.getJerseyNumber().value.compareTo(p2.getJerseyNumber().value);
+                    }
+                };
+
+                <span class="predefined-type">Comparator</span>&lt;Person&gt; ratingComparator = <span class="keyword">new</span> <span class="predefined-type">Comparator</span>&lt;Person&gt;() {
+                    <span class="annotation">@Override</span>
+                    <span class="directive">public</span> <span class="type">int</span> compare(Person p1, Person p2) {
+                        <span class="keyword">return</span> p1.getRating().toString().compareTo(p2.getRating().toString());
+                    }
+                };
+
+                <span class="predefined-type">Comparator</span>&lt;Person&gt; posComparator = <span class="keyword">new</span> <span class="predefined-type">Comparator</span>&lt;Person&gt;() {
+                    <span class="annotation">@Override</span>
+                    <span class="directive">public</span> <span class="type">int</span> compare(Person p1, Person p2) {
+                        <span class="keyword">return</span> p1.getPosition().value.compareTo(p2.getPosition().value);
+                    }
+                };
+
+                <span class="predefined-type">Comparator</span>&lt;Person&gt; emailComparator = <span class="keyword">new</span> <span class="predefined-type">Comparator</span>&lt;Person&gt;() {
+                    <span class="annotation">@Override</span>
+                    <span class="directive">public</span> <span class="type">int</span> compare(Person p1, Person p2) {
+                        <span class="keyword">return</span> p1.getEmail().toString().compareTo(p2.getEmail().toString());
+                    }
+                };
+
+                <span class="predefined-type">Comparator</span>&lt;Person&gt; addressComparator = <span class="keyword">new</span> <span class="predefined-type">Comparator</span>&lt;Person&gt;() {
+                    <span class="annotation">@Override</span>
+                    <span class="directive">public</span> <span class="type">int</span> compare(Person p1, Person p2) {
+                        <span class="keyword">return</span> p1.getAddress().toString().compareTo(p2.getAddress().toString());
+                    }
+                };</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The following sequence diagram shows the program flow when <code>sort</code> is used:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/sortSeq.png" alt="sortSeq" width="900">
+</div>
+<div class="title">Figure 1. Sort Sequence Diagram</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+If address book is empty, a <code>NoPlayerException</code> will be thrown by <code>sortBy</code> method in UniquePlayerList.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect4">
+<h5 id="design-consideration"><a class="link" href="#design-consideration">Design Consideration</a></h5>
+<div class="sect5">
+<h6 id="aspect-implementation-of-code-sort-code"><a class="link" href="#aspect-implementation-of-code-sort-code">Aspect: Implementation of <code>sort</code></a></h6>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Alternative 1 (current choice):</strong> Sorting is done in <code>UniquePersonList</code>.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: Sorting methods resides in class that handles most operations done to list. Future changes to implementation would be easier.</p>
+</li>
+<li>
+<p>Cons: Complicated flow of control passed between classes.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Alternative 2:</strong> Sorting is done in <code>SortCommand</code>.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: Easier to trace flow of control as lesser passing between classes.</p>
+</li>
+<li>
+<p>Cons: Unnecessary coupling if <code>UniquePersonList</code> has to rely on <code>SortCommand</code>.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect5">
+<h6 id="aspect-sort-by-multiple-fields"><a class="link" href="#aspect-sort-by-multiple-fields">Aspect: Sort by multiple fields</a></h6>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Alternative 1 (current choice):</strong> Sort can only be done by 1 field.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: Easy to implement and input is straightforward.</p>
+</li>
+<li>
+<p>Cons: Unable to fine tune to great detail how teams are sorted and displayed.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Alternative 2:</strong> Sort can be done by multiple fields.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros:  Able to fine tune to great detail how teams are sorted and displayed.</p>
+</li>
+<li>
+<p>Cons: Unnecessary as team managers would not need to sort players by multiple fields.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect5">
+<h6 id="aspect-sort-persistence"><a class="link" href="#aspect-sort-persistence">Aspect: Sort Persistence</a></h6>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Alternative 1 (current choice):</strong> Address book is saved after sorting.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: Easy to implement. Allows team managers to use preferred sort pattern in every session.</p>
+</li>
+<li>
+<p>Cons: Previous order of players will be lost.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Alternative 2:</strong> Address book is not saved after sorting.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: Good if team manager wants to sort players for current session only.</p>
+</li>
+<li>
+<p>Cons: Sort order is lost when program exits. More memory is used to sort a list and reverse it after.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="setting-various-player-fields-to-private"><a class="link" href="#setting-various-player-fields-to-private">Setting various player fields to private</a></h4>
+<div class="sect4">
+<h5 id="current-implementation-2"><a class="link" href="#current-implementation-2">Current Implementation</a></h5>
+<div class="paragraph">
+<p><code>Phone</code>, <code>Email</code>, <code>Remark</code>, <code>Rating</code> and <code>Address</code> of a player has an additional boolean attribute
+<code>isPrivate</code> which tracks the privacy of the particular field. When a player is added into MTM, <code>isPrivate</code> of these
+fields are set to 'false' by default.</p>
+</div>
+<div class="paragraph">
+<p>Each of these fields have a different <code>toString</code> method which would return <code>&lt;Private 'FIELD'&gt;</code> if privacy of
+the field is set to 'true', as shown in the following code snippet:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Override</span>
+    <span class="directive">public</span> <span class="predefined-type">String</span> toString() {
+        <span class="keyword">if</span> (isPrivate) {
+            <span class="keyword">return</span> <span class="string"><span class="delimiter">&quot;</span><span class="content">&lt;Private Address&gt;</span><span class="delimiter">&quot;</span></span>;
+        }
+        <span class="keyword">return</span> value;
+    }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>XmlAdaptedPerson</code> under the storage portion has been edited to save the <code>isPrivate</code> value for the fields:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@XmlElement</span>(required = <span class="predefined-constant">true</span>)
+    <span class="directive">private</span> <span class="predefined-type">Boolean</span> phonePrivacy;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Toggling of privacy works in a similar way to <code>Edit</code>. New fields will be created with privacy settings of <code>EditPersonPrivacy</code>
+ based on user input. This is done by first detecting if a particular prefix is present when command is
+entered in <code>TogglePrivacyCommandParser</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">if</span> (argMultimap.getValue(PREFIX_PHONE).isPresent()) {
+            epp.setPrivatePhone(<span class="predefined-constant">false</span>);
+        }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If prefix of a field is not present, the privacy setting of that particular field in <code>EditPersonPrivacy</code> would be null.</p>
+</div>
+<div class="paragraph">
+<p>In <code>TogglePrivacyCommand</code>, the new fields are created with this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">private</span> <span class="directive">static</span> Phone createPhonePrivacy(Person person, EditPersonPrivacy epp) {
+        Phone phone;
+        <span class="keyword">try</span> {
+            <span class="keyword">if</span> (person.getPhone().isPrivate()) {
+                person.getPhone().togglePrivacy();
+                phone = <span class="keyword">new</span> Phone(person.getPhone().toString());
+                person.getPhone().togglePrivacy();
+            } <span class="keyword">else</span> {
+                phone = <span class="keyword">new</span> Phone(person.getPhone().toString());
+            }
+        } <span class="keyword">catch</span> (<span class="exception">Exception</span> e) {
+            <span class="keyword">throw</span> <span class="keyword">new</span> <span class="exception">AssertionError</span>(<span class="string"><span class="delimiter">&quot;</span><span class="content">Invalid Phone</span><span class="delimiter">&quot;</span></span>);
+        }
+        <span class="keyword">if</span> (epp.getPrivatePhone() != <span class="predefined-constant">null</span>) {
+            phone.setPrivate(person.getPhone().isPrivate());
+            phone.togglePrivacy();
+        } <span class="keyword">else</span> {
+            phone.setPrivate(person.getPhone().isPrivate());
+        }
+
+        <span class="keyword">return</span> phone;
+    }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Note that in the second portion of the code, if <code>epp.getPrivatePhone()</code> is null, this would mean that it&#8217;s privacy
+setting was not toggled and thus is set to the same as it was before. Else, it would be toggled:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">void</span> togglePrivacy() {
+        <span class="local-variable">this</span>.isPrivate = isPrivate ? <span class="predefined-constant">false</span> : <span class="predefined-constant">true</span>;
+    }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A new person object is then created:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">private</span> <span class="directive">static</span> Person createEditedPrivacyPerson(Person personToEdit, EditPersonPrivacy epp)
+            <span class="directive">throws</span> IllegalValueException {
+        <span class="keyword">assert</span> personToEdit != <span class="predefined-constant">null</span>;
+
+        <span class="predefined-type">Name</span> updatedName = personToEdit.getName();
+        Phone updatedPhone = createPhonePrivacy(personToEdit, epp);
+        Email updatedEmail = createEmailPrivacy(personToEdit, epp);
+        Address updatedAddress = createAddressPrivacy(personToEdit, epp);
+        Remark updatedRemark = createRemarkPrivacy(personToEdit, epp);
+        TeamName updatedTeamName = personToEdit.getTeamName();
+        <span class="predefined-type">Set</span>&lt;Tag&gt; updatedTags = personToEdit.getTags();
+        Rating updatedRating = createRatingPrivacy(personToEdit, epp);
+        <span class="predefined-type">Position</span> updatedPosition = personToEdit.getPosition();
+        JerseyNumber updatedJerseyNumber = personToEdit.getJerseyNumber();
+        Avatar updatedAvatar = personToEdit.getAvatar();
+
+        <span class="keyword">return</span> <span class="keyword">new</span> Person(updatedName, updatedPhone, updatedEmail, updatedAddress, updatedRemark,
+                updatedTeamName, updatedTags, updatedRating, updatedPosition, updatedJerseyNumber, updatedAvatar);
+    }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>and is used to update current person:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java">model.updatePerson(personToEdit, editedPerson);</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="design-consideration-2"><a class="link" href="#design-consideration-2">Design Consideration</a></h5>
+<div class="sect5">
+<h6 id="aspect-how-field-privacy-is-implemented"><a class="link" href="#aspect-how-field-privacy-is-implemented">Aspect: How field privacy is implemented</a></h6>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Alternative 1 (current choice):</strong> Boolean <code>isPrivate</code> added to field classes.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: Privacy settings can be obtained straight from class by calling getter method.</p>
+</li>
+<li>
+<p>Cons: Adddtional methods are needed to set and get value of <code>isPrivate</code>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Alternative 2:</strong> Field privacy settings stored in <code>Person</code> in a HashMap.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: Field privacy can be accessed and modified easily</p>
+</li>
+<li>
+<p>Cons: <code>Person</code> has to be accessed every time field privacy needs to be checked</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect5">
+<h6 id="aspect-privacy-of-fields-upon-adding-of-player"><a class="link" href="#aspect-privacy-of-fields-upon-adding-of-player">Aspect: Privacy of fields upon adding of player</a></h6>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Alternative 1 (current choice):</strong> All newly added players' fields are not private by default.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: <code>Add</code> command does not need to be tweaked to allow adding player with private fields.</p>
+</li>
+<li>
+<p>Cons: After adding players, user has to do additional command to toggle privacy of fields.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Alternative 2:</strong> Include implementation of prefixes that denotes private field during <code>Add</code>.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: Newly added players can have private fields right away.</p>
+</li>
+<li>
+<p>Cons: Addtional changes has to be made to <code>Add</code> command.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="toggle-lock-on-mtm"><a class="link" href="#toggle-lock-on-mtm">Toggle lock on MTM</a></h4>
+<div class="sect4">
+<h5 id="current-implementation-3"><a class="link" href="#current-implementation-3">Current Implementation</a></h5>
+<div class="paragraph">
+<p>Locking mechanism of MTM can be toggled on and off using the <code>Key</code> command. It utilises the Model to access
+user preferences of MTM. Current lock state and password is stored in <code>UserPrefs</code> in the Storage component.</p>
+</div>
+<div class="paragraph">
+<p>This activity diagram shows the logic behind the <code>Key</code> command:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/Keyactdiag.png" alt="Keyactdiag" width="900">
+</div>
+<div class="title">Figure 2. Key Activity Diagram</div>
+</div>
+<div class="paragraph">
+<p>Password checking done in <code>Key</code> command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">private</span> <span class="type">boolean</span> correctPassword() {
+        UserPrefs up = model.getUserPrefs();
+        <span class="predefined-type">String</span> hash = Hashing.sha256().hashString(password, StandardCharsets.UTF_8).toString();
+        <span class="keyword">return</span> hash.equals(up.getAddressBookHashedPass());
+    }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When password check is done, the lock on MTM is toggled to the state opposite of the current:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">if</span> (correctPassword()) {
+            <span class="keyword">if</span> (model.getLockState()) {
+                model.unlockAddressBookModel();
+            } <span class="keyword">else</span> {
+                model.lockAddressBookModel();
+            }
+
+            logger.info(<span class="string"><span class="delimiter">&quot;</span><span class="content">Lock state is now: </span><span class="delimiter">&quot;</span></span> + <span class="predefined-type">Boolean</span>.toString(model.getLockState()));
+            <span class="keyword">return</span> <span class="keyword">new</span> CommandResult(MESSAGE_SUCCESS);
+        }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In a locked state, only certain functions of MTM can be used. This is to prevent unauthorised tampering with the details
+stored on MTM.</p>
+</div>
+<div class="paragraph">
+<p>This is done in <code>AddressBookParser</code>. Commands are split into low level or not. When a command is
+being executed, it is checked if it falls under the low level category. If so, it would execute. When adding new features,
+add them to this list should you feel it is 'low level':</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">private</span> Command lowLevelCommand(<span class="predefined-type">String</span> commandWord, <span class="predefined-type">String</span> arguments) <span class="directive">throws</span> <span class="exception">ParseException</span> {
+        <span class="keyword">switch</span>(commandWord) {
+        <span class="keyword">case</span> ChangeThemeCommand.COMMAND_WORD:
+        <span class="keyword">case</span> ChangeThemeCommand.COMMAND_ALIAS:
+            <span class="keyword">return</span> <span class="keyword">new</span> ChangeThemeCommandParser().parse(arguments);
+
+        <span class="keyword">case</span> FindCommand.COMMAND_WORD:
+        <span class="keyword">case</span> FindCommand.COMMAND_ALIAS:
+            <span class="keyword">return</span> <span class="keyword">new</span> FindCommandParser().parse(arguments);
+
+        <span class="keyword">case</span> ListCommand.COMMAND_WORD:
+        <span class="keyword">case</span> ListCommand.COMMAND_ALIAS:
+            <span class="keyword">return</span> <span class="keyword">new</span> ListCommand();
+
+        <span class="keyword">case</span> KeyCommand.COMMAND_WORD:
+        <span class="keyword">case</span> KeyCommand.COMMAND_ALIAS:
+            <span class="keyword">return</span> <span class="keyword">new</span> KeyCommandParser().parse(arguments);
+
+        <span class="keyword">case</span> ViewCommand.COMMAND_WORD:
+        <span class="keyword">case</span> ViewCommand.COMMAND_ALIAS:
+            <span class="keyword">return</span> <span class="keyword">new</span> ViewCommandParser().parse(arguments);
+
+        <span class="keyword">case</span> ExitCommand.COMMAND_WORD:
+            <span class="keyword">return</span> <span class="keyword">new</span> ExitCommand();
+
+        <span class="keyword">case</span> HelpCommand.COMMAND_WORD:
+            <span class="keyword">return</span> <span class="keyword">new</span> HelpCommand();
+
+        <span class="keyword">case</span> SortCommand.COMMAND_WORD:
+        <span class="keyword">case</span> SortCommand.COMMAND_ALIAS:
+            <span class="keyword">return</span> <span class="keyword">new</span> SortCommandParser().parse(arguments);
+
+        <span class="keyword">default</span>:
+            <span class="keyword">return</span> <span class="predefined-constant">null</span>;
+        }
+    }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If command being executed does not fall into the category of 'low level', a check on the lock state of MTM is done
+before allowing or restricting access:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">if</span> (lockState) {
+            <span class="keyword">throw</span> <span class="keyword">new</span> <span class="exception">ParseException</span>(MESSAGE_RESTRICTED);
+        }</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="design-considerations"><a class="link" href="#design-considerations">Design Considerations</a></h5>
+<div class="sect5">
+<h6 id="aspect-implementation-of-locking-mtm"><a class="link" href="#aspect-implementation-of-locking-mtm">Aspect: Implementation of locking MTM</a></h6>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Alternative 1 (current choice):</strong> Lock is toggled with only a single command <code>Key</code>.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: Easy to implement, just check current lock state and switch it.</p>
+</li>
+<li>
+<p>Cons: With a toggle, user might unlock MTM thinking he/she is locking it.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Alternative 2:</strong> Locking and unlocking of MTM is done with two separate commands.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pros: Ensures that when a lock is done, MTM is truly locked.</p>
+</li>
+<li>
+<p>Cons: Addtional command needs to be created, along with its command parser and implementations.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2018-04-15 04:31:13 UTC
+</div>
+</div>
+</body>
+</html>
